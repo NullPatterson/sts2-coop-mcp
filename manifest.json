@@ -1,0 +1,4532 @@
+{
+  "ABRASIVE": {
+    "character": "silent",
+    "path": "characters/silent/cards/ABRASIVE.md",
+    "type": "card"
+  },
+  "ACCELERANT": {
+    "character": "silent",
+    "path": "characters/silent/cards/ACCELERANT.md",
+    "type": "card"
+  },
+  "ACCURACY": {
+    "character": "silent",
+    "path": "characters/silent/cards/ACCURACY.md",
+    "type": "card"
+  },
+  "ACROBATICS": {
+    "character": "silent",
+    "path": "characters/silent/cards/ACROBATICS.md",
+    "type": "card"
+  },
+  "ADAPTIVE_STRIKE": {
+    "character": "defect",
+    "path": "characters/defect/cards/ADAPTIVE_STRIKE.md",
+    "type": "card"
+  },
+  "ADRENALINE": {
+    "character": "silent",
+    "path": "characters/silent/cards/ADRENALINE.md",
+    "type": "card"
+  },
+  "AFTERIMAGE": {
+    "character": "silent",
+    "path": "characters/silent/cards/AFTERIMAGE.md",
+    "type": "card"
+  },
+  "AFTERLIFE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/AFTERLIFE.md",
+    "type": "card"
+  },
+  "AGGRESSION": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/AGGRESSION.md",
+    "type": "card"
+  },
+  "AKABEKO": {
+    "character": "colorless",
+    "path": "relics/AKABEKO.md",
+    "type": "relic"
+  },
+  "ALCHEMICAL_COFFER": {
+    "character": "colorless",
+    "path": "relics/ALCHEMICAL_COFFER.md",
+    "type": "relic"
+  },
+  "ALCHEMIZE": {
+    "character": "colorless",
+    "path": "cards/colorless/ALCHEMIZE.md",
+    "type": "card"
+  },
+  "ALIGNMENT": {
+    "character": "regent",
+    "path": "characters/regent/cards/ALIGNMENT.md",
+    "type": "card"
+  },
+  "ALL_FOR_ONE": {
+    "character": "defect",
+    "path": "characters/defect/cards/ALL_FOR_ONE.md",
+    "type": "card"
+  },
+  "AMETHYST_AUBERGINE": {
+    "character": "colorless",
+    "path": "relics/AMETHYST_AUBERGINE.md",
+    "type": "relic"
+  },
+  "ANCHOR": {
+    "character": "colorless",
+    "path": "relics/ANCHOR.md",
+    "type": "relic"
+  },
+  "ANCIENT": {
+    "character": "colorless",
+    "path": "relics/ANCIENT.md",
+    "type": "relic"
+  },
+  "ANGER": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/ANGER.md",
+    "type": "card"
+  },
+  "ANOINTED": {
+    "character": "colorless",
+    "path": "cards/colorless/ANOINTED.md",
+    "type": "card"
+  },
+  "ANTICIPATE": {
+    "character": "silent",
+    "path": "characters/silent/cards/ANTICIPATE.md",
+    "type": "card"
+  },
+  "APOTHEOSIS": {
+    "character": "event",
+    "path": "cards/colorless/APOTHEOSIS.md",
+    "type": "card"
+  },
+  "APPARITION": {
+    "character": "event",
+    "path": "cards/colorless/APPARITION.md",
+    "type": "card"
+  },
+  "ARCANE_SCROLL": {
+    "character": "colorless",
+    "path": "relics/ARCANE_SCROLL.md",
+    "type": "relic"
+  },
+  "ARCHAIC_TOOTH": {
+    "character": "colorless",
+    "path": "relics/ARCHAIC_TOOTH.md",
+    "type": "relic"
+  },
+  "ARMAMENTS": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/ARMAMENTS.md",
+    "type": "card"
+  },
+  "ARSENAL": {
+    "character": "regent",
+    "path": "characters/regent/cards/ARSENAL.md",
+    "type": "card"
+  },
+  "ART_OF_WAR": {
+    "character": "colorless",
+    "path": "relics/ART_OF_WAR.md",
+    "type": "relic"
+  },
+  "ASCENDER_S_BANE": {
+    "character": "curse",
+    "path": "cards/colorless/ASCENDER_S_BANE.md",
+    "type": "card"
+  },
+  "ASHEN_STRIKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/ASHEN_STRIKE.md",
+    "type": "card"
+  },
+  "ASHWATER": {
+    "character": "ironclad",
+    "path": "potions/ASHWATER.md",
+    "type": "potion"
+  },
+  "ASSASSINATE": {
+    "character": "silent",
+    "path": "characters/silent/cards/ASSASSINATE.md",
+    "type": "card"
+  },
+  "ASTRAL_PULSE": {
+    "character": "regent",
+    "path": "characters/regent/cards/ASTRAL_PULSE.md",
+    "type": "card"
+  },
+  "ASTROLABE": {
+    "character": "colorless",
+    "path": "relics/ASTROLABE.md",
+    "type": "relic"
+  },
+  "ATTACK_POTION": {
+    "character": "colorless",
+    "path": "potions/ATTACK_POTION.md",
+    "type": "potion"
+  },
+  "AUTOMATION": {
+    "character": "colorless",
+    "path": "cards/colorless/AUTOMATION.md",
+    "type": "card"
+  },
+  "BACKFLIP": {
+    "character": "silent",
+    "path": "characters/silent/cards/BACKFLIP.md",
+    "type": "card"
+  },
+  "BACKSTAB": {
+    "character": "silent",
+    "path": "characters/silent/cards/BACKSTAB.md",
+    "type": "card"
+  },
+  "BAD_LUCK": {
+    "character": "curse",
+    "path": "cards/colorless/BAD_LUCK.md",
+    "type": "card"
+  },
+  "BAG_OF_MARBLES": {
+    "character": "colorless",
+    "path": "relics/BAG_OF_MARBLES.md",
+    "type": "relic"
+  },
+  "BAG_OF_PREPARATION": {
+    "character": "colorless",
+    "path": "relics/BAG_OF_PREPARATION.md",
+    "type": "relic"
+  },
+  "BALL_LIGHTNING": {
+    "character": "defect",
+    "path": "characters/defect/cards/BALL_LIGHTNING.md",
+    "type": "card"
+  },
+  "BANSHEE_S_CRY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BANSHEE_S_CRY.md",
+    "type": "card"
+  },
+  "BARRAGE": {
+    "character": "defect",
+    "path": "characters/defect/cards/BARRAGE.md",
+    "type": "card"
+  },
+  "BARRICADE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BARRICADE.md",
+    "type": "card"
+  },
+  "BASH": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BASH.md",
+    "type": "card"
+  },
+  "BATTLE_TRANCE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BATTLE_TRANCE.md",
+    "type": "card"
+  },
+  "BEACON_OF_HOPE": {
+    "character": "colorless",
+    "path": "cards/colorless/BEACON_OF_HOPE.md",
+    "type": "card"
+  },
+  "BEAM_CELL": {
+    "character": "defect",
+    "path": "characters/defect/cards/BEAM_CELL.md",
+    "type": "card"
+  },
+  "BEATING_REMNANT": {
+    "character": "colorless",
+    "path": "relics/BEATING_REMNANT.md",
+    "type": "relic"
+  },
+  "BEAT_DOWN": {
+    "character": "colorless",
+    "path": "cards/colorless/BEAT_DOWN.md",
+    "type": "card"
+  },
+  "BEAT_INTO_SHAPE": {
+    "character": "regent",
+    "path": "characters/regent/cards/BEAT_INTO_SHAPE.md",
+    "type": "card"
+  },
+  "BEAUTIFUL_BRACELET": {
+    "character": "colorless",
+    "path": "relics/BEAUTIFUL_BRACELET.md",
+    "type": "relic"
+  },
+  "BECKON": {
+    "character": "status",
+    "path": "cards/colorless/BECKON.md",
+    "type": "card"
+  },
+  "BEETLE_JUICE": {
+    "character": "colorless",
+    "path": "potions/BEETLE_JUICE.md",
+    "type": "potion"
+  },
+  "BEGONE": {
+    "character": "regent",
+    "path": "characters/regent/cards/BEGONE.md",
+    "type": "card"
+  },
+  "BELIEVE_IN_YOU": {
+    "character": "colorless",
+    "path": "cards/colorless/BELIEVE_IN_YOU.md",
+    "type": "card"
+  },
+  "BELLOWS": {
+    "character": "colorless",
+    "path": "relics/BELLOWS.md",
+    "type": "relic"
+  },
+  "BELT_BUCKLE": {
+    "character": "colorless",
+    "path": "relics/BELT_BUCKLE.md",
+    "type": "relic"
+  },
+  "BIASED_COGNITION": {
+    "character": "defect",
+    "path": "characters/defect/cards/BIASED_COGNITION.md",
+    "type": "card"
+  },
+  "BIG_BANG": {
+    "character": "regent",
+    "path": "characters/regent/cards/BIG_BANG.md",
+    "type": "card"
+  },
+  "BIG_HAT": {
+    "character": "necrobinder",
+    "path": "relics/BIG_HAT.md",
+    "type": "relic"
+  },
+  "BIG_MUSHROOM": {
+    "character": "colorless",
+    "path": "relics/BIG_MUSHROOM.md",
+    "type": "relic"
+  },
+  "BIIIG_HUG": {
+    "character": "colorless",
+    "path": "relics/BIIIG_HUG.md",
+    "type": "relic"
+  },
+  "BING_BONG": {
+    "character": "colorless",
+    "path": "relics/BING_BONG.md",
+    "type": "relic"
+  },
+  "BLACK_BLOOD": {
+    "character": "ironclad",
+    "path": "relics/BLACK_BLOOD.md",
+    "type": "relic"
+  },
+  "BLACK_HOLE": {
+    "character": "regent",
+    "path": "characters/regent/cards/BLACK_HOLE.md",
+    "type": "card"
+  },
+  "BLACK_STAR": {
+    "character": "colorless",
+    "path": "relics/BLACK_STAR.md",
+    "type": "relic"
+  },
+  "BLADE_DANCE": {
+    "character": "silent",
+    "path": "characters/silent/cards/BLADE_DANCE.md",
+    "type": "card"
+  },
+  "BLADE_OF_INK": {
+    "character": "silent",
+    "path": "characters/silent/cards/BLADE_OF_INK.md",
+    "type": "card"
+  },
+  "BLESSED_ANTLER": {
+    "character": "colorless",
+    "path": "relics/BLESSED_ANTLER.md",
+    "type": "relic"
+  },
+  "BLESSING_OF_THE_FORGE": {
+    "character": "colorless",
+    "path": "potions/BLESSING_OF_THE_FORGE.md",
+    "type": "potion"
+  },
+  "BLIGHT_STRIKE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BLIGHT_STRIKE.md",
+    "type": "card"
+  },
+  "BLOCK_POTION": {
+    "character": "colorless",
+    "path": "potions/BLOCK_POTION.md",
+    "type": "potion"
+  },
+  "BLOODLETTING": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BLOODLETTING.md",
+    "type": "card"
+  },
+  "BLOOD_POTION": {
+    "character": "ironclad",
+    "path": "potions/BLOOD_POTION.md",
+    "type": "potion"
+  },
+  "BLOOD_SOAKED_ROSE": {
+    "character": "colorless",
+    "path": "relics/BLOOD_SOAKED_ROSE.md",
+    "type": "relic"
+  },
+  "BLOOD_VIAL": {
+    "character": "colorless",
+    "path": "relics/BLOOD_VIAL.md",
+    "type": "relic"
+  },
+  "BLOOD_WALL": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BLOOD_WALL.md",
+    "type": "card"
+  },
+  "BLUDGEON": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BLUDGEON.md",
+    "type": "card"
+  },
+  "BLUR": {
+    "character": "silent",
+    "path": "characters/silent/cards/BLUR.md",
+    "type": "card"
+  },
+  "BODYGUARD": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BODYGUARD.md",
+    "type": "card"
+  },
+  "BODY_SLAM": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BODY_SLAM.md",
+    "type": "card"
+  },
+  "BOLAS": {
+    "character": "colorless",
+    "path": "cards/colorless/BOLAS.md",
+    "type": "card"
+  },
+  "BOMBARDMENT": {
+    "character": "regent",
+    "path": "characters/regent/cards/BOMBARDMENT.md",
+    "type": "card"
+  },
+  "BONE_BREW": {
+    "character": "necrobinder",
+    "path": "potions/BONE_BREW.md",
+    "type": "potion"
+  },
+  "BONE_FLUTE": {
+    "character": "necrobinder",
+    "path": "relics/BONE_FLUTE.md",
+    "type": "relic"
+  },
+  "BONE_SHARDS": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BONE_SHARDS.md",
+    "type": "card"
+  },
+  "BONE_TEA": {
+    "character": "colorless",
+    "path": "relics/BONE_TEA.md",
+    "type": "relic"
+  },
+  "BOOKMARK": {
+    "character": "necrobinder",
+    "path": "relics/BOOKMARK.md",
+    "type": "relic"
+  },
+  "BOOK_OF_FIVE_RINGS": {
+    "character": "colorless",
+    "path": "relics/BOOK_OF_FIVE_RINGS.md",
+    "type": "relic"
+  },
+  "BOOK_REPAIR_KNIFE": {
+    "character": "necrobinder",
+    "path": "relics/BOOK_REPAIR_KNIFE.md",
+    "type": "relic"
+  },
+  "BOOMING_CONCH": {
+    "character": "colorless",
+    "path": "relics/BOOMING_CONCH.md",
+    "type": "relic"
+  },
+  "BOOST_AWAY": {
+    "character": "defect",
+    "path": "characters/defect/cards/BOOST_AWAY.md",
+    "type": "card"
+  },
+  "BOOT_SEQUENCE": {
+    "character": "defect",
+    "path": "characters/defect/cards/BOOT_SEQUENCE.md",
+    "type": "card"
+  },
+  "BORROWED_TIME": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BORROWED_TIME.md",
+    "type": "card"
+  },
+  "BOTTLED_POTENTIAL": {
+    "character": "colorless",
+    "path": "potions/BOTTLED_POTENTIAL.md",
+    "type": "potion"
+  },
+  "BOUNCING_FLASK": {
+    "character": "silent",
+    "path": "characters/silent/cards/BOUNCING_FLASK.md",
+    "type": "card"
+  },
+  "BOUND_PHYLACTERY": {
+    "character": "necrobinder",
+    "path": "relics/BOUND_PHYLACTERY.md",
+    "type": "relic"
+  },
+  "BOWLER_HAT": {
+    "character": "colorless",
+    "path": "relics/BOWLER_HAT.md",
+    "type": "relic"
+  },
+  "BRAND": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BRAND.md",
+    "type": "card"
+  },
+  "BREAD": {
+    "character": "colorless",
+    "path": "relics/BREAD.md",
+    "type": "relic"
+  },
+  "BREAK": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BREAK.md",
+    "type": "card"
+  },
+  "BREAKTHROUGH": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BREAKTHROUGH.md",
+    "type": "card"
+  },
+  "BRIGHTEST_FLAME": {
+    "character": "event",
+    "path": "cards/colorless/BRIGHTEST_FLAME.md",
+    "type": "card"
+  },
+  "BRILLIANT_SCARF": {
+    "character": "colorless",
+    "path": "relics/BRILLIANT_SCARF.md",
+    "type": "relic"
+  },
+  "BRIMSTONE": {
+    "character": "ironclad",
+    "path": "relics/BRIMSTONE.md",
+    "type": "relic"
+  },
+  "BRONZE_SCALES": {
+    "character": "colorless",
+    "path": "relics/BRONZE_SCALES.md",
+    "type": "relic"
+  },
+  "BUBBLE_BUBBLE": {
+    "character": "silent",
+    "path": "characters/silent/cards/BUBBLE_BUBBLE.md",
+    "type": "card"
+  },
+  "BUFFER": {
+    "character": "defect",
+    "path": "characters/defect/cards/BUFFER.md",
+    "type": "card"
+  },
+  "BULK_UP": {
+    "character": "defect",
+    "path": "characters/defect/cards/BULK_UP.md",
+    "type": "card"
+  },
+  "BULLET_TIME": {
+    "character": "silent",
+    "path": "characters/silent/cards/BULLET_TIME.md",
+    "type": "card"
+  },
+  "BULLY": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BULLY.md",
+    "type": "card"
+  },
+  "BULWARK": {
+    "character": "regent",
+    "path": "characters/regent/cards/BULWARK.md",
+    "type": "card"
+  },
+  "BUNDLE_OF_JOY": {
+    "character": "regent",
+    "path": "characters/regent/cards/BUNDLE_OF_JOY.md",
+    "type": "card"
+  },
+  "BURN": {
+    "character": "status",
+    "path": "cards/colorless/BURN.md",
+    "type": "card"
+  },
+  "BURNING_BLOOD": {
+    "character": "ironclad",
+    "path": "relics/BURNING_BLOOD.md",
+    "type": "relic"
+  },
+  "BURNING_PACT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/BURNING_PACT.md",
+    "type": "card"
+  },
+  "BURNING_STICKS": {
+    "character": "colorless",
+    "path": "relics/BURNING_STICKS.md",
+    "type": "relic"
+  },
+  "BURST": {
+    "character": "silent",
+    "path": "characters/silent/cards/BURST.md",
+    "type": "card"
+  },
+  "BURY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/BURY.md",
+    "type": "card"
+  },
+  "BYRDONIS_EGG": {
+    "character": "quest",
+    "path": "cards/colorless/BYRDONIS_EGG.md",
+    "type": "card"
+  },
+  "BYRDPIP": {
+    "character": "colorless",
+    "path": "relics/BYRDPIP.md",
+    "type": "relic"
+  },
+  "BYRD_SWOOP": {
+    "character": "event",
+    "path": "cards/colorless/BYRD_SWOOP.md",
+    "type": "card"
+  },
+  "CALAMITY": {
+    "character": "colorless",
+    "path": "cards/colorless/CALAMITY.md",
+    "type": "card"
+  },
+  "CALCIFY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/CALCIFY.md",
+    "type": "card"
+  },
+  "CALCULATED_GAMBLE": {
+    "character": "silent",
+    "path": "characters/silent/cards/CALCULATED_GAMBLE.md",
+    "type": "card"
+  },
+  "CALLING_BELL": {
+    "character": "colorless",
+    "path": "relics/CALLING_BELL.md",
+    "type": "relic"
+  },
+  "CALL_OF_THE_VOID": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/CALL_OF_THE_VOID.md",
+    "type": "card"
+  },
+  "CANDELABRA": {
+    "character": "colorless",
+    "path": "relics/CANDELABRA.md",
+    "type": "relic"
+  },
+  "CAPACITOR": {
+    "character": "defect",
+    "path": "characters/defect/cards/CAPACITOR.md",
+    "type": "card"
+  },
+  "CAPTAIN_S_WHEEL": {
+    "character": "colorless",
+    "path": "relics/CAPTAIN_S_WHEEL.md",
+    "type": "relic"
+  },
+  "CAPTURE_SPIRIT": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/CAPTURE_SPIRIT.md",
+    "type": "card"
+  },
+  "CASCADE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CASCADE.md",
+    "type": "card"
+  },
+  "CATASTROPHE": {
+    "character": "colorless",
+    "path": "cards/colorless/CATASTROPHE.md",
+    "type": "card"
+  },
+  "CAULDRON": {
+    "character": "colorless",
+    "path": "relics/CAULDRON.md",
+    "type": "relic"
+  },
+  "CELESTIAL_MIGHT": {
+    "character": "regent",
+    "path": "characters/regent/cards/CELESTIAL_MIGHT.md",
+    "type": "card"
+  },
+  "CENTENNIAL_PUZZLE": {
+    "character": "colorless",
+    "path": "relics/CENTENNIAL_PUZZLE.md",
+    "type": "relic"
+  },
+  "CHANDELIER": {
+    "character": "colorless",
+    "path": "relics/CHANDELIER.md",
+    "type": "relic"
+  },
+  "CHAOS": {
+    "character": "defect",
+    "path": "characters/defect/cards/CHAOS.md",
+    "type": "card"
+  },
+  "CHARGE": {
+    "character": "regent",
+    "path": "characters/regent/cards/CHARGE.md",
+    "type": "card"
+  },
+  "CHARGE_BATTERY": {
+    "character": "defect",
+    "path": "characters/defect/cards/CHARGE_BATTERY.md",
+    "type": "card"
+  },
+  "CHARON_S_ASHES": {
+    "character": "ironclad",
+    "path": "relics/CHARON_S_ASHES.md",
+    "type": "relic"
+  },
+  "CHEMICAL_X": {
+    "character": "colorless",
+    "path": "relics/CHEMICAL_X.md",
+    "type": "relic"
+  },
+  "CHILD_OF_THE_STARS": {
+    "character": "regent",
+    "path": "characters/regent/cards/CHILD_OF_THE_STARS.md",
+    "type": "card"
+  },
+  "CHILL": {
+    "character": "defect",
+    "path": "characters/defect/cards/CHILL.md",
+    "type": "card"
+  },
+  "CHOICES_PARADOX": {
+    "character": "colorless",
+    "path": "relics/CHOICES_PARADOX.md",
+    "type": "relic"
+  },
+  "CINDER": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CINDER.md",
+    "type": "card"
+  },
+  "CIRCLET": {
+    "character": "colorless",
+    "path": "relics/CIRCLET.md",
+    "type": "relic"
+  },
+  "CLARITY_EXTRACT": {
+    "character": "colorless",
+    "path": "potions/CLARITY_EXTRACT.md",
+    "type": "potion"
+  },
+  "CLAW": {
+    "character": "defect",
+    "path": "characters/defect/cards/CLAW.md",
+    "type": "card"
+  },
+  "CLAWS": {
+    "character": "colorless",
+    "path": "relics/CLAWS.md",
+    "type": "relic"
+  },
+  "CLEANSE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/CLEANSE.md",
+    "type": "card"
+  },
+  "CLOAK_AND_DAGGER": {
+    "character": "silent",
+    "path": "characters/silent/cards/CLOAK_AND_DAGGER.md",
+    "type": "card"
+  },
+  "CLOAK_CLASP": {
+    "character": "colorless",
+    "path": "relics/CLOAK_CLASP.md",
+    "type": "relic"
+  },
+  "CLOAK_OF_STARS": {
+    "character": "regent",
+    "path": "characters/regent/cards/CLOAK_OF_STARS.md",
+    "type": "card"
+  },
+  "CLUMSY": {
+    "character": "curse",
+    "path": "cards/colorless/CLUMSY.md",
+    "type": "card"
+  },
+  "COLD_SNAP": {
+    "character": "defect",
+    "path": "characters/defect/cards/COLD_SNAP.md",
+    "type": "card"
+  },
+  "COLLISION_COURSE": {
+    "character": "regent",
+    "path": "characters/regent/cards/COLLISION_COURSE.md",
+    "type": "card"
+  },
+  "COLORLESS_POTION": {
+    "character": "colorless",
+    "path": "potions/COLORLESS_POTION.md",
+    "type": "potion"
+  },
+  "COLOSSUS": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/COLOSSUS.md",
+    "type": "card"
+  },
+  "COMET": {
+    "character": "regent",
+    "path": "characters/regent/cards/COMET.md",
+    "type": "card"
+  },
+  "COMMON": {
+    "character": "colorless",
+    "path": "relics/COMMON.md",
+    "type": "relic"
+  },
+  "COMPACT": {
+    "character": "defect",
+    "path": "characters/defect/cards/COMPACT.md",
+    "type": "card"
+  },
+  "COMPILE_DRIVER": {
+    "character": "defect",
+    "path": "characters/defect/cards/COMPILE_DRIVER.md",
+    "type": "card"
+  },
+  "CONFLAGRATION": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CONFLAGRATION.md",
+    "type": "card"
+  },
+  "CONQUEROR": {
+    "character": "regent",
+    "path": "characters/regent/cards/CONQUEROR.md",
+    "type": "card"
+  },
+  "CONSUMING_SHADOW": {
+    "character": "defect",
+    "path": "characters/defect/cards/CONSUMING_SHADOW.md",
+    "type": "card"
+  },
+  "CONVERGENCE": {
+    "character": "regent",
+    "path": "characters/regent/cards/CONVERGENCE.md",
+    "type": "card"
+  },
+  "COOLANT": {
+    "character": "defect",
+    "path": "characters/defect/cards/COOLANT.md",
+    "type": "card"
+  },
+  "COOLHEADED": {
+    "character": "defect",
+    "path": "characters/defect/cards/COOLHEADED.md",
+    "type": "card"
+  },
+  "COORDINATE": {
+    "character": "colorless",
+    "path": "cards/colorless/COORDINATE.md",
+    "type": "card"
+  },
+  "CORROSIVE_WAVE": {
+    "character": "silent",
+    "path": "characters/silent/cards/CORROSIVE_WAVE.md",
+    "type": "card"
+  },
+  "CORRUPTION": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CORRUPTION.md",
+    "type": "card"
+  },
+  "COSMIC_CONCOCTION": {
+    "character": "regent",
+    "path": "potions/COSMIC_CONCOCTION.md",
+    "type": "potion"
+  },
+  "COSMIC_INDIFFERENCE": {
+    "character": "regent",
+    "path": "characters/regent/cards/COSMIC_INDIFFERENCE.md",
+    "type": "card"
+  },
+  "COUNTDOWN": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/COUNTDOWN.md",
+    "type": "card"
+  },
+  "CRACKED_CORE": {
+    "character": "defect",
+    "path": "relics/CRACKED_CORE.md",
+    "type": "relic"
+  },
+  "CRASH_LANDING": {
+    "character": "regent",
+    "path": "characters/regent/cards/CRASH_LANDING.md",
+    "type": "card"
+  },
+  "CREATIVE_AI": {
+    "character": "defect",
+    "path": "characters/defect/cards/CREATIVE_AI.md",
+    "type": "card"
+  },
+  "CRESCENT_SPEAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/CRESCENT_SPEAR.md",
+    "type": "card"
+  },
+  "CRIMSON_MANTLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CRIMSON_MANTLE.md",
+    "type": "card"
+  },
+  "CROSSBOW": {
+    "character": "colorless",
+    "path": "relics/CROSSBOW.md",
+    "type": "relic"
+  },
+  "CRUELTY": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/CRUELTY.md",
+    "type": "card"
+  },
+  "CRUSH_UNDER": {
+    "character": "regent",
+    "path": "characters/regent/cards/CRUSH_UNDER.md",
+    "type": "card"
+  },
+  "CUNNING_POTION": {
+    "character": "silent",
+    "path": "potions/CUNNING_POTION.md",
+    "type": "potion"
+  },
+  "CURE_ALL": {
+    "character": "colorless",
+    "path": "potions/CURE_ALL.md",
+    "type": "potion"
+  },
+  "CURSED_PEARL": {
+    "character": "colorless",
+    "path": "relics/CURSED_PEARL.md",
+    "type": "relic"
+  },
+  "CURSE_OF_THE_BELL": {
+    "character": "curse",
+    "path": "cards/colorless/CURSE_OF_THE_BELL.md",
+    "type": "card"
+  },
+  "DAGGER_SPRAY": {
+    "character": "silent",
+    "path": "characters/silent/cards/DAGGER_SPRAY.md",
+    "type": "card"
+  },
+  "DAGGER_THROW": {
+    "character": "silent",
+    "path": "characters/silent/cards/DAGGER_THROW.md",
+    "type": "card"
+  },
+  "DANSE_MACABRE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DANSE_MACABRE.md",
+    "type": "card"
+  },
+  "DARKNESS": {
+    "character": "defect",
+    "path": "characters/defect/cards/DARKNESS.md",
+    "type": "card"
+  },
+  "DARKSTONE_PERIAPT": {
+    "character": "colorless",
+    "path": "relics/DARKSTONE_PERIAPT.md",
+    "type": "relic"
+  },
+  "DARK_EMBRACE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DARK_EMBRACE.md",
+    "type": "card"
+  },
+  "DARK_SHACKLES": {
+    "character": "colorless",
+    "path": "cards/colorless/DARK_SHACKLES.md",
+    "type": "card"
+  },
+  "DASH": {
+    "character": "silent",
+    "path": "characters/silent/cards/DASH.md",
+    "type": "card"
+  },
+  "DATA_DISK": {
+    "character": "defect",
+    "path": "relics/DATA_DISK.md",
+    "type": "relic"
+  },
+  "DAUGHTER_OF_THE_WIND": {
+    "character": "colorless",
+    "path": "relics/DAUGHTER_OF_THE_WIND.md",
+    "type": "relic"
+  },
+  "DAZED": {
+    "character": "status",
+    "path": "cards/colorless/DAZED.md",
+    "type": "card"
+  },
+  "DEADLY_POISON": {
+    "character": "silent",
+    "path": "characters/silent/cards/DEADLY_POISON.md",
+    "type": "card"
+  },
+  "DEATHBRINGER": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEATHBRINGER.md",
+    "type": "card"
+  },
+  "DEATH_MARCH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEATH_MARCH.md",
+    "type": "card"
+  },
+  "DEATH_S_DOOR": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEATH_S_DOOR.md",
+    "type": "card"
+  },
+  "DEBILITATE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEBILITATE.md",
+    "type": "card"
+  },
+  "DEBRIS": {
+    "character": "status",
+    "path": "cards/colorless/DEBRIS.md",
+    "type": "card"
+  },
+  "DEBT": {
+    "character": "curse",
+    "path": "cards/colorless/DEBT.md",
+    "type": "card"
+  },
+  "DECAY": {
+    "character": "curse",
+    "path": "cards/colorless/DECAY.md",
+    "type": "card"
+  },
+  "DECISIONS_DECISIONS": {
+    "character": "regent",
+    "path": "characters/regent/cards/DECISIONS_DECISIONS.md",
+    "type": "card"
+  },
+  "DEFEND": {
+    "character": "silent",
+    "path": "characters/silent/cards/DEFEND.md",
+    "type": "card"
+  },
+  "DEFILE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEFILE.md",
+    "type": "card"
+  },
+  "DEFLECT": {
+    "character": "silent",
+    "path": "characters/silent/cards/DEFLECT.md",
+    "type": "card"
+  },
+  "DEFRAGMENT": {
+    "character": "defect",
+    "path": "characters/defect/cards/DEFRAGMENT.md",
+    "type": "card"
+  },
+  "DEFY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEFY.md",
+    "type": "card"
+  },
+  "DELAY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DELAY.md",
+    "type": "card"
+  },
+  "DELICATE_FROND": {
+    "character": "colorless",
+    "path": "relics/DELICATE_FROND.md",
+    "type": "relic"
+  },
+  "DEMESNE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEMESNE.md",
+    "type": "card"
+  },
+  "DEMONIC_SHIELD": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DEMONIC_SHIELD.md",
+    "type": "card"
+  },
+  "DEMON_FORM": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DEMON_FORM.md",
+    "type": "card"
+  },
+  "DEMON_TONGUE": {
+    "character": "ironclad",
+    "path": "relics/DEMON_TONGUE.md",
+    "type": "relic"
+  },
+  "DEVASTATE": {
+    "character": "regent",
+    "path": "characters/regent/cards/DEVASTATE.md",
+    "type": "card"
+  },
+  "DEVOUR_LIFE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DEVOUR_LIFE.md",
+    "type": "card"
+  },
+  "DEXTERITY_POTION": {
+    "character": "colorless",
+    "path": "potions/DEXTERITY_POTION.md",
+    "type": "potion"
+  },
+  "DIAMOND_DIADEM": {
+    "character": "colorless",
+    "path": "relics/DIAMOND_DIADEM.md",
+    "type": "relic"
+  },
+  "DINGY_RUG": {
+    "character": "colorless",
+    "path": "relics/DINGY_RUG.md",
+    "type": "relic"
+  },
+  "DIRGE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DIRGE.md",
+    "type": "card"
+  },
+  "DISCOVERY": {
+    "character": "colorless",
+    "path": "cards/colorless/DISCOVERY.md",
+    "type": "card"
+  },
+  "DISINTEGRATION": {
+    "character": "token",
+    "path": "cards/colorless/DISINTEGRATION.md",
+    "type": "card"
+  },
+  "DISMANTLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DISMANTLE.md",
+    "type": "card"
+  },
+  "DISTILLED_CHAOS": {
+    "character": "colorless",
+    "path": "potions/DISTILLED_CHAOS.md",
+    "type": "potion"
+  },
+  "DISTINGUISHED_CAPE": {
+    "character": "colorless",
+    "path": "relics/DISTINGUISHED_CAPE.md",
+    "type": "relic"
+  },
+  "DIVINE_DESTINY": {
+    "character": "regent",
+    "path": "relics/DIVINE_DESTINY.md",
+    "type": "relic"
+  },
+  "DIVINE_RIGHT": {
+    "character": "regent",
+    "path": "relics/DIVINE_RIGHT.md",
+    "type": "relic"
+  },
+  "DODGE_AND_ROLL": {
+    "character": "silent",
+    "path": "characters/silent/cards/DODGE_AND_ROLL.md",
+    "type": "card"
+  },
+  "DOLLY_S_MIRROR": {
+    "character": "colorless",
+    "path": "relics/DOLLY_S_MIRROR.md",
+    "type": "relic"
+  },
+  "DOMINATE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DOMINATE.md",
+    "type": "card"
+  },
+  "DOUBLE_ENERGY": {
+    "character": "defect",
+    "path": "characters/defect/cards/DOUBLE_ENERGY.md",
+    "type": "card"
+  },
+  "DOUBT": {
+    "character": "curse",
+    "path": "cards/colorless/DOUBT.md",
+    "type": "card"
+  },
+  "DRAGON_FRUIT": {
+    "character": "colorless",
+    "path": "relics/DRAGON_FRUIT.md",
+    "type": "relic"
+  },
+  "DRAIN_POWER": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DRAIN_POWER.md",
+    "type": "card"
+  },
+  "DRAMATIC_ENTRANCE": {
+    "character": "colorless",
+    "path": "cards/colorless/DRAMATIC_ENTRANCE.md",
+    "type": "card"
+  },
+  "DREAM_CATCHER": {
+    "character": "colorless",
+    "path": "relics/DREAM_CATCHER.md",
+    "type": "relic"
+  },
+  "DREDGE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/DREDGE.md",
+    "type": "card"
+  },
+  "DRIFTWOOD": {
+    "character": "colorless",
+    "path": "relics/DRIFTWOOD.md",
+    "type": "relic"
+  },
+  "DROPLET_OF_PRECOGNITION": {
+    "character": "colorless",
+    "path": "potions/DROPLET_OF_PRECOGNITION.md",
+    "type": "potion"
+  },
+  "DRUM_OF_BATTLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/DRUM_OF_BATTLE.md",
+    "type": "card"
+  },
+  "DUALCAST": {
+    "character": "defect",
+    "path": "characters/defect/cards/DUALCAST.md",
+    "type": "card"
+  },
+  "DUPLICATOR": {
+    "character": "colorless",
+    "path": "potions/DUPLICATOR.md",
+    "type": "potion"
+  },
+  "DUSTY_TOME": {
+    "character": "colorless",
+    "path": "relics/DUSTY_TOME.md",
+    "type": "relic"
+  },
+  "DYING_STAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/DYING_STAR.md",
+    "type": "card"
+  },
+  "ECHOING_SLASH": {
+    "character": "silent",
+    "path": "characters/silent/cards/ECHOING_SLASH.md",
+    "type": "card"
+  },
+  "ECHO_FORM": {
+    "character": "defect",
+    "path": "characters/defect/cards/ECHO_FORM.md",
+    "type": "card"
+  },
+  "ECTOPLASM": {
+    "character": "colorless",
+    "path": "relics/ECTOPLASM.md",
+    "type": "relic"
+  },
+  "EIDOLON": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/EIDOLON.md",
+    "type": "card"
+  },
+  "ELECTRIC_SHRYMP": {
+    "character": "colorless",
+    "path": "relics/ELECTRIC_SHRYMP.md",
+    "type": "relic"
+  },
+  "EMBER_TEA": {
+    "character": "colorless",
+    "path": "relics/EMBER_TEA.md",
+    "type": "relic"
+  },
+  "EMOTION_CHIP": {
+    "character": "defect",
+    "path": "relics/EMOTION_CHIP.md",
+    "type": "relic"
+  },
+  "EMPTY_CAGE": {
+    "character": "colorless",
+    "path": "relics/EMPTY_CAGE.md",
+    "type": "relic"
+  },
+  "END_OF_DAYS": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/END_OF_DAYS.md",
+    "type": "card"
+  },
+  "ENERGY_POTION": {
+    "character": "colorless",
+    "path": "potions/ENERGY_POTION.md",
+    "type": "potion"
+  },
+  "ENERGY_SURGE": {
+    "character": "defect",
+    "path": "characters/defect/cards/ENERGY_SURGE.md",
+    "type": "card"
+  },
+  "ENFEEBLING_TOUCH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/ENFEEBLING_TOUCH.md",
+    "type": "card"
+  },
+  "ENLIGHTENMENT": {
+    "character": "event",
+    "path": "cards/colorless/ENLIGHTENMENT.md",
+    "type": "card"
+  },
+  "ENTHRALLED": {
+    "character": "curse",
+    "path": "cards/colorless/ENTHRALLED.md",
+    "type": "card"
+  },
+  "ENTROPIC_BREW": {
+    "character": "colorless",
+    "path": "potions/ENTROPIC_BREW.md",
+    "type": "potion"
+  },
+  "ENTROPY": {
+    "character": "colorless",
+    "path": "cards/colorless/ENTROPY.md",
+    "type": "card"
+  },
+  "ENVENOM": {
+    "character": "silent",
+    "path": "characters/silent/cards/ENVENOM.md",
+    "type": "card"
+  },
+  "EQUILIBRIUM": {
+    "character": "colorless",
+    "path": "cards/colorless/EQUILIBRIUM.md",
+    "type": "card"
+  },
+  "ERADICATE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/ERADICATE.md",
+    "type": "card"
+  },
+  "ESCAPE_PLAN": {
+    "character": "silent",
+    "path": "characters/silent/cards/ESCAPE_PLAN.md",
+    "type": "card"
+  },
+  "ESSENCE_OF_DARKNESS": {
+    "character": "defect",
+    "path": "potions/ESSENCE_OF_DARKNESS.md",
+    "type": "potion"
+  },
+  "ETERNAL_ARMOR": {
+    "character": "colorless",
+    "path": "cards/colorless/ETERNAL_ARMOR.md",
+    "type": "card"
+  },
+  "ETERNAL_FEATHER": {
+    "character": "colorless",
+    "path": "relics/ETERNAL_FEATHER.md",
+    "type": "relic"
+  },
+  "EVENT": {
+    "character": "colorless",
+    "path": "relics/EVENT.md",
+    "type": "relic"
+  },
+  "EVIL_EYE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/EVIL_EYE.md",
+    "type": "card"
+  },
+  "EXPECT_A_FIGHT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/EXPECT_A_FIGHT.md",
+    "type": "card"
+  },
+  "EXPERTISE": {
+    "character": "silent",
+    "path": "characters/silent/cards/EXPERTISE.md",
+    "type": "card"
+  },
+  "EXPLOSIVE_AMPOULE": {
+    "character": "unknown",
+    "path": "potions/EXPLOSIVE_AMPOULE.md",
+    "type": "potion"
+  },
+  "EXPOSE": {
+    "character": "silent",
+    "path": "characters/silent/cards/EXPOSE.md",
+    "type": "card"
+  },
+  "EXTERMINATE": {
+    "character": "event",
+    "path": "cards/colorless/EXTERMINATE.md",
+    "type": "card"
+  },
+  "FAIRY_IN_A_BOTTLE": {
+    "character": "unknown",
+    "path": "potions/FAIRY_IN_A_BOTTLE.md",
+    "type": "potion"
+  },
+  "FALLING_STAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/FALLING_STAR.md",
+    "type": "card"
+  },
+  "FAN_OF_KNIVES": {
+    "character": "silent",
+    "path": "characters/silent/cards/FAN_OF_KNIVES.md",
+    "type": "card"
+  },
+  "FASTEN": {
+    "character": "colorless",
+    "path": "cards/colorless/FASTEN.md",
+    "type": "card"
+  },
+  "FEAR": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/FEAR.md",
+    "type": "card"
+  },
+  "FEED": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FEED.md",
+    "type": "card"
+  },
+  "FEEDING_FRENZY": {
+    "character": "event",
+    "path": "cards/colorless/FEEDING_FRENZY.md",
+    "type": "card"
+  },
+  "FEEL_NO_PAIN": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FEEL_NO_PAIN.md",
+    "type": "card"
+  },
+  "FENCING_MANUAL": {
+    "character": "regent",
+    "path": "relics/FENCING_MANUAL.md",
+    "type": "relic"
+  },
+  "FERAL": {
+    "character": "defect",
+    "path": "characters/defect/cards/FERAL.md",
+    "type": "card"
+  },
+  "FESTIVE_POPPER": {
+    "character": "colorless",
+    "path": "relics/FESTIVE_POPPER.md",
+    "type": "relic"
+  },
+  "FETCH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/FETCH.md",
+    "type": "card"
+  },
+  "FIDDLE": {
+    "character": "colorless",
+    "path": "relics/FIDDLE.md",
+    "type": "relic"
+  },
+  "FIEND_FIRE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FIEND_FIRE.md",
+    "type": "card"
+  },
+  "FIGHT_ME": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FIGHT_ME.md",
+    "type": "card"
+  },
+  "FIGHT_THROUGH": {
+    "character": "defect",
+    "path": "characters/defect/cards/FIGHT_THROUGH.md",
+    "type": "card"
+  },
+  "FINESSE": {
+    "character": "colorless",
+    "path": "cards/colorless/FINESSE.md",
+    "type": "card"
+  },
+  "FINISHER": {
+    "character": "silent",
+    "path": "characters/silent/cards/FINISHER.md",
+    "type": "card"
+  },
+  "FIRE_POTION": {
+    "character": "unknown",
+    "path": "potions/FIRE_POTION.md",
+    "type": "potion"
+  },
+  "FISTICUFFS": {
+    "character": "colorless",
+    "path": "cards/colorless/FISTICUFFS.md",
+    "type": "card"
+  },
+  "FLAK_CANNON": {
+    "character": "defect",
+    "path": "characters/defect/cards/FLAK_CANNON.md",
+    "type": "card"
+  },
+  "FLAME_BARRIER": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FLAME_BARRIER.md",
+    "type": "card"
+  },
+  "FLANKING": {
+    "character": "silent",
+    "path": "characters/silent/cards/FLANKING.md",
+    "type": "card"
+  },
+  "FLASH_OF_STEEL": {
+    "character": "colorless",
+    "path": "cards/colorless/FLASH_OF_STEEL.md",
+    "type": "card"
+  },
+  "FLATTEN": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/FLATTEN.md",
+    "type": "card"
+  },
+  "FLECHETTES": {
+    "character": "silent",
+    "path": "characters/silent/cards/FLECHETTES.md",
+    "type": "card"
+  },
+  "FLEX_POTION": {
+    "character": "unknown",
+    "path": "potions/FLEX_POTION.md",
+    "type": "potion"
+  },
+  "FLICK_FLACK": {
+    "character": "silent",
+    "path": "characters/silent/cards/FLICK_FLACK.md",
+    "type": "card"
+  },
+  "FOCUSED_STRIKE": {
+    "character": "defect",
+    "path": "characters/defect/cards/FOCUSED_STRIKE.md",
+    "type": "card"
+  },
+  "FOCUS_POTION": {
+    "character": "unknown",
+    "path": "potions/FOCUS_POTION.md",
+    "type": "potion"
+  },
+  "FOLLOW_THROUGH": {
+    "character": "silent",
+    "path": "characters/silent/cards/FOLLOW_THROUGH.md",
+    "type": "card"
+  },
+  "FOLLY": {
+    "character": "curse",
+    "path": "cards/colorless/FOLLY.md",
+    "type": "card"
+  },
+  "FOOTWORK": {
+    "character": "silent",
+    "path": "characters/silent/cards/FOOTWORK.md",
+    "type": "card"
+  },
+  "FORBIDDEN_GRIMOIRE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/FORBIDDEN_GRIMOIRE.md",
+    "type": "card"
+  },
+  "FOREGONE_CONCLUSION": {
+    "character": "regent",
+    "path": "characters/regent/cards/FOREGONE_CONCLUSION.md",
+    "type": "card"
+  },
+  "FORGOTTEN_RITUAL": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/FORGOTTEN_RITUAL.md",
+    "type": "card"
+  },
+  "FORGOTTEN_SOUL": {
+    "character": "colorless",
+    "path": "relics/FORGOTTEN_SOUL.md",
+    "type": "relic"
+  },
+  "FORTIFIER": {
+    "character": "unknown",
+    "path": "potions/FORTIFIER.md",
+    "type": "potion"
+  },
+  "FOUL_POTION": {
+    "character": "unknown",
+    "path": "potions/FOUL_POTION.md",
+    "type": "potion"
+  },
+  "FRAGRANT_MUSHROOM": {
+    "character": "colorless",
+    "path": "relics/FRAGRANT_MUSHROOM.md",
+    "type": "relic"
+  },
+  "FRANTIC_ESCAPE": {
+    "character": "status",
+    "path": "cards/colorless/FRANTIC_ESCAPE.md",
+    "type": "card"
+  },
+  "FRESNEL_LENS": {
+    "character": "colorless",
+    "path": "relics/FRESNEL_LENS.md",
+    "type": "relic"
+  },
+  "FRIENDSHIP": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/FRIENDSHIP.md",
+    "type": "card"
+  },
+  "FROZEN_EGG": {
+    "character": "colorless",
+    "path": "relics/FROZEN_EGG.md",
+    "type": "relic"
+  },
+  "FRUIT_JUICE": {
+    "character": "unknown",
+    "path": "potions/FRUIT_JUICE.md",
+    "type": "potion"
+  },
+  "FTL": {
+    "character": "defect",
+    "path": "characters/defect/cards/FTL.md",
+    "type": "card"
+  },
+  "FUEL": {
+    "character": "token",
+    "path": "cards/colorless/FUEL.md",
+    "type": "card"
+  },
+  "FUNERARY_MASK": {
+    "character": "necrobinder",
+    "path": "relics/FUNERARY_MASK.md",
+    "type": "relic"
+  },
+  "FURNACE": {
+    "character": "regent",
+    "path": "characters/regent/cards/FURNACE.md",
+    "type": "card"
+  },
+  "FUR_COAT": {
+    "character": "colorless",
+    "path": "relics/FUR_COAT.md",
+    "type": "relic"
+  },
+  "FUSION": {
+    "character": "defect",
+    "path": "characters/defect/cards/FUSION.md",
+    "type": "card"
+  },
+  "FYSH_OIL": {
+    "character": "unknown",
+    "path": "potions/FYSH_OIL.md",
+    "type": "potion"
+  },
+  "GALACTIC_DUST": {
+    "character": "regent",
+    "path": "relics/GALACTIC_DUST.md",
+    "type": "relic"
+  },
+  "GAMBLER_S_BREW": {
+    "character": "unknown",
+    "path": "potions/GAMBLER_S_BREW.md",
+    "type": "potion"
+  },
+  "GAMBLING_CHIP": {
+    "character": "colorless",
+    "path": "relics/GAMBLING_CHIP.md",
+    "type": "relic"
+  },
+  "GAME_PIECE": {
+    "character": "colorless",
+    "path": "relics/GAME_PIECE.md",
+    "type": "relic"
+  },
+  "GAMMA_BLAST": {
+    "character": "regent",
+    "path": "characters/regent/cards/GAMMA_BLAST.md",
+    "type": "card"
+  },
+  "GANG_UP": {
+    "character": "colorless",
+    "path": "cards/colorless/GANG_UP.md",
+    "type": "card"
+  },
+  "GATHER_LIGHT": {
+    "character": "regent",
+    "path": "characters/regent/cards/GATHER_LIGHT.md",
+    "type": "card"
+  },
+  "GENESIS": {
+    "character": "regent",
+    "path": "characters/regent/cards/GENESIS.md",
+    "type": "card"
+  },
+  "GENETIC_ALGORITHM": {
+    "character": "defect",
+    "path": "characters/defect/cards/GENETIC_ALGORITHM.md",
+    "type": "card"
+  },
+  "GHOST_IN_A_JAR": {
+    "character": "unknown",
+    "path": "potions/GHOST_IN_A_JAR.md",
+    "type": "potion"
+  },
+  "GHOST_SEED": {
+    "character": "colorless",
+    "path": "relics/GHOST_SEED.md",
+    "type": "relic"
+  },
+  "GIANT_ROCK": {
+    "character": "token",
+    "path": "cards/colorless/GIANT_ROCK.md",
+    "type": "card"
+  },
+  "GIGANTIFICATION_POTION": {
+    "character": "unknown",
+    "path": "potions/GIGANTIFICATION_POTION.md",
+    "type": "potion"
+  },
+  "GIRYA": {
+    "character": "colorless",
+    "path": "relics/GIRYA.md",
+    "type": "relic"
+  },
+  "GLACIER": {
+    "character": "defect",
+    "path": "characters/defect/cards/GLACIER.md",
+    "type": "card"
+  },
+  "GLASSWORK": {
+    "character": "defect",
+    "path": "characters/defect/cards/GLASSWORK.md",
+    "type": "card"
+  },
+  "GLASS_EYE": {
+    "character": "colorless",
+    "path": "relics/GLASS_EYE.md",
+    "type": "relic"
+  },
+  "GLIMMER": {
+    "character": "regent",
+    "path": "characters/regent/cards/GLIMMER.md",
+    "type": "card"
+  },
+  "GLIMPSE_BEYOND": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/GLIMPSE_BEYOND.md",
+    "type": "card"
+  },
+  "GLITTER": {
+    "character": "colorless",
+    "path": "relics/GLITTER.md",
+    "type": "relic"
+  },
+  "GLITTERSTREAM": {
+    "character": "regent",
+    "path": "characters/regent/cards/GLITTERSTREAM.md",
+    "type": "card"
+  },
+  "GLOW": {
+    "character": "regent",
+    "path": "characters/regent/cards/GLOW.md",
+    "type": "card"
+  },
+  "GLOWWATER_POTION": {
+    "character": "unknown",
+    "path": "potions/GLOWWATER_POTION.md",
+    "type": "potion"
+  },
+  "GNARLED_HAMMER": {
+    "character": "colorless",
+    "path": "relics/GNARLED_HAMMER.md",
+    "type": "relic"
+  },
+  "GOLDEN_COMPASS": {
+    "character": "colorless",
+    "path": "relics/GOLDEN_COMPASS.md",
+    "type": "relic"
+  },
+  "GOLDEN_PEARL": {
+    "character": "colorless",
+    "path": "relics/GOLDEN_PEARL.md",
+    "type": "relic"
+  },
+  "GOLD_AXE": {
+    "character": "colorless",
+    "path": "cards/colorless/GOLD_AXE.md",
+    "type": "card"
+  },
+  "GOLD_PLATED_CABLES": {
+    "character": "defect",
+    "path": "relics/GOLD_PLATED_CABLES.md",
+    "type": "relic"
+  },
+  "GORGET": {
+    "character": "colorless",
+    "path": "relics/GORGET.md",
+    "type": "relic"
+  },
+  "GO_FOR_THE_EYES": {
+    "character": "defect",
+    "path": "characters/defect/cards/GO_FOR_THE_EYES.md",
+    "type": "card"
+  },
+  "GRAND_FINALE": {
+    "character": "silent",
+    "path": "characters/silent/cards/GRAND_FINALE.md",
+    "type": "card"
+  },
+  "GRAPPLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/GRAPPLE.md",
+    "type": "card"
+  },
+  "GRAVEBLAST": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/GRAVEBLAST.md",
+    "type": "card"
+  },
+  "GRAVE_WARDEN": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/GRAVE_WARDEN.md",
+    "type": "card"
+  },
+  "GREED": {
+    "character": "curse",
+    "path": "cards/colorless/GREED.md",
+    "type": "card"
+  },
+  "GREMLIN_HORN": {
+    "character": "colorless",
+    "path": "relics/GREMLIN_HORN.md",
+    "type": "relic"
+  },
+  "GUARDS": {
+    "character": "regent",
+    "path": "characters/regent/cards/GUARDS.md",
+    "type": "card"
+  },
+  "GUIDING_STAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/GUIDING_STAR.md",
+    "type": "card"
+  },
+  "GUILTY": {
+    "character": "curse",
+    "path": "cards/colorless/GUILTY.md",
+    "type": "card"
+  },
+  "GUNK_UP": {
+    "character": "defect",
+    "path": "characters/defect/cards/GUNK_UP.md",
+    "type": "card"
+  },
+  "HAILSTORM": {
+    "character": "defect",
+    "path": "characters/defect/cards/HAILSTORM.md",
+    "type": "card"
+  },
+  "HAMMER_TIME": {
+    "character": "regent",
+    "path": "characters/regent/cards/HAMMER_TIME.md",
+    "type": "card"
+  },
+  "HAND_DRILL": {
+    "character": "colorless",
+    "path": "relics/HAND_DRILL.md",
+    "type": "relic"
+  },
+  "HAND_OF_GREED": {
+    "character": "colorless",
+    "path": "cards/colorless/HAND_OF_GREED.md",
+    "type": "card"
+  },
+  "HAND_TRICK": {
+    "character": "silent",
+    "path": "characters/silent/cards/HAND_TRICK.md",
+    "type": "card"
+  },
+  "HANG": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/HANG.md",
+    "type": "card"
+  },
+  "HAPPY_FLOWER": {
+    "character": "colorless",
+    "path": "relics/HAPPY_FLOWER.md",
+    "type": "relic"
+  },
+  "HAUNT": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/HAUNT.md",
+    "type": "card"
+  },
+  "HAVOC": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/HAVOC.md",
+    "type": "card"
+  },
+  "HAZE": {
+    "character": "silent",
+    "path": "characters/silent/cards/HAZE.md",
+    "type": "card"
+  },
+  "HEADBUTT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/HEADBUTT.md",
+    "type": "card"
+  },
+  "HEART_OF_IRON": {
+    "character": "unknown",
+    "path": "potions/HEART_OF_IRON.md",
+    "type": "potion"
+  },
+  "HEAVENLY_DRILL": {
+    "character": "regent",
+    "path": "characters/regent/cards/HEAVENLY_DRILL.md",
+    "type": "card"
+  },
+  "HEGEMONY": {
+    "character": "regent",
+    "path": "characters/regent/cards/HEGEMONY.md",
+    "type": "card"
+  },
+  "HEIRLOOM_HAMMER": {
+    "character": "regent",
+    "path": "characters/regent/cards/HEIRLOOM_HAMMER.md",
+    "type": "card"
+  },
+  "HELICAL_DART": {
+    "character": "silent",
+    "path": "relics/HELICAL_DART.md",
+    "type": "relic"
+  },
+  "HELIX_DRILL": {
+    "character": "defect",
+    "path": "characters/defect/cards/HELIX_DRILL.md",
+    "type": "card"
+  },
+  "HELLRAISER": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/HELLRAISER.md",
+    "type": "card"
+  },
+  "HEMOKINESIS": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/HEMOKINESIS.md",
+    "type": "card"
+  },
+  "HIDDEN_CACHE": {
+    "character": "regent",
+    "path": "characters/regent/cards/HIDDEN_CACHE.md",
+    "type": "card"
+  },
+  "HIDDEN_DAGGERS": {
+    "character": "silent",
+    "path": "characters/silent/cards/HIDDEN_DAGGERS.md",
+    "type": "card"
+  },
+  "HIDDEN_GEM": {
+    "character": "colorless",
+    "path": "cards/colorless/HIDDEN_GEM.md",
+    "type": "card"
+  },
+  "HIGH_FIVE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/HIGH_FIVE.md",
+    "type": "card"
+  },
+  "HISTORY_COURSE": {
+    "character": "colorless",
+    "path": "relics/HISTORY_COURSE.md",
+    "type": "relic"
+  },
+  "HOLOGRAM": {
+    "character": "defect",
+    "path": "characters/defect/cards/HOLOGRAM.md",
+    "type": "card"
+  },
+  "HORN_CLEAT": {
+    "character": "colorless",
+    "path": "relics/HORN_CLEAT.md",
+    "type": "relic"
+  },
+  "HOTFIX": {
+    "character": "defect",
+    "path": "characters/defect/cards/HOTFIX.md",
+    "type": "card"
+  },
+  "HOWL_FROM_BEYOND": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/HOWL_FROM_BEYOND.md",
+    "type": "card"
+  },
+  "HUDDLE_UP": {
+    "character": "colorless",
+    "path": "cards/colorless/HUDDLE_UP.md",
+    "type": "card"
+  },
+  "HYPERBEAM": {
+    "character": "defect",
+    "path": "characters/defect/cards/HYPERBEAM.md",
+    "type": "card"
+  },
+  "ICE_CREAM": {
+    "character": "colorless",
+    "path": "relics/ICE_CREAM.md",
+    "type": "relic"
+  },
+  "ICE_LANCE": {
+    "character": "defect",
+    "path": "characters/defect/cards/ICE_LANCE.md",
+    "type": "card"
+  },
+  "IGNITION": {
+    "character": "defect",
+    "path": "characters/defect/cards/IGNITION.md",
+    "type": "card"
+  },
+  "IMPATIENCE": {
+    "character": "colorless",
+    "path": "cards/colorless/IMPATIENCE.md",
+    "type": "card"
+  },
+  "IMPERVIOUS": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/IMPERVIOUS.md",
+    "type": "card"
+  },
+  "INFECTION": {
+    "character": "status",
+    "path": "cards/colorless/INFECTION.md",
+    "type": "card"
+  },
+  "INFERNAL_BLADE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/INFERNAL_BLADE.md",
+    "type": "card"
+  },
+  "INFERNO": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/INFERNO.md",
+    "type": "card"
+  },
+  "INFINITE_BLADES": {
+    "character": "silent",
+    "path": "characters/silent/cards/INFINITE_BLADES.md",
+    "type": "card"
+  },
+  "INFLAME": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/INFLAME.md",
+    "type": "card"
+  },
+  "INFUSED_CORE": {
+    "character": "defect",
+    "path": "relics/INFUSED_CORE.md",
+    "type": "relic"
+  },
+  "INJURY": {
+    "character": "curse",
+    "path": "cards/colorless/INJURY.md",
+    "type": "card"
+  },
+  "INK_BOTTLE": {
+    "character": "colorless",
+    "path": "relics/INK_BOTTLE.md",
+    "type": "relic"
+  },
+  "INTERCEPT": {
+    "character": "colorless",
+    "path": "cards/colorless/INTERCEPT.md",
+    "type": "card"
+  },
+  "INTIMIDATING_HELMET": {
+    "character": "colorless",
+    "path": "relics/INTIMIDATING_HELMET.md",
+    "type": "relic"
+  },
+  "INVOKE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/INVOKE.md",
+    "type": "card"
+  },
+  "IRON_CLUB": {
+    "character": "colorless",
+    "path": "relics/IRON_CLUB.md",
+    "type": "relic"
+  },
+  "IRON_WAVE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/IRON_WAVE.md",
+    "type": "card"
+  },
+  "ITERATION": {
+    "character": "defect",
+    "path": "characters/defect/cards/ITERATION.md",
+    "type": "card"
+  },
+  "IVORY_TILE": {
+    "character": "necrobinder",
+    "path": "relics/IVORY_TILE.md",
+    "type": "relic"
+  },
+  "I_AM_INVINCIBLE": {
+    "character": "regent",
+    "path": "characters/regent/cards/I_AM_INVINCIBLE.md",
+    "type": "card"
+  },
+  "JACKPOT": {
+    "character": "colorless",
+    "path": "cards/colorless/JACKPOT.md",
+    "type": "card"
+  },
+  "JACK_OF_ALL_TRADES": {
+    "character": "colorless",
+    "path": "cards/colorless/JACK_OF_ALL_TRADES.md",
+    "type": "card"
+  },
+  "JEWELED_MASK": {
+    "character": "colorless",
+    "path": "relics/JEWELED_MASK.md",
+    "type": "relic"
+  },
+  "JEWELRY_BOX": {
+    "character": "colorless",
+    "path": "relics/JEWELRY_BOX.md",
+    "type": "relic"
+  },
+  "JOSS_PAPER": {
+    "character": "colorless",
+    "path": "relics/JOSS_PAPER.md",
+    "type": "relic"
+  },
+  "JUGGERNAUT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/JUGGERNAUT.md",
+    "type": "card"
+  },
+  "JUGGLING": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/JUGGLING.md",
+    "type": "card"
+  },
+  "JUZU_BRACELET": {
+    "character": "colorless",
+    "path": "relics/JUZU_BRACELET.md",
+    "type": "relic"
+  },
+  "KIFUDA": {
+    "character": "colorless",
+    "path": "relics/KIFUDA.md",
+    "type": "relic"
+  },
+  "KINGLY_KICK": {
+    "character": "regent",
+    "path": "characters/regent/cards/KINGLY_KICK.md",
+    "type": "card"
+  },
+  "KINGLY_PUNCH": {
+    "character": "regent",
+    "path": "characters/regent/cards/KINGLY_PUNCH.md",
+    "type": "card"
+  },
+  "KING_S_COURAGE": {
+    "character": "unknown",
+    "path": "potions/KING_S_COURAGE.md",
+    "type": "potion"
+  },
+  "KNIFE_TRAP": {
+    "character": "silent",
+    "path": "characters/silent/cards/KNIFE_TRAP.md",
+    "type": "card"
+  },
+  "KNOCKDOWN": {
+    "character": "colorless",
+    "path": "cards/colorless/KNOCKDOWN.md",
+    "type": "card"
+  },
+  "KNOCKOUT_BLOW": {
+    "character": "regent",
+    "path": "characters/regent/cards/KNOCKOUT_BLOW.md",
+    "type": "card"
+  },
+  "KNOW_THY_PLACE": {
+    "character": "regent",
+    "path": "characters/regent/cards/KNOW_THY_PLACE.md",
+    "type": "card"
+  },
+  "KUNAI": {
+    "character": "colorless",
+    "path": "relics/KUNAI.md",
+    "type": "relic"
+  },
+  "KUSARIGAMA": {
+    "character": "colorless",
+    "path": "relics/KUSARIGAMA.md",
+    "type": "relic"
+  },
+  "LANTERN": {
+    "character": "colorless",
+    "path": "relics/LANTERN.md",
+    "type": "relic"
+  },
+  "LANTERN_KEY": {
+    "character": "quest",
+    "path": "cards/colorless/LANTERN_KEY.md",
+    "type": "card"
+  },
+  "LARGESSE": {
+    "character": "regent",
+    "path": "characters/regent/cards/LARGESSE.md",
+    "type": "card"
+  },
+  "LARGE_CAPSULE": {
+    "character": "colorless",
+    "path": "relics/LARGE_CAPSULE.md",
+    "type": "relic"
+  },
+  "LASTING_CANDY": {
+    "character": "colorless",
+    "path": "relics/LASTING_CANDY.md",
+    "type": "relic"
+  },
+  "LAVA_LAMP": {
+    "character": "colorless",
+    "path": "relics/LAVA_LAMP.md",
+    "type": "relic"
+  },
+  "LAVA_ROCK": {
+    "character": "colorless",
+    "path": "relics/LAVA_ROCK.md",
+    "type": "relic"
+  },
+  "LEADING_STRIKE": {
+    "character": "silent",
+    "path": "characters/silent/cards/LEADING_STRIKE.md",
+    "type": "card"
+  },
+  "LEAD_PAPERWEIGHT": {
+    "character": "colorless",
+    "path": "relics/LEAD_PAPERWEIGHT.md",
+    "type": "relic"
+  },
+  "LEAFY_POULTICE": {
+    "character": "colorless",
+    "path": "relics/LEAFY_POULTICE.md",
+    "type": "relic"
+  },
+  "LEAP": {
+    "character": "defect",
+    "path": "characters/defect/cards/LEAP.md",
+    "type": "card"
+  },
+  "LEE_S_WAFFLE": {
+    "character": "colorless",
+    "path": "relics/LEE_S_WAFFLE.md",
+    "type": "relic"
+  },
+  "LEGION_OF_BONE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/LEGION_OF_BONE.md",
+    "type": "card"
+  },
+  "LEG_SWEEP": {
+    "character": "silent",
+    "path": "characters/silent/cards/LEG_SWEEP.md",
+    "type": "card"
+  },
+  "LETHALITY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/LETHALITY.md",
+    "type": "card"
+  },
+  "LETTER_OPENER": {
+    "character": "colorless",
+    "path": "relics/LETTER_OPENER.md",
+    "type": "relic"
+  },
+  "LIFT": {
+    "character": "colorless",
+    "path": "cards/colorless/LIFT.md",
+    "type": "card"
+  },
+  "LIGHTNING_ROD": {
+    "character": "defect",
+    "path": "characters/defect/cards/LIGHTNING_ROD.md",
+    "type": "card"
+  },
+  "LIQUID_BRONZE": {
+    "character": "unknown",
+    "path": "potions/LIQUID_BRONZE.md",
+    "type": "potion"
+  },
+  "LIQUID_MEMORIES": {
+    "character": "unknown",
+    "path": "potions/LIQUID_MEMORIES.md",
+    "type": "potion"
+  },
+  "LIZARD_TAIL": {
+    "character": "colorless",
+    "path": "relics/LIZARD_TAIL.md",
+    "type": "relic"
+  },
+  "LOOMING_FRUIT": {
+    "character": "colorless",
+    "path": "relics/LOOMING_FRUIT.md",
+    "type": "relic"
+  },
+  "LOOP": {
+    "character": "defect",
+    "path": "characters/defect/cards/LOOP.md",
+    "type": "card"
+  },
+  "LORD_S_PARASOL": {
+    "character": "colorless",
+    "path": "relics/LORD_S_PARASOL.md",
+    "type": "relic"
+  },
+  "LOST_COFFER": {
+    "character": "colorless",
+    "path": "relics/LOST_COFFER.md",
+    "type": "relic"
+  },
+  "LOST_WISP": {
+    "character": "colorless",
+    "path": "relics/LOST_WISP.md",
+    "type": "relic"
+  },
+  "LUCKY_FYSH": {
+    "character": "colorless",
+    "path": "relics/LUCKY_FYSH.md",
+    "type": "relic"
+  },
+  "LUCKY_TONIC": {
+    "character": "unknown",
+    "path": "potions/LUCKY_TONIC.md",
+    "type": "potion"
+  },
+  "LUMINESCE": {
+    "character": "token",
+    "path": "cards/colorless/LUMINESCE.md",
+    "type": "card"
+  },
+  "LUNAR_BLAST": {
+    "character": "regent",
+    "path": "characters/regent/cards/LUNAR_BLAST.md",
+    "type": "card"
+  },
+  "LUNAR_PASTRY": {
+    "character": "regent",
+    "path": "relics/LUNAR_PASTRY.md",
+    "type": "relic"
+  },
+  "MACHINE_LEARNING": {
+    "character": "defect",
+    "path": "characters/defect/cards/MACHINE_LEARNING.md",
+    "type": "card"
+  },
+  "MAKE_IT_SO": {
+    "character": "regent",
+    "path": "characters/regent/cards/MAKE_IT_SO.md",
+    "type": "card"
+  },
+  "MALAISE": {
+    "character": "silent",
+    "path": "characters/silent/cards/MALAISE.md",
+    "type": "card"
+  },
+  "MANGLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/MANGLE.md",
+    "type": "card"
+  },
+  "MANGO": {
+    "character": "colorless",
+    "path": "relics/MANGO.md",
+    "type": "relic"
+  },
+  "MANIFEST_AUTHORITY": {
+    "character": "regent",
+    "path": "characters/regent/cards/MANIFEST_AUTHORITY.md",
+    "type": "card"
+  },
+  "MASSIVE_SCROLL": {
+    "character": "colorless",
+    "path": "relics/MASSIVE_SCROLL.md",
+    "type": "relic"
+  },
+  "MASTER_OF_STRATEGY": {
+    "character": "colorless",
+    "path": "cards/colorless/MASTER_OF_STRATEGY.md",
+    "type": "card"
+  },
+  "MASTER_PLANNER": {
+    "character": "silent",
+    "path": "characters/silent/cards/MASTER_PLANNER.md",
+    "type": "card"
+  },
+  "MAUL": {
+    "character": "event",
+    "path": "cards/colorless/MAUL.md",
+    "type": "card"
+  },
+  "MAW_BANK": {
+    "character": "colorless",
+    "path": "relics/MAW_BANK.md",
+    "type": "relic"
+  },
+  "MAYHEM": {
+    "character": "colorless",
+    "path": "cards/colorless/MAYHEM.md",
+    "type": "card"
+  },
+  "MAZALETH_S_GIFT": {
+    "character": "unknown",
+    "path": "potions/MAZALETH_S_GIFT.md",
+    "type": "potion"
+  },
+  "MEAL_TICKET": {
+    "character": "colorless",
+    "path": "relics/MEAL_TICKET.md",
+    "type": "relic"
+  },
+  "MEAT_CLEAVER": {
+    "character": "colorless",
+    "path": "relics/MEAT_CLEAVER.md",
+    "type": "relic"
+  },
+  "MEAT_ON_THE_BONE": {
+    "character": "colorless",
+    "path": "relics/MEAT_ON_THE_BONE.md",
+    "type": "relic"
+  },
+  "MEDICAL_KIT": {
+    "character": "colorless",
+    "path": "relics/MEDICAL_KIT.md",
+    "type": "relic"
+  },
+  "MELANCHOLY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/MELANCHOLY.md",
+    "type": "card"
+  },
+  "MEMBERSHIP_CARD": {
+    "character": "colorless",
+    "path": "relics/MEMBERSHIP_CARD.md",
+    "type": "relic"
+  },
+  "MEMENTO_MORI": {
+    "character": "silent",
+    "path": "characters/silent/cards/MEMENTO_MORI.md",
+    "type": "card"
+  },
+  "MERCURY_HOURGLASS": {
+    "character": "colorless",
+    "path": "relics/MERCURY_HOURGLASS.md",
+    "type": "relic"
+  },
+  "METAMORPHOSIS": {
+    "character": "event",
+    "path": "cards/colorless/METAMORPHOSIS.md",
+    "type": "card"
+  },
+  "METEOR_SHOWER": {
+    "character": "regent",
+    "path": "characters/regent/cards/METEOR_SHOWER.md",
+    "type": "card"
+  },
+  "METEOR_STRIKE": {
+    "character": "defect",
+    "path": "characters/defect/cards/METEOR_STRIKE.md",
+    "type": "card"
+  },
+  "METRONOME": {
+    "character": "defect",
+    "path": "relics/METRONOME.md",
+    "type": "relic"
+  },
+  "MIMIC": {
+    "character": "colorless",
+    "path": "cards/colorless/MIMIC.md",
+    "type": "card"
+  },
+  "MIND_BLAST": {
+    "character": "colorless",
+    "path": "cards/colorless/MIND_BLAST.md",
+    "type": "card"
+  },
+  "MIND_ROT": {
+    "character": "token",
+    "path": "cards/colorless/MIND_ROT.md",
+    "type": "card"
+  },
+  "MINIATURE_CANNON": {
+    "character": "colorless",
+    "path": "relics/MINIATURE_CANNON.md",
+    "type": "relic"
+  },
+  "MINIATURE_TENT": {
+    "character": "colorless",
+    "path": "relics/MINIATURE_TENT.md",
+    "type": "relic"
+  },
+  "MINION_DIVE_BOMB": {
+    "character": "token",
+    "path": "cards/colorless/MINION_DIVE_BOMB.md",
+    "type": "card"
+  },
+  "MINION_SACRIFICE": {
+    "character": "token",
+    "path": "cards/colorless/MINION_SACRIFICE.md",
+    "type": "card"
+  },
+  "MINION_STRIKE": {
+    "character": "token",
+    "path": "cards/colorless/MINION_STRIKE.md",
+    "type": "card"
+  },
+  "MINI_REGENT": {
+    "character": "regent",
+    "path": "relics/MINI_REGENT.md",
+    "type": "relic"
+  },
+  "MIRAGE": {
+    "character": "silent",
+    "path": "characters/silent/cards/MIRAGE.md",
+    "type": "card"
+  },
+  "MISERY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/MISERY.md",
+    "type": "card"
+  },
+  "MODDED": {
+    "character": "defect",
+    "path": "characters/defect/cards/MODDED.md",
+    "type": "card"
+  },
+  "MOLTEN_EGG": {
+    "character": "colorless",
+    "path": "relics/MOLTEN_EGG.md",
+    "type": "relic"
+  },
+  "MOLTEN_FIST": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/MOLTEN_FIST.md",
+    "type": "card"
+  },
+  "MOMENTUM_STRIKE": {
+    "character": "defect",
+    "path": "characters/defect/cards/MOMENTUM_STRIKE.md",
+    "type": "card"
+  },
+  "MONARCH_S_GAZE": {
+    "character": "regent",
+    "path": "characters/regent/cards/MONARCH_S_GAZE.md",
+    "type": "card"
+  },
+  "MONOLOGUE": {
+    "character": "regent",
+    "path": "characters/regent/cards/MONOLOGUE.md",
+    "type": "card"
+  },
+  "MR_STRUGGLES": {
+    "character": "colorless",
+    "path": "relics/MR_STRUGGLES.md",
+    "type": "relic"
+  },
+  "MULTI_CAST": {
+    "character": "defect",
+    "path": "characters/defect/cards/MULTI_CAST.md",
+    "type": "card"
+  },
+  "MUMMIFIED_HAND": {
+    "character": "colorless",
+    "path": "relics/MUMMIFIED_HAND.md",
+    "type": "relic"
+  },
+  "MURDER": {
+    "character": "silent",
+    "path": "characters/silent/cards/MURDER.md",
+    "type": "card"
+  },
+  "MUSIC_BOX": {
+    "character": "colorless",
+    "path": "relics/MUSIC_BOX.md",
+    "type": "relic"
+  },
+  "MYSTERIOUS_COCOON": {
+    "character": "colorless",
+    "path": "relics/MYSTERIOUS_COCOON.md",
+    "type": "relic"
+  },
+  "MYSTIC_LIGHTER": {
+    "character": "colorless",
+    "path": "relics/MYSTIC_LIGHTER.md",
+    "type": "relic"
+  },
+  "NECRO_MASTERY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/NECRO_MASTERY.md",
+    "type": "card"
+  },
+  "NEGATIVE_PULSE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/NEGATIVE_PULSE.md",
+    "type": "card"
+  },
+  "NEOW_S_FURY": {
+    "character": "event",
+    "path": "cards/colorless/NEOW_S_FURY.md",
+    "type": "card"
+  },
+  "NEOW_S_TORMENT": {
+    "character": "colorless",
+    "path": "relics/NEOW_S_TORMENT.md",
+    "type": "relic"
+  },
+  "NEUROSURGE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/NEUROSURGE.md",
+    "type": "card"
+  },
+  "NEUTRALIZE": {
+    "character": "silent",
+    "path": "characters/silent/cards/NEUTRALIZE.md",
+    "type": "card"
+  },
+  "NEUTRON_AEGIS": {
+    "character": "regent",
+    "path": "characters/regent/cards/NEUTRON_AEGIS.md",
+    "type": "card"
+  },
+  "NEW_LEAF": {
+    "character": "colorless",
+    "path": "relics/NEW_LEAF.md",
+    "type": "relic"
+  },
+  "NIGHTMARE": {
+    "character": "silent",
+    "path": "characters/silent/cards/NIGHTMARE.md",
+    "type": "card"
+  },
+  "NINJA_SCROLL": {
+    "character": "silent",
+    "path": "relics/NINJA_SCROLL.md",
+    "type": "relic"
+  },
+  "NORMALITY": {
+    "character": "curse",
+    "path": "cards/colorless/NORMALITY.md",
+    "type": "card"
+  },
+  "NOSTALGIA": {
+    "character": "colorless",
+    "path": "cards/colorless/NOSTALGIA.md",
+    "type": "card"
+  },
+  "NOXIOUS_FUMES": {
+    "character": "silent",
+    "path": "characters/silent/cards/NOXIOUS_FUMES.md",
+    "type": "card"
+  },
+  "NO_ESCAPE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/NO_ESCAPE.md",
+    "type": "card"
+  },
+  "NULL": {
+    "character": "defect",
+    "path": "characters/defect/cards/NULL.md",
+    "type": "card"
+  },
+  "NUNCHAKU": {
+    "character": "colorless",
+    "path": "relics/NUNCHAKU.md",
+    "type": "relic"
+  },
+  "NUTRITIOUS_OYSTER": {
+    "character": "colorless",
+    "path": "relics/NUTRITIOUS_OYSTER.md",
+    "type": "relic"
+  },
+  "NUTRITIOUS_SOUP": {
+    "character": "colorless",
+    "path": "relics/NUTRITIOUS_SOUP.md",
+    "type": "relic"
+  },
+  "OBLIVION": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/OBLIVION.md",
+    "type": "card"
+  },
+  "ODDLY_SMOOTH_STONE": {
+    "character": "colorless",
+    "path": "relics/ODDLY_SMOOTH_STONE.md",
+    "type": "relic"
+  },
+  "OFFERING": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/OFFERING.md",
+    "type": "card"
+  },
+  "OLD_COIN": {
+    "character": "colorless",
+    "path": "relics/OLD_COIN.md",
+    "type": "relic"
+  },
+  "OMNISLICE": {
+    "character": "colorless",
+    "path": "cards/colorless/OMNISLICE.md",
+    "type": "card"
+  },
+  "ONE_TWO_PUNCH": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/ONE_TWO_PUNCH.md",
+    "type": "card"
+  },
+  "ORANGE_DOUGH": {
+    "character": "regent",
+    "path": "relics/ORANGE_DOUGH.md",
+    "type": "relic"
+  },
+  "ORBIT": {
+    "character": "regent",
+    "path": "characters/regent/cards/ORBIT.md",
+    "type": "card"
+  },
+  "ORICHALCUM": {
+    "character": "colorless",
+    "path": "relics/ORICHALCUM.md",
+    "type": "relic"
+  },
+  "ORNAMENTAL_FAN": {
+    "character": "colorless",
+    "path": "relics/ORNAMENTAL_FAN.md",
+    "type": "relic"
+  },
+  "OROBIC_ACID": {
+    "character": "unknown",
+    "path": "potions/OROBIC_ACID.md",
+    "type": "potion"
+  },
+  "ORRERY": {
+    "character": "colorless",
+    "path": "relics/ORRERY.md",
+    "type": "relic"
+  },
+  "OUTBREAK": {
+    "character": "silent",
+    "path": "characters/silent/cards/OUTBREAK.md",
+    "type": "card"
+  },
+  "OVERCLOCK": {
+    "character": "defect",
+    "path": "characters/defect/cards/OVERCLOCK.md",
+    "type": "card"
+  },
+  "PACT_S_END": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/PACT_S_END.md",
+    "type": "card"
+  },
+  "PAEL_S_BLOOD": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_BLOOD.md",
+    "type": "relic"
+  },
+  "PAEL_S_CLAW": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_CLAW.md",
+    "type": "relic"
+  },
+  "PAEL_S_EYE": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_EYE.md",
+    "type": "relic"
+  },
+  "PAEL_S_FLESH": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_FLESH.md",
+    "type": "relic"
+  },
+  "PAEL_S_GROWTH": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_GROWTH.md",
+    "type": "relic"
+  },
+  "PAEL_S_HORN": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_HORN.md",
+    "type": "relic"
+  },
+  "PAEL_S_LEGION": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_LEGION.md",
+    "type": "relic"
+  },
+  "PAEL_S_TEARS": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_TEARS.md",
+    "type": "relic"
+  },
+  "PAEL_S_TOOTH": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_TOOTH.md",
+    "type": "relic"
+  },
+  "PAEL_S_WING": {
+    "character": "colorless",
+    "path": "relics/PAEL_S_WING.md",
+    "type": "relic"
+  },
+  "PAGESTORM": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PAGESTORM.md",
+    "type": "card"
+  },
+  "PALE_BLUE_DOT": {
+    "character": "regent",
+    "path": "characters/regent/cards/PALE_BLUE_DOT.md",
+    "type": "card"
+  },
+  "PANACHE": {
+    "character": "colorless",
+    "path": "cards/colorless/PANACHE.md",
+    "type": "card"
+  },
+  "PANDORA_S_BOX": {
+    "character": "colorless",
+    "path": "relics/PANDORA_S_BOX.md",
+    "type": "relic"
+  },
+  "PANIC_BUTTON": {
+    "character": "colorless",
+    "path": "cards/colorless/PANIC_BUTTON.md",
+    "type": "card"
+  },
+  "PANTOGRAPH": {
+    "character": "colorless",
+    "path": "relics/PANTOGRAPH.md",
+    "type": "relic"
+  },
+  "PAPER_KRANE": {
+    "character": "silent",
+    "path": "relics/PAPER_KRANE.md",
+    "type": "relic"
+  },
+  "PAPER_PHROG": {
+    "character": "ironclad",
+    "path": "relics/PAPER_PHROG.md",
+    "type": "relic"
+  },
+  "PARRY": {
+    "character": "regent",
+    "path": "characters/regent/cards/PARRY.md",
+    "type": "card"
+  },
+  "PARRYING_SHIELD": {
+    "character": "colorless",
+    "path": "relics/PARRYING_SHIELD.md",
+    "type": "relic"
+  },
+  "PARSE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PARSE.md",
+    "type": "card"
+  },
+  "PARTICLE_WALL": {
+    "character": "regent",
+    "path": "characters/regent/cards/PARTICLE_WALL.md",
+    "type": "card"
+  },
+  "PATTER": {
+    "character": "regent",
+    "path": "characters/regent/cards/PATTER.md",
+    "type": "card"
+  },
+  "PEAR": {
+    "character": "colorless",
+    "path": "relics/PEAR.md",
+    "type": "relic"
+  },
+  "PECK": {
+    "character": "event",
+    "path": "cards/colorless/PECK.md",
+    "type": "card"
+  },
+  "PENDULUM": {
+    "character": "colorless",
+    "path": "relics/PENDULUM.md",
+    "type": "relic"
+  },
+  "PEN_NIB": {
+    "character": "colorless",
+    "path": "relics/PEN_NIB.md",
+    "type": "relic"
+  },
+  "PERFECTED_STRIKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/PERFECTED_STRIKE.md",
+    "type": "card"
+  },
+  "PERMAFROST": {
+    "character": "colorless",
+    "path": "relics/PERMAFROST.md",
+    "type": "relic"
+  },
+  "PETRIFIED_TOAD": {
+    "character": "colorless",
+    "path": "relics/PETRIFIED_TOAD.md",
+    "type": "relic"
+  },
+  "PHANTOM_BLADES": {
+    "character": "silent",
+    "path": "characters/silent/cards/PHANTOM_BLADES.md",
+    "type": "card"
+  },
+  "PHILOSOPHER_S_STONE": {
+    "character": "colorless",
+    "path": "relics/PHILOSOPHER_S_STONE.md",
+    "type": "relic"
+  },
+  "PHOTON_CUT": {
+    "character": "regent",
+    "path": "characters/regent/cards/PHOTON_CUT.md",
+    "type": "card"
+  },
+  "PHYLACTERY_UNBOUND": {
+    "character": "necrobinder",
+    "path": "relics/PHYLACTERY_UNBOUND.md",
+    "type": "relic"
+  },
+  "PIERCING_WAIL": {
+    "character": "silent",
+    "path": "characters/silent/cards/PIERCING_WAIL.md",
+    "type": "card"
+  },
+  "PILLAGE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/PILLAGE.md",
+    "type": "card"
+  },
+  "PILLAR_OF_CREATION": {
+    "character": "regent",
+    "path": "characters/regent/cards/PILLAR_OF_CREATION.md",
+    "type": "card"
+  },
+  "PINPOINT": {
+    "character": "silent",
+    "path": "characters/silent/cards/PINPOINT.md",
+    "type": "card"
+  },
+  "PLANISPHERE": {
+    "character": "colorless",
+    "path": "relics/PLANISPHERE.md",
+    "type": "relic"
+  },
+  "POCKETWATCH": {
+    "character": "colorless",
+    "path": "relics/POCKETWATCH.md",
+    "type": "relic"
+  },
+  "POISONED_STAB": {
+    "character": "silent",
+    "path": "characters/silent/cards/POISONED_STAB.md",
+    "type": "card"
+  },
+  "POISON_POTION": {
+    "character": "unknown",
+    "path": "potions/POISON_POTION.md",
+    "type": "potion"
+  },
+  "POKE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/POKE.md",
+    "type": "card"
+  },
+  "POLLINOUS_CORE": {
+    "character": "colorless",
+    "path": "relics/POLLINOUS_CORE.md",
+    "type": "relic"
+  },
+  "POMANDER": {
+    "character": "colorless",
+    "path": "relics/POMANDER.md",
+    "type": "relic"
+  },
+  "POMMEL_STRIKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/POMMEL_STRIKE.md",
+    "type": "card"
+  },
+  "POOR_SLEEP": {
+    "character": "curse",
+    "path": "cards/colorless/POOR_SLEEP.md",
+    "type": "card"
+  },
+  "POTION_BELT": {
+    "character": "colorless",
+    "path": "relics/POTION_BELT.md",
+    "type": "relic"
+  },
+  "POTION_OF_BINDING": {
+    "character": "unknown",
+    "path": "potions/POTION_OF_BINDING.md",
+    "type": "potion"
+  },
+  "POTION_OF_CAPACITY": {
+    "character": "unknown",
+    "path": "potions/POTION_OF_CAPACITY.md",
+    "type": "potion"
+  },
+  "POTION_OF_DOOM": {
+    "character": "unknown",
+    "path": "potions/POTION_OF_DOOM.md",
+    "type": "potion"
+  },
+  "POTION_SHAPED_ROCK": {
+    "character": "unknown",
+    "path": "potions/POTION_SHAPED_ROCK.md",
+    "type": "potion"
+  },
+  "POT_OF_GHOULS": {
+    "character": "unknown",
+    "path": "potions/POT_OF_GHOULS.md",
+    "type": "potion"
+  },
+  "POUNCE": {
+    "character": "silent",
+    "path": "characters/silent/cards/POUNCE.md",
+    "type": "card"
+  },
+  "POWDERED_DEMISE": {
+    "character": "unknown",
+    "path": "potions/POWDERED_DEMISE.md",
+    "type": "potion"
+  },
+  "POWER_CELL": {
+    "character": "defect",
+    "path": "relics/POWER_CELL.md",
+    "type": "relic"
+  },
+  "POWER_POTION": {
+    "character": "unknown",
+    "path": "potions/POWER_POTION.md",
+    "type": "potion"
+  },
+  "PRAYER_WHEEL": {
+    "character": "colorless",
+    "path": "relics/PRAYER_WHEEL.md",
+    "type": "relic"
+  },
+  "PRECARIOUS_SHEARS": {
+    "character": "colorless",
+    "path": "relics/PRECARIOUS_SHEARS.md",
+    "type": "relic"
+  },
+  "PRECISE_CUT": {
+    "character": "silent",
+    "path": "characters/silent/cards/PRECISE_CUT.md",
+    "type": "card"
+  },
+  "PRECISE_SCISSORS": {
+    "character": "colorless",
+    "path": "relics/PRECISE_SCISSORS.md",
+    "type": "relic"
+  },
+  "PREDATOR": {
+    "character": "silent",
+    "path": "characters/silent/cards/PREDATOR.md",
+    "type": "card"
+  },
+  "PREPARED": {
+    "character": "silent",
+    "path": "characters/silent/cards/PREPARED.md",
+    "type": "card"
+  },
+  "PREP_TIME": {
+    "character": "colorless",
+    "path": "cards/colorless/PREP_TIME.md",
+    "type": "card"
+  },
+  "PRESERVED_FOG": {
+    "character": "colorless",
+    "path": "relics/PRESERVED_FOG.md",
+    "type": "relic"
+  },
+  "PRIMAL_FORCE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/PRIMAL_FORCE.md",
+    "type": "card"
+  },
+  "PRISMATIC_GEM": {
+    "character": "colorless",
+    "path": "relics/PRISMATIC_GEM.md",
+    "type": "relic"
+  },
+  "PRODUCTION": {
+    "character": "colorless",
+    "path": "cards/colorless/PRODUCTION.md",
+    "type": "card"
+  },
+  "PROLONG": {
+    "character": "colorless",
+    "path": "cards/colorless/PROLONG.md",
+    "type": "card"
+  },
+  "PROPHESIZE": {
+    "character": "regent",
+    "path": "characters/regent/cards/PROPHESIZE.md",
+    "type": "card"
+  },
+  "PROTECTOR": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PROTECTOR.md",
+    "type": "card"
+  },
+  "PROWESS": {
+    "character": "colorless",
+    "path": "cards/colorless/PROWESS.md",
+    "type": "card"
+  },
+  "PULL_AGGRO": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PULL_AGGRO.md",
+    "type": "card"
+  },
+  "PULL_FROM_BELOW": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PULL_FROM_BELOW.md",
+    "type": "card"
+  },
+  "PUMPKIN_CANDLE": {
+    "character": "colorless",
+    "path": "relics/PUMPKIN_CANDLE.md",
+    "type": "relic"
+  },
+  "PUNCH_DAGGER": {
+    "character": "colorless",
+    "path": "relics/PUNCH_DAGGER.md",
+    "type": "relic"
+  },
+  "PURITY": {
+    "character": "colorless",
+    "path": "cards/colorless/PURITY.md",
+    "type": "card"
+  },
+  "PUTREFY": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/PUTREFY.md",
+    "type": "card"
+  },
+  "PYRE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/PYRE.md",
+    "type": "card"
+  },
+  "QUADCAST": {
+    "character": "defect",
+    "path": "characters/defect/cards/QUADCAST.md",
+    "type": "card"
+  },
+  "QUASAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/QUASAR.md",
+    "type": "card"
+  },
+  "RADIANT_PEARL": {
+    "character": "colorless",
+    "path": "relics/RADIANT_PEARL.md",
+    "type": "relic"
+  },
+  "RADIANT_TINCTURE": {
+    "character": "unknown",
+    "path": "potions/RADIANT_TINCTURE.md",
+    "type": "potion"
+  },
+  "RADIATE": {
+    "character": "regent",
+    "path": "characters/regent/cards/RADIATE.md",
+    "type": "card"
+  },
+  "RAGE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/RAGE.md",
+    "type": "card"
+  },
+  "RAINBOW": {
+    "character": "defect",
+    "path": "characters/defect/cards/RAINBOW.md",
+    "type": "card"
+  },
+  "RAINBOW_RING": {
+    "character": "colorless",
+    "path": "relics/RAINBOW_RING.md",
+    "type": "relic"
+  },
+  "RALLY": {
+    "character": "colorless",
+    "path": "cards/colorless/RALLY.md",
+    "type": "card"
+  },
+  "RAMPAGE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/RAMPAGE.md",
+    "type": "card"
+  },
+  "RARE": {
+    "character": "colorless",
+    "path": "relics/RARE.md",
+    "type": "relic"
+  },
+  "RATTLE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/RATTLE.md",
+    "type": "card"
+  },
+  "RAZOR_TOOTH": {
+    "character": "colorless",
+    "path": "relics/RAZOR_TOOTH.md",
+    "type": "relic"
+  },
+  "REANIMATE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/REANIMATE.md",
+    "type": "card"
+  },
+  "REAP": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/REAP.md",
+    "type": "card"
+  },
+  "REAPER_FORM": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/REAPER_FORM.md",
+    "type": "card"
+  },
+  "REAVE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/REAVE.md",
+    "type": "card"
+  },
+  "REBOOT": {
+    "character": "defect",
+    "path": "characters/defect/cards/REBOOT.md",
+    "type": "card"
+  },
+  "RED_MASK": {
+    "character": "colorless",
+    "path": "relics/RED_MASK.md",
+    "type": "relic"
+  },
+  "RED_SKULL": {
+    "character": "ironclad",
+    "path": "relics/RED_SKULL.md",
+    "type": "relic"
+  },
+  "REFINE_BLADE": {
+    "character": "regent",
+    "path": "characters/regent/cards/REFINE_BLADE.md",
+    "type": "card"
+  },
+  "REFLECT": {
+    "character": "regent",
+    "path": "characters/regent/cards/REFLECT.md",
+    "type": "card"
+  },
+  "REFLEX": {
+    "character": "silent",
+    "path": "characters/silent/cards/REFLEX.md",
+    "type": "card"
+  },
+  "REFRACT": {
+    "character": "defect",
+    "path": "characters/defect/cards/REFRACT.md",
+    "type": "card"
+  },
+  "REGALITE": {
+    "character": "regent",
+    "path": "relics/REGALITE.md",
+    "type": "relic"
+  },
+  "REGAL_PILLOW": {
+    "character": "colorless",
+    "path": "relics/REGAL_PILLOW.md",
+    "type": "relic"
+  },
+  "REGEN_POTION": {
+    "character": "unknown",
+    "path": "potions/REGEN_POTION.md",
+    "type": "potion"
+  },
+  "REGRET": {
+    "character": "curse",
+    "path": "cards/colorless/REGRET.md",
+    "type": "card"
+  },
+  "RELAX": {
+    "character": "event",
+    "path": "cards/colorless/RELAX.md",
+    "type": "card"
+  },
+  "REND": {
+    "character": "colorless",
+    "path": "cards/colorless/REND.md",
+    "type": "card"
+  },
+  "REPTILE_TRINKET": {
+    "character": "colorless",
+    "path": "relics/REPTILE_TRINKET.md",
+    "type": "relic"
+  },
+  "RESONANCE": {
+    "character": "regent",
+    "path": "characters/regent/cards/RESONANCE.md",
+    "type": "card"
+  },
+  "RESTLESSNESS": {
+    "character": "colorless",
+    "path": "cards/colorless/RESTLESSNESS.md",
+    "type": "card"
+  },
+  "RICOCHET": {
+    "character": "silent",
+    "path": "characters/silent/cards/RICOCHET.md",
+    "type": "card"
+  },
+  "RIGHT_HAND_HAND": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/RIGHT_HAND_HAND.md",
+    "type": "card"
+  },
+  "RINGING_TRIANGLE": {
+    "character": "colorless",
+    "path": "relics/RINGING_TRIANGLE.md",
+    "type": "relic"
+  },
+  "RING_OF_THE_DRAKE": {
+    "character": "silent",
+    "path": "relics/RING_OF_THE_DRAKE.md",
+    "type": "relic"
+  },
+  "RING_OF_THE_SNAKE": {
+    "character": "silent",
+    "path": "relics/RING_OF_THE_SNAKE.md",
+    "type": "relic"
+  },
+  "RIPPLE_BASIN": {
+    "character": "colorless",
+    "path": "relics/RIPPLE_BASIN.md",
+    "type": "relic"
+  },
+  "RIP_AND_TEAR": {
+    "character": "defect",
+    "path": "characters/defect/cards/RIP_AND_TEAR.md",
+    "type": "card"
+  },
+  "ROCKET_PUNCH": {
+    "character": "defect",
+    "path": "characters/defect/cards/ROCKET_PUNCH.md",
+    "type": "card"
+  },
+  "ROLLING_BOULDER": {
+    "character": "colorless",
+    "path": "cards/colorless/ROLLING_BOULDER.md",
+    "type": "card"
+  },
+  "ROYALTIES": {
+    "character": "regent",
+    "path": "characters/regent/cards/ROYALTIES.md",
+    "type": "card"
+  },
+  "ROYAL_GAMBLE": {
+    "character": "regent",
+    "path": "characters/regent/cards/ROYAL_GAMBLE.md",
+    "type": "card"
+  },
+  "ROYAL_POISON": {
+    "character": "colorless",
+    "path": "relics/ROYAL_POISON.md",
+    "type": "relic"
+  },
+  "ROYAL_STAMP": {
+    "character": "colorless",
+    "path": "relics/ROYAL_STAMP.md",
+    "type": "relic"
+  },
+  "RUINED_HELMET": {
+    "character": "ironclad",
+    "path": "relics/RUINED_HELMET.md",
+    "type": "relic"
+  },
+  "RUNIC_CAPACITOR": {
+    "character": "defect",
+    "path": "relics/RUNIC_CAPACITOR.md",
+    "type": "relic"
+  },
+  "RUNIC_PYRAMID": {
+    "character": "colorless",
+    "path": "relics/RUNIC_PYRAMID.md",
+    "type": "relic"
+  },
+  "RUPTURE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/RUPTURE.md",
+    "type": "card"
+  },
+  "SACRIFICE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SACRIFICE.md",
+    "type": "card"
+  },
+  "SAI": {
+    "character": "colorless",
+    "path": "relics/SAI.md",
+    "type": "relic"
+  },
+  "SALVO": {
+    "character": "colorless",
+    "path": "cards/colorless/SALVO.md",
+    "type": "card"
+  },
+  "SAND_CASTLE": {
+    "character": "colorless",
+    "path": "relics/SAND_CASTLE.md",
+    "type": "relic"
+  },
+  "SCAVENGE": {
+    "character": "defect",
+    "path": "characters/defect/cards/SCAVENGE.md",
+    "type": "card"
+  },
+  "SCOURGE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SCOURGE.md",
+    "type": "card"
+  },
+  "SCRAPE": {
+    "character": "defect",
+    "path": "characters/defect/cards/SCRAPE.md",
+    "type": "card"
+  },
+  "SCRAWL": {
+    "character": "colorless",
+    "path": "cards/colorless/SCRAWL.md",
+    "type": "card"
+  },
+  "SCREAMING_FLAGON": {
+    "character": "colorless",
+    "path": "relics/SCREAMING_FLAGON.md",
+    "type": "relic"
+  },
+  "SCROLL_BOXES": {
+    "character": "colorless",
+    "path": "relics/SCROLL_BOXES.md",
+    "type": "relic"
+  },
+  "SCULPTING_STRIKE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SCULPTING_STRIKE.md",
+    "type": "card"
+  },
+  "SEAL_OF_GOLD": {
+    "character": "colorless",
+    "path": "relics/SEAL_OF_GOLD.md",
+    "type": "relic"
+  },
+  "SEANCE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SEANCE.md",
+    "type": "card"
+  },
+  "SEA_GLASS": {
+    "character": "colorless",
+    "path": "relics/SEA_GLASS.md",
+    "type": "relic"
+  },
+  "SECOND_WIND": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/SECOND_WIND.md",
+    "type": "card"
+  },
+  "SECRET_TECHNIQUE": {
+    "character": "colorless",
+    "path": "cards/colorless/SECRET_TECHNIQUE.md",
+    "type": "card"
+  },
+  "SECRET_WEAPON": {
+    "character": "colorless",
+    "path": "cards/colorless/SECRET_WEAPON.md",
+    "type": "card"
+  },
+  "SEEKER_STRIKE": {
+    "character": "colorless",
+    "path": "cards/colorless/SEEKER_STRIKE.md",
+    "type": "card"
+  },
+  "SEEKING_EDGE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SEEKING_EDGE.md",
+    "type": "card"
+  },
+  "SELF_FORMING_CLAY": {
+    "character": "ironclad",
+    "path": "relics/SELF_FORMING_CLAY.md",
+    "type": "relic"
+  },
+  "SENTRY_MODE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SENTRY_MODE.md",
+    "type": "card"
+  },
+  "SERE_TALON": {
+    "character": "colorless",
+    "path": "relics/SERE_TALON.md",
+    "type": "relic"
+  },
+  "SERPENT_FORM": {
+    "character": "silent",
+    "path": "characters/silent/cards/SERPENT_FORM.md",
+    "type": "card"
+  },
+  "SETUP_STRIKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/SETUP_STRIKE.md",
+    "type": "card"
+  },
+  "SEVEN_STARS": {
+    "character": "regent",
+    "path": "characters/regent/cards/SEVEN_STARS.md",
+    "type": "card"
+  },
+  "SEVERANCE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SEVERANCE.md",
+    "type": "card"
+  },
+  "SHACKLING_POTION": {
+    "character": "unknown",
+    "path": "potions/SHACKLING_POTION.md",
+    "type": "potion"
+  },
+  "SHADOWMELD": {
+    "character": "silent",
+    "path": "characters/silent/cards/SHADOWMELD.md",
+    "type": "card"
+  },
+  "SHADOW_SHIELD": {
+    "character": "defect",
+    "path": "characters/defect/cards/SHADOW_SHIELD.md",
+    "type": "card"
+  },
+  "SHADOW_STEP": {
+    "character": "silent",
+    "path": "characters/silent/cards/SHADOW_STEP.md",
+    "type": "card"
+  },
+  "SHAME": {
+    "character": "curse",
+    "path": "cards/colorless/SHAME.md",
+    "type": "card"
+  },
+  "SHARED_FATE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SHARED_FATE.md",
+    "type": "card"
+  },
+  "SHATTER": {
+    "character": "defect",
+    "path": "characters/defect/cards/SHATTER.md",
+    "type": "card"
+  },
+  "SHINING_STRIKE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SHINING_STRIKE.md",
+    "type": "card"
+  },
+  "SHIP_IN_A_BOTTLE": {
+    "character": "unknown",
+    "path": "potions/SHIP_IN_A_BOTTLE.md",
+    "type": "potion"
+  },
+  "SHIV": {
+    "character": "token",
+    "path": "cards/colorless/SHIV.md",
+    "type": "card"
+  },
+  "SHOCKWAVE": {
+    "character": "colorless",
+    "path": "cards/colorless/SHOCKWAVE.md",
+    "type": "card"
+  },
+  "SHOP": {
+    "character": "colorless",
+    "path": "relics/SHOP.md",
+    "type": "relic"
+  },
+  "SHOVEL": {
+    "character": "colorless",
+    "path": "relics/SHOVEL.md",
+    "type": "relic"
+  },
+  "SHROUD": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SHROUD.md",
+    "type": "card"
+  },
+  "SHRUG_IT_OFF": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/SHRUG_IT_OFF.md",
+    "type": "card"
+  },
+  "SHURIKEN": {
+    "character": "colorless",
+    "path": "relics/SHURIKEN.md",
+    "type": "relic"
+  },
+  "SIC_EM": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SIC_EM.md",
+    "type": "card"
+  },
+  "SIGNAL_BOOST": {
+    "character": "defect",
+    "path": "characters/defect/cards/SIGNAL_BOOST.md",
+    "type": "card"
+  },
+  "SIGNET_RING": {
+    "character": "colorless",
+    "path": "relics/SIGNET_RING.md",
+    "type": "relic"
+  },
+  "SILVER_CRUCIBLE": {
+    "character": "colorless",
+    "path": "relics/SILVER_CRUCIBLE.md",
+    "type": "relic"
+  },
+  "SKEWER": {
+    "character": "silent",
+    "path": "characters/silent/cards/SKEWER.md",
+    "type": "card"
+  },
+  "SKILL_POTION": {
+    "character": "unknown",
+    "path": "potions/SKILL_POTION.md",
+    "type": "potion"
+  },
+  "SKIM": {
+    "character": "defect",
+    "path": "characters/defect/cards/SKIM.md",
+    "type": "card"
+  },
+  "SLEIGHT_OF_FLESH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SLEIGHT_OF_FLESH.md",
+    "type": "card"
+  },
+  "SLICE": {
+    "character": "silent",
+    "path": "characters/silent/cards/SLICE.md",
+    "type": "card"
+  },
+  "SLIMED": {
+    "character": "status",
+    "path": "cards/colorless/SLIMED.md",
+    "type": "card"
+  },
+  "SLING_OF_COURAGE": {
+    "character": "colorless",
+    "path": "relics/SLING_OF_COURAGE.md",
+    "type": "relic"
+  },
+  "SLOTH": {
+    "character": "token",
+    "path": "cards/colorless/SLOTH.md",
+    "type": "card"
+  },
+  "SMALL_CAPSULE": {
+    "character": "colorless",
+    "path": "relics/SMALL_CAPSULE.md",
+    "type": "relic"
+  },
+  "SMOKESTACK": {
+    "character": "defect",
+    "path": "characters/defect/cards/SMOKESTACK.md",
+    "type": "card"
+  },
+  "SNAKEBITE": {
+    "character": "silent",
+    "path": "characters/silent/cards/SNAKEBITE.md",
+    "type": "card"
+  },
+  "SNAP": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SNAP.md",
+    "type": "card"
+  },
+  "SNEAKY": {
+    "character": "silent",
+    "path": "characters/silent/cards/SNEAKY.md",
+    "type": "card"
+  },
+  "SNECKO_EYE": {
+    "character": "colorless",
+    "path": "relics/SNECKO_EYE.md",
+    "type": "relic"
+  },
+  "SNECKO_OIL": {
+    "character": "unknown",
+    "path": "potions/SNECKO_OIL.md",
+    "type": "potion"
+  },
+  "SNECKO_SKULL": {
+    "character": "silent",
+    "path": "relics/SNECKO_SKULL.md",
+    "type": "relic"
+  },
+  "SOLAR_STRIKE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SOLAR_STRIKE.md",
+    "type": "card"
+  },
+  "SOLDIER_S_STEW": {
+    "character": "unknown",
+    "path": "potions/SOLDIER_S_STEW.md",
+    "type": "potion"
+  },
+  "SOOT": {
+    "character": "status",
+    "path": "cards/colorless/SOOT.md",
+    "type": "card"
+  },
+  "SOUL": {
+    "character": "token",
+    "path": "cards/colorless/SOUL.md",
+    "type": "card"
+  },
+  "SOUL_STORM": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SOUL_STORM.md",
+    "type": "card"
+  },
+  "SOVEREIGN_BLADE": {
+    "character": "token",
+    "path": "cards/colorless/SOVEREIGN_BLADE.md",
+    "type": "card"
+  },
+  "SOW": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SOW.md",
+    "type": "card"
+  },
+  "SOZU": {
+    "character": "colorless",
+    "path": "relics/SOZU.md",
+    "type": "relic"
+  },
+  "SPARKLING_ROUGE": {
+    "character": "colorless",
+    "path": "relics/SPARKLING_ROUGE.md",
+    "type": "relic"
+  },
+  "SPECIAL": {
+    "character": "colorless",
+    "path": "relics/SPECIAL.md",
+    "type": "relic"
+  },
+  "SPECTRUM_SHIFT": {
+    "character": "regent",
+    "path": "characters/regent/cards/SPECTRUM_SHIFT.md",
+    "type": "card"
+  },
+  "SPEEDSTER": {
+    "character": "silent",
+    "path": "characters/silent/cards/SPEEDSTER.md",
+    "type": "card"
+  },
+  "SPEED_POTION": {
+    "character": "unknown",
+    "path": "potions/SPEED_POTION.md",
+    "type": "potion"
+  },
+  "SPIKED_GAUNTLETS": {
+    "character": "colorless",
+    "path": "relics/SPIKED_GAUNTLETS.md",
+    "type": "relic"
+  },
+  "SPINNER": {
+    "character": "defect",
+    "path": "characters/defect/cards/SPINNER.md",
+    "type": "card"
+  },
+  "SPIRIT_OF_ASH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SPIRIT_OF_ASH.md",
+    "type": "card"
+  },
+  "SPITE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/SPITE.md",
+    "type": "card"
+  },
+  "SPLASH": {
+    "character": "colorless",
+    "path": "cards/colorless/SPLASH.md",
+    "type": "card"
+  },
+  "SPOILS_MAP": {
+    "character": "quest",
+    "path": "cards/colorless/SPOILS_MAP.md",
+    "type": "card"
+  },
+  "SPOILS_OF_BATTLE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SPOILS_OF_BATTLE.md",
+    "type": "card"
+  },
+  "SPORE_MIND": {
+    "character": "curse",
+    "path": "cards/colorless/SPORE_MIND.md",
+    "type": "card"
+  },
+  "SPUR": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SPUR.md",
+    "type": "card"
+  },
+  "SQUASH": {
+    "character": "event",
+    "path": "cards/colorless/SQUASH.md",
+    "type": "card"
+  },
+  "SQUEEZE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/SQUEEZE.md",
+    "type": "card"
+  },
+  "STABLE_SERUM": {
+    "character": "unknown",
+    "path": "potions/STABLE_SERUM.md",
+    "type": "potion"
+  },
+  "STAMPEDE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/STAMPEDE.md",
+    "type": "card"
+  },
+  "STARDUST": {
+    "character": "regent",
+    "path": "characters/regent/cards/STARDUST.md",
+    "type": "card"
+  },
+  "STARTER": {
+    "character": "silent",
+    "path": "relics/STARTER.md",
+    "type": "relic"
+  },
+  "STAR_POTION": {
+    "character": "unknown",
+    "path": "potions/STAR_POTION.md",
+    "type": "potion"
+  },
+  "STOKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/STOKE.md",
+    "type": "card"
+  },
+  "STOMP": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/STOMP.md",
+    "type": "card"
+  },
+  "STONE_ARMOR": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/STONE_ARMOR.md",
+    "type": "card"
+  },
+  "STONE_CALENDAR": {
+    "character": "colorless",
+    "path": "relics/STONE_CALENDAR.md",
+    "type": "relic"
+  },
+  "STONE_CRACKER": {
+    "character": "colorless",
+    "path": "relics/STONE_CRACKER.md",
+    "type": "relic"
+  },
+  "STONE_HUMIDIFIER": {
+    "character": "colorless",
+    "path": "relics/STONE_HUMIDIFIER.md",
+    "type": "relic"
+  },
+  "STORM": {
+    "character": "defect",
+    "path": "characters/defect/cards/STORM.md",
+    "type": "card"
+  },
+  "STORM_OF_STEEL": {
+    "character": "silent",
+    "path": "characters/silent/cards/STORM_OF_STEEL.md",
+    "type": "card"
+  },
+  "STORYBOOK": {
+    "character": "colorless",
+    "path": "relics/STORYBOOK.md",
+    "type": "relic"
+  },
+  "STRANGLE": {
+    "character": "silent",
+    "path": "characters/silent/cards/STRANGLE.md",
+    "type": "card"
+  },
+  "STRATAGEM": {
+    "character": "colorless",
+    "path": "cards/colorless/STRATAGEM.md",
+    "type": "card"
+  },
+  "STRAWBERRY": {
+    "character": "colorless",
+    "path": "relics/STRAWBERRY.md",
+    "type": "relic"
+  },
+  "STRENGTH_POTION": {
+    "character": "unknown",
+    "path": "potions/STRENGTH_POTION.md",
+    "type": "potion"
+  },
+  "STRIKE": {
+    "character": "silent",
+    "path": "characters/silent/cards/STRIKE.md",
+    "type": "card"
+  },
+  "STRIKE_DUMMY": {
+    "character": "colorless",
+    "path": "relics/STRIKE_DUMMY.md",
+    "type": "relic"
+  },
+  "STURDY_CLAMP": {
+    "character": "colorless",
+    "path": "relics/STURDY_CLAMP.md",
+    "type": "relic"
+  },
+  "SUBROUTINE": {
+    "character": "defect",
+    "path": "characters/defect/cards/SUBROUTINE.md",
+    "type": "card"
+  },
+  "SUCKER_PUNCH": {
+    "character": "silent",
+    "path": "characters/silent/cards/SUCKER_PUNCH.md",
+    "type": "card"
+  },
+  "SUMMON_FORTH": {
+    "character": "regent",
+    "path": "characters/regent/cards/SUMMON_FORTH.md",
+    "type": "card"
+  },
+  "SUNDER": {
+    "character": "defect",
+    "path": "characters/defect/cards/SUNDER.md",
+    "type": "card"
+  },
+  "SUPERCRITICAL": {
+    "character": "defect",
+    "path": "characters/defect/cards/SUPERCRITICAL.md",
+    "type": "card"
+  },
+  "SUPERMASSIVE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SUPERMASSIVE.md",
+    "type": "card"
+  },
+  "SUPPRESS": {
+    "character": "silent",
+    "path": "characters/silent/cards/SUPPRESS.md",
+    "type": "card"
+  },
+  "SURVIVOR": {
+    "character": "silent",
+    "path": "characters/silent/cards/SURVIVOR.md",
+    "type": "card"
+  },
+  "SWEEPING_BEAM": {
+    "character": "defect",
+    "path": "characters/defect/cards/SWEEPING_BEAM.md",
+    "type": "card"
+  },
+  "SWEEPING_GAZE": {
+    "character": "token",
+    "path": "cards/colorless/SWEEPING_GAZE.md",
+    "type": "card"
+  },
+  "SWIFT_POTION": {
+    "character": "unknown",
+    "path": "potions/SWIFT_POTION.md",
+    "type": "potion"
+  },
+  "SWORD_BOOMERANG": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/SWORD_BOOMERANG.md",
+    "type": "card"
+  },
+  "SWORD_OF_JADE": {
+    "character": "colorless",
+    "path": "relics/SWORD_OF_JADE.md",
+    "type": "relic"
+  },
+  "SWORD_OF_STONE": {
+    "character": "colorless",
+    "path": "relics/SWORD_OF_STONE.md",
+    "type": "relic"
+  },
+  "SWORD_SAGE": {
+    "character": "regent",
+    "path": "characters/regent/cards/SWORD_SAGE.md",
+    "type": "card"
+  },
+  "SYMBIOTIC_VIRUS": {
+    "character": "defect",
+    "path": "relics/SYMBIOTIC_VIRUS.md",
+    "type": "relic"
+  },
+  "SYNCHRONIZE": {
+    "character": "defect",
+    "path": "characters/defect/cards/SYNCHRONIZE.md",
+    "type": "card"
+  },
+  "SYNTHESIS": {
+    "character": "defect",
+    "path": "characters/defect/cards/SYNTHESIS.md",
+    "type": "card"
+  },
+  "TACTICIAN": {
+    "character": "silent",
+    "path": "characters/silent/cards/TACTICIAN.md",
+    "type": "card"
+  },
+  "TAG_TEAM": {
+    "character": "colorless",
+    "path": "cards/colorless/TAG_TEAM.md",
+    "type": "card"
+  },
+  "TANK": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TANK.md",
+    "type": "card"
+  },
+  "TANX_S_WHISTLE": {
+    "character": "colorless",
+    "path": "relics/TANX_S_WHISTLE.md",
+    "type": "relic"
+  },
+  "TAUNT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TAUNT.md",
+    "type": "card"
+  },
+  "TEAR_ASUNDER": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TEAR_ASUNDER.md",
+    "type": "card"
+  },
+  "TEA_OF_DISCOURTESY": {
+    "character": "colorless",
+    "path": "relics/TEA_OF_DISCOURTESY.md",
+    "type": "relic"
+  },
+  "TEMPEST": {
+    "character": "defect",
+    "path": "characters/defect/cards/TEMPEST.md",
+    "type": "card"
+  },
+  "TERRAFORMING": {
+    "character": "regent",
+    "path": "characters/regent/cards/TERRAFORMING.md",
+    "type": "card"
+  },
+  "TESLA_COIL": {
+    "character": "defect",
+    "path": "characters/defect/cards/TESLA_COIL.md",
+    "type": "card"
+  },
+  "THE_ABACUS": {
+    "character": "colorless",
+    "path": "relics/THE_ABACUS.md",
+    "type": "relic"
+  },
+  "THE_BOMB": {
+    "character": "colorless",
+    "path": "cards/colorless/THE_BOMB.md",
+    "type": "card"
+  },
+  "THE_BOOT": {
+    "character": "colorless",
+    "path": "relics/THE_BOOT.md",
+    "type": "relic"
+  },
+  "THE_COURIER": {
+    "character": "colorless",
+    "path": "relics/THE_COURIER.md",
+    "type": "relic"
+  },
+  "THE_GAMBIT": {
+    "character": "colorless",
+    "path": "cards/colorless/THE_GAMBIT.md",
+    "type": "card"
+  },
+  "THE_HUNT": {
+    "character": "silent",
+    "path": "characters/silent/cards/THE_HUNT.md",
+    "type": "card"
+  },
+  "THE_SCYTHE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/THE_SCYTHE.md",
+    "type": "card"
+  },
+  "THE_SEALED_THRONE": {
+    "character": "regent",
+    "path": "characters/regent/cards/THE_SEALED_THRONE.md",
+    "type": "card"
+  },
+  "THE_SMITH": {
+    "character": "regent",
+    "path": "characters/regent/cards/THE_SMITH.md",
+    "type": "card"
+  },
+  "THINKING_AHEAD": {
+    "character": "colorless",
+    "path": "cards/colorless/THINKING_AHEAD.md",
+    "type": "card"
+  },
+  "THRASH": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/THRASH.md",
+    "type": "card"
+  },
+  "THROWING_AXE": {
+    "character": "colorless",
+    "path": "relics/THROWING_AXE.md",
+    "type": "relic"
+  },
+  "THRUMMING_HATCHET": {
+    "character": "colorless",
+    "path": "cards/colorless/THRUMMING_HATCHET.md",
+    "type": "card"
+  },
+  "THUNDER": {
+    "character": "defect",
+    "path": "characters/defect/cards/THUNDER.md",
+    "type": "card"
+  },
+  "THUNDERCLAP": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/THUNDERCLAP.md",
+    "type": "card"
+  },
+  "TIME_S_UP": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/TIME_S_UP.md",
+    "type": "card"
+  },
+  "TINGSHA": {
+    "character": "silent",
+    "path": "relics/TINGSHA.md",
+    "type": "relic"
+  },
+  "TINY_MAILBOX": {
+    "character": "colorless",
+    "path": "relics/TINY_MAILBOX.md",
+    "type": "relic"
+  },
+  "TOASTY_MITTENS": {
+    "character": "colorless",
+    "path": "relics/TOASTY_MITTENS.md",
+    "type": "relic"
+  },
+  "TOOLBOX": {
+    "character": "colorless",
+    "path": "relics/TOOLBOX.md",
+    "type": "relic"
+  },
+  "TOOLS_OF_THE_TRADE": {
+    "character": "silent",
+    "path": "characters/silent/cards/TOOLS_OF_THE_TRADE.md",
+    "type": "card"
+  },
+  "TORIC_TOUGHNESS": {
+    "character": "event",
+    "path": "cards/colorless/TORIC_TOUGHNESS.md",
+    "type": "card"
+  },
+  "TOUCH_OF_INSANITY": {
+    "character": "unknown",
+    "path": "potions/TOUCH_OF_INSANITY.md",
+    "type": "potion"
+  },
+  "TOUCH_OF_OROBAS": {
+    "character": "colorless",
+    "path": "relics/TOUCH_OF_OROBAS.md",
+    "type": "relic"
+  },
+  "TOUGH_BANDAGES": {
+    "character": "silent",
+    "path": "relics/TOUGH_BANDAGES.md",
+    "type": "relic"
+  },
+  "TOXIC": {
+    "character": "status",
+    "path": "cards/colorless/TOXIC.md",
+    "type": "card"
+  },
+  "TOXIC_EGG": {
+    "character": "colorless",
+    "path": "relics/TOXIC_EGG.md",
+    "type": "relic"
+  },
+  "TOY_BOX": {
+    "character": "colorless",
+    "path": "relics/TOY_BOX.md",
+    "type": "relic"
+  },
+  "TRACKING": {
+    "character": "silent",
+    "path": "characters/silent/cards/TRACKING.md",
+    "type": "card"
+  },
+  "TRANSFIGURE": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/TRANSFIGURE.md",
+    "type": "card"
+  },
+  "TRASH_TO_TREASURE": {
+    "character": "defect",
+    "path": "characters/defect/cards/TRASH_TO_TREASURE.md",
+    "type": "card"
+  },
+  "TREMBLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TREMBLE.md",
+    "type": "card"
+  },
+  "TRI_BOOMERANG": {
+    "character": "colorless",
+    "path": "relics/TRI_BOOMERANG.md",
+    "type": "relic"
+  },
+  "TRUE_GRIT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TRUE_GRIT.md",
+    "type": "card"
+  },
+  "TUNGSTEN_ROD": {
+    "character": "colorless",
+    "path": "relics/TUNGSTEN_ROD.md",
+    "type": "relic"
+  },
+  "TUNING_FORK": {
+    "character": "colorless",
+    "path": "relics/TUNING_FORK.md",
+    "type": "relic"
+  },
+  "TURBO": {
+    "character": "defect",
+    "path": "characters/defect/cards/TURBO.md",
+    "type": "card"
+  },
+  "TWIN_STRIKE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/TWIN_STRIKE.md",
+    "type": "card"
+  },
+  "TWISTED_FUNNEL": {
+    "character": "silent",
+    "path": "relics/TWISTED_FUNNEL.md",
+    "type": "relic"
+  },
+  "TYRANNY": {
+    "character": "regent",
+    "path": "characters/regent/cards/TYRANNY.md",
+    "type": "card"
+  },
+  "ULTIMATE_DEFEND": {
+    "character": "colorless",
+    "path": "cards/colorless/ULTIMATE_DEFEND.md",
+    "type": "card"
+  },
+  "ULTIMATE_STRIKE": {
+    "character": "colorless",
+    "path": "cards/colorless/ULTIMATE_STRIKE.md",
+    "type": "card"
+  },
+  "UNCEASING_TOP": {
+    "character": "colorless",
+    "path": "relics/UNCEASING_TOP.md",
+    "type": "relic"
+  },
+  "UNCOMMON": {
+    "character": "colorless",
+    "path": "relics/UNCOMMON.md",
+    "type": "relic"
+  },
+  "UNDEATH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/UNDEATH.md",
+    "type": "card"
+  },
+  "UNDYING_SIGIL": {
+    "character": "necrobinder",
+    "path": "relics/UNDYING_SIGIL.md",
+    "type": "relic"
+  },
+  "UNLEASH": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/UNLEASH.md",
+    "type": "card"
+  },
+  "UNMOVABLE": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/UNMOVABLE.md",
+    "type": "card"
+  },
+  "UNRELENTING": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/UNRELENTING.md",
+    "type": "card"
+  },
+  "UNSETTLING_LAMP": {
+    "character": "colorless",
+    "path": "relics/UNSETTLING_LAMP.md",
+    "type": "relic"
+  },
+  "UNTOUCHABLE": {
+    "character": "silent",
+    "path": "characters/silent/cards/UNTOUCHABLE.md",
+    "type": "card"
+  },
+  "UPPERCUT": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/UPPERCUT.md",
+    "type": "card"
+  },
+  "UPROAR": {
+    "character": "defect",
+    "path": "characters/defect/cards/UPROAR.md",
+    "type": "card"
+  },
+  "UP_MY_SLEEVE": {
+    "character": "silent",
+    "path": "characters/silent/cards/UP_MY_SLEEVE.md",
+    "type": "card"
+  },
+  "VAJRA": {
+    "character": "colorless",
+    "path": "relics/VAJRA.md",
+    "type": "relic"
+  },
+  "VAMBRACE": {
+    "character": "colorless",
+    "path": "relics/VAMBRACE.md",
+    "type": "relic"
+  },
+  "VEILPIERCER": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/VEILPIERCER.md",
+    "type": "card"
+  },
+  "VELVET_CHOKER": {
+    "character": "colorless",
+    "path": "relics/VELVET_CHOKER.md",
+    "type": "relic"
+  },
+  "VENERABLE_TEA_SET": {
+    "character": "colorless",
+    "path": "relics/VENERABLE_TEA_SET.md",
+    "type": "relic"
+  },
+  "VENERATE": {
+    "character": "regent",
+    "path": "characters/regent/cards/VENERATE.md",
+    "type": "card"
+  },
+  "VERY_HOT_COCOA": {
+    "character": "colorless",
+    "path": "relics/VERY_HOT_COCOA.md",
+    "type": "relic"
+  },
+  "VEXING_PUZZLEBOX": {
+    "character": "colorless",
+    "path": "relics/VEXING_PUZZLEBOX.md",
+    "type": "relic"
+  },
+  "VICIOUS": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/VICIOUS.md",
+    "type": "card"
+  },
+  "VITRUVIAN_MINION": {
+    "character": "regent",
+    "path": "relics/VITRUVIAN_MINION.md",
+    "type": "relic"
+  },
+  "VOID": {
+    "character": "status",
+    "path": "cards/colorless/VOID.md",
+    "type": "card"
+  },
+  "VOID_FORM": {
+    "character": "regent",
+    "path": "characters/regent/cards/VOID_FORM.md",
+    "type": "card"
+  },
+  "VOLLEY": {
+    "character": "colorless",
+    "path": "cards/colorless/VOLLEY.md",
+    "type": "card"
+  },
+  "VOLTAIC": {
+    "character": "defect",
+    "path": "characters/defect/cards/VOLTAIC.md",
+    "type": "card"
+  },
+  "VULNERABLE_POTION": {
+    "character": "unknown",
+    "path": "potions/VULNERABLE_POTION.md",
+    "type": "potion"
+  },
+  "WAR_HAMMER": {
+    "character": "colorless",
+    "path": "relics/WAR_HAMMER.md",
+    "type": "relic"
+  },
+  "WAR_PAINT": {
+    "character": "colorless",
+    "path": "relics/WAR_PAINT.md",
+    "type": "relic"
+  },
+  "WASTE_AWAY": {
+    "character": "token",
+    "path": "cards/colorless/WASTE_AWAY.md",
+    "type": "card"
+  },
+  "WEAK_POTION": {
+    "character": "unknown",
+    "path": "potions/WEAK_POTION.md",
+    "type": "potion"
+  },
+  "WELL_LAID_PLANS": {
+    "character": "silent",
+    "path": "characters/silent/cards/WELL_LAID_PLANS.md",
+    "type": "card"
+  },
+  "WHETSTONE": {
+    "character": "colorless",
+    "path": "relics/WHETSTONE.md",
+    "type": "relic"
+  },
+  "WHIRLWIND": {
+    "character": "ironclad",
+    "path": "characters/ironclad/cards/WHIRLWIND.md",
+    "type": "card"
+  },
+  "WHISPERING_EARRING": {
+    "character": "colorless",
+    "path": "relics/WHISPERING_EARRING.md",
+    "type": "relic"
+  },
+  "WHISTLE": {
+    "character": "event",
+    "path": "cards/colorless/WHISTLE.md",
+    "type": "card"
+  },
+  "WHITE_BEAST_STATUE": {
+    "character": "colorless",
+    "path": "relics/WHITE_BEAST_STATUE.md",
+    "type": "relic"
+  },
+  "WHITE_NOISE": {
+    "character": "defect",
+    "path": "characters/defect/cards/WHITE_NOISE.md",
+    "type": "card"
+  },
+  "WHITE_STAR": {
+    "character": "colorless",
+    "path": "relics/WHITE_STAR.md",
+    "type": "relic"
+  },
+  "WING_CHARM": {
+    "character": "colorless",
+    "path": "relics/WING_CHARM.md",
+    "type": "relic"
+  },
+  "WISH": {
+    "character": "event",
+    "path": "cards/colorless/WISH.md",
+    "type": "card"
+  },
+  "WISP": {
+    "character": "necrobinder",
+    "path": "characters/necrobinder/cards/WISP.md",
+    "type": "card"
+  },
+  "WOUND": {
+    "character": "status",
+    "path": "cards/colorless/WOUND.md",
+    "type": "card"
+  },
+  "WRAITH_FORM": {
+    "character": "silent",
+    "path": "characters/silent/cards/WRAITH_FORM.md",
+    "type": "card"
+  },
+  "WRITHE": {
+    "character": "curse",
+    "path": "cards/colorless/WRITHE.md",
+    "type": "card"
+  },
+  "WROUGHT_IN_WAR": {
+    "character": "regent",
+    "path": "characters/regent/cards/WROUGHT_IN_WAR.md",
+    "type": "card"
+  },
+  "ZAP": {
+    "character": "defect",
+    "path": "characters/defect/cards/ZAP.md",
+    "type": "card"
+  }
+}

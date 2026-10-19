@@ -1,0 +1,42 @@
+diff --git a/McpMod.cs b/McpMod.cs
+index 3b5ed64..3358ec6 100644
+--- a/McpMod.cs
++++ b/McpMod.cs
+@@ -34,8 +34,37 @@ public static partial class McpMod
+         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+     };
+ 
++    // Several game clients on one machine (e.g. LocalCoop) share this DLL and
++    // its STS2_MCP.conf, so they would all claim the same port. Allow a
++    // per-process override: STS2_MCP_PORT wins; otherwise a LocalCoop client
++    // folder named "client-N" (LOCALCOOP_CONFIG_DIR) maps to DefaultPort + N.
++    private static int? PortFromEnvironment()
++    {
++        string? explicitPort = Environment.GetEnvironmentVariable("STS2_MCP_PORT");
++        if (int.TryParse(explicitPort, out int p) && p is > 0 and <= 65535)
++            return p;
++
++        string? cfgDir = Environment.GetEnvironmentVariable("LOCALCOOP_CONFIG_DIR");
++        if (!string.IsNullOrWhiteSpace(cfgDir))
++        {
++            string leaf = Path.GetFileName(cfgDir.TrimEnd('\\', '/'));
++            if (leaf.StartsWith("client-", StringComparison.OrdinalIgnoreCase)
++                && int.TryParse(leaf.AsSpan("client-".Length), out int n)
++                && n >= 0 && DefaultPort + n <= 65535)
++                return DefaultPort + n;
++        }
++        return null;
++    }
++
+     private static int LoadPort()
+     {
++        int? envPort = PortFromEnvironment();
++        if (envPort.HasValue)
++        {
++            GD.Print($"[STS2 MCP] Using port {envPort.Value} from environment");
++            return envPort.Value;
++        }
++
+         try
+         {
+             string? modDir = Path.GetDirectoryName(
