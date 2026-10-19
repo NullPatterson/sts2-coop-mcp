@@ -1,0 +1,377 @@
+MegaDot v4.5.1.m.12.mono.custom_build - https://godotengine.org
+Vulkan 1.4.312 - Forward+ - Using Device #0: NVIDIA - Quadro P3200
+
+FMOD Sound System: Successfully initialized
+[INFO] Found release_info.json at: /home/nol/sts2-coop-mcp/game/release_info.json
+[INFO] [Sentry.NET] Initialized: env=development, release=v0.107.1
+[INFO] Steamworks: attempting initialization...
+[INFO] Steam is running: True
+[S_API] SteamAPI_Init(): Loaded '/home/nol/.local/share/Steam/linux64/steamclient.so' OK.
+Setting breakpad minidump AppID = 2868840
+SteamInternal_SetMinidumpSteamID:  Caching Steam ID:  76561198265192385 [API loaded no]
+[INFO] Steamworks initialization succeeded!
+[INFO] Steam is enabled, we will write saves to steam storage. Enabled for account: True, app: False 
+[INFO] Registered 11 migrations
+[INFO] Current save versions: PrefsSave v2; ProfileSave v2; SerializableProgress v21; RunHistory v9; SerializableRun v16; SettingsSave v5
+[INFO] Found mod manifest file /home/nol/sts2-coop-mcp/game/mods/STS2_MCP.json
+[INFO] Found mod manifest file /home/nol/sts2-coop-mcp/game/mods/LocalCoop/LocalCoop.json
+[INFO] Found mod manifest file /home/nol/sts2-coop-mcp/game/mods/STS2_MCP/STS2_MCP.json
+[WARN] Could not get Steam Workshop item install info for item 3747911678
+[WARN] Mod STS2_MCP does not declare min game version. Assuming that it is supported.
+[INFO] Loading assembly DLL /home/nol/sts2-coop-mcp/game/mods/STS2_MCP.dll
+[INFO] Calling initializer method of type STS2_MCP.McpMod for STS2_MCP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[STS2 MCP] LocalCoop co-op mode detected; using derived port 15527.
+[STS2 MCP] v0.4.0 server started on http://localhost:15527/
+[INFO] Finished mod initialization for 'STS2 MCP' (STS2_MCP).
+[WARN] Mod STS2_MCP does not declare min game version. Assuming that it is supported.
+[ERROR] Tried to load mod with id STS2_MCP, but a mod is already loaded with that name!
+   at MegaCrit.Sts2.Core.Modding.ModManager.TryLoadMod(Mod mod)
+   at MegaCrit.Sts2.Core.Modding.ModManager.Initialize(IModManagerFileIo fileIo, ModSettings settings, SemanticVersion gameVersion)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Modding.ModManager.Initialize(IModManagerFileIo fileIo, ModSettings settings, SemanticVersion gameVersion)
+   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteVeryEarly()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Helpers.OneTimeInitialization.ExecuteVeryEarly()
+   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartup()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartup()
+   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupWrapper()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Nodes.NGame.GameStartupWrapper()
+   at MegaCrit.Sts2.Core.Nodes.NGame._EnterTree()
+   at Godot.Node.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.CanvasItem.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.NGame.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+
+[WARN] Mod LocalCoop does not declare min game version. Assuming that it is supported.
+[INFO] Loading assembly DLL /home/nol/sts2-coop-mcp/game/mods/LocalCoop/LocalCoop.dll
+[INFO] Calling initializer method of type LocalCoop.Mod.LocalCoopMod for LocalCoop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[INFO] Finished mod initialization for 'LocalCoop' (LocalCoop).
+[INFO]  --- RUNNING MODDED! --- Loaded 2 mods (3 total)
+[Sentry.GDExtension] should_sample callable set
+[WARN] Asset not cached: res://scenes/debug/dev_console.tscn
+[INFO] OVERWRITING cloud saves with local saves.
+[WARN] Asset not cached: res://scenes/cards/card.tscn
+[WARN] Asset not cached: res://scenes/cards/holders/grid_card_holder.tscn
+[INFO] AtlasManager: Loaded ui_atlas with 102 sprites
+[INFO] AtlasManager: Loaded compressed with 45 sprites
+[INFO] Loading locale path=res://localization/eng
+[INFO] ModelIdSerializationCache initialized. Categories: 20 Entries: 1622 Epochs: 57 Hash: 3954186980
+[Sentry.GDExtension] Initialized: env=playtesters, release=v0.107.1
+[INFO] Window changed! New size: (1854, 1011)
+[INFO] MuteInBackground: FocusIn received [tween=False, msSinceFocusOut=3147, windowFocused=True]
+[INFO] Applying display settings...
+  FULLSCREEN: False
+  ASPECT_RATIO: (SixteenByNine)
+  TARGET_DISPLAY: (0)
+  WINDOW_SIZE: (1390, 786)
+  POSITION: (66, 69)
+[INFO] [Display] Min size: (64, 64) Max size: (32768, 32768)
+[INFO] Window changed! New size: (1854, 1011)
+[INFO] [Display] Attempting WINDOWED mode on Display 1 of 2 at position (66, 69)
+[INFO] [Display] SUCCESS: (1390, 786) Windowed mode in Display 0: Position (1986, 189) ((66, 69))
+[INFO] [Display] New size: (1390, 786) position: (1986, 189)
+[INFO] VSync: Adaptive
+[INFO] SteamStatsManager: Global stats received (found=True), architect damage = 389977476323
+[INFO] === Godot OS Debug Information ===
+Timestamp: 09/18/2026 10:23:07
+OS: Linux
+OS Version: 24.04
+Distribution Name: Ubuntu 24.04.3 LTS
+Device Model: GenericDevice
+Is Debug Build: False
+Is Sandboxed: False
+Executable Path: /home/nol/sts2-coop-mcp/game/SlayTheSpire2
+Data Directory: /home/nol/.local/share
+User Data Directory: /home/nol/.local/share/SlayTheSpire2
+Command Line Args: 
+User Command Line Args: 
+OS Locale: en_US
+OS Language: en
+Game Locale: en_US
+Is UserFS Persistent: True
+Is Stdout Verbose: False
+Is Low Processor Usage Mode: False
+Architecture: x86_64
+Engine Version: 4.5.1-m.12 (custom_build)
+Is Editor: False
+Release Version: v0.107.1
+Release Commit: 59260271
+Release Date: 06/18/2026 22:43:56
+Processor Count: 12
+Processor Name: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz
+Main assembly hash: 1692500715
+Rendering device name: Quadro P3200
+Screen info (primary 0):
+  Index 0: Size: (1920, 1080) Orientation: Landscape Scale: 1 DPI: 128 Refresh Rate: 60.05
+  Index 1: Size: (1920, 1200) Orientation: Landscape Scale: 1 DPI: 128 Refresh Rate: 60.05
+Video Memory Used: 0.0B
+Memory Info:
+  physical: 15.5GB
+  free: 2.4GB
+  available: 3.9GB
+  stack: 8.0MB
+  Static Memory Usage: 0.0B
+  Static Memory Peak Usage: 0.0B
+Disk Info:
+  Index 5: Name: / Type: Fixed Format: ext3 Available: 398.9GB Total Free: 422.7GB Total Size: 467.3GB
+  Index 10: Name: /sys/fs/pstore Type: Fixed Format: pstorefs Available: 0.0B Total Free: 0.0B Total Size: 0.0B
+  Index 12: Name: /sys/fs/bpf Type: Fixed Format: bpf_fs Available: 0.0B Total Free: 0.0B Total Size: 0.0B
+  Index 17: Name: /sys/kernel/tracing Type: Fixed Format: tracefs Available: 0.0B Total Free: 0.0B Total Size: 0.0B
+  Index 20: Name: /snap/bare/5 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 128.0KB
+  Index 21: Name: /snap/core20/2866 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 63.9MB
+  Index 22: Name: /snap/core22/2411 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 74.0MB
+  Index 23: Name: /snap/dotnet-sdk/256 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 269.4MB
+  Index 24: Name: /snap/firefox/6565 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 245.3MB
+  Index 25: Name: /snap/core24/1643 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 66.9MB
+  Index 26: Name: /snap/firmware-updater/226 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 16.5MB
+  Index 27: Name: /snap/firmware-updater/216 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 16.5MB
+  Index 28: Name: /snap/gaming-graphics-core24/13 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 242.6MB
+  Index 29: Name: /snap/gnome-42-2204/247 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 0.5GB
+  Index 30: Name: /snap/gnome-42-2204/263 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 0.5GB
+  Index 31: Name: /snap/gnome-46-2404/153 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 0.6GB
+  Index 32: Name: /snap/gtk-common-themes/1535 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 91.8MB
+  Index 33: Name: /snap/mesa-2404/1165 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 395.0MB
+  Index 34: Name: /snap/snap-store/1270 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 10.9MB
+  Index 35: Name: /snap/snap-store/1310 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 15.6MB
+  Index 36: Name: /snap/snapd/25935 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 48.1MB
+  Index 37: Name: /snap/snapd-desktop-integration/315 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 0.6MB
+  Index 38: Name: /snap/snapd/26382 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 48.4MB
+  Index 39: Name: /boot/efi Type: Fixed Format: msdos Available: 1.0GB Total Free: 1.0GB Total Size: 1.0GB
+  Index 48: Name: /snap/gitkraken/323 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 224.9MB
+  Index 50: Name: /snap/core22/2955 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 74.0MB
+  Index 51: Name: /snap/core24/2124 Type: Fixed Format: squashfs Available: 0.0B Total Free: 0.0B Total Size: 66.9MB
+Important Environment Variables:
+  PATH: ~/.dotnet:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+  GODOT_ROOT_DIR: 
+  HOME: ~
+  DYLD_LIBRARY_PATH: 
+  LD_LIBRARY_PATH: 
+Linux Environment:
+  Running under Proton: True
+  PROTON_VERSION: 
+  WINEPREFIX set: False
+  XDG_SESSION_TYPE: x11
+  XDG_CURRENT_DESKTOP: ubuntu:GNOME
+  WAYLAND_DISPLAY: 
+
+[INFO] Window changed! New size: (1390, 749)
+[INFO] Window changed! New size: (1390, 786)
+[INFO] SteamStatsManager: User stats received
+[INFO] SteamStatsManager: User stats received
+[INFO] Wrote 49 bytes to profile.save in steam remote store
+[INFO] Wrote 246368 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 49256 bytes to modded/profile1/saves/current_run_mp.save in steam remote store
+[INFO] Wrote 287 bytes to modded/profile1/saves/prefs.save in steam remote store
+[INFO] Wrote 2953 bytes to modded/profile1/saves/history/1789401894.run in steam remote store
+[INFO] Wrote 2951 bytes to modded/profile1/saves/history/1789402643.run in steam remote store
+[INFO] Profile-scoped data path initialized: user://steam/5495323171043147777/modded/profile1
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = CardStats.[540], Message = Unknown card ID: CARD.FOLLOW_THROUGH, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = EncounterStats.[85], Message = Unknown encounter ID: ENCOUNTER.DOORMAKER_BOSS, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = EnemyStats.[104], Message = Unknown enemy ID: MONSTER.DOORMAKER, IsFatal = False }
+[WARN] Progress parse: ValidationError { Severity = Warning, Path = DiscoveredCards, Message = Unknown CardModel ID: CARD.FOLLOW_THROUGH, IsFatal = False }
+[INFO] [Sentry.NET] Is running modded
+[INFO] [Sentry.NET] Shutting down because event reporting is disabled.
+[INFO] [Sentry.NET] Shutting down
+[Sentry.GDExtension] Shutting down
+[INFO] AtlasManager: Loaded controller_atlas with 112 sprites
+[INFO] Preloading 'IntroLogo' assets... count=3 vfx=0
+[INFO] Preloading 'IntroLogo' Complete: assets=3 time_elapsed=52ms
+[INFO] Preloading 'MainMenuEssentials' assets... count=5 vfx=0
+[INFO] Preloading 'MainMenuEssentials' Complete: assets=5 time_elapsed=224ms
+[WARN] Asset not cached: res://debug_audio/SOTE_Logo_Echoing_ShortTail.mp3
+[STS2 MCP] Instant Mode checkbox injected into settings
+[INFO] [Startup] Time to main menu (Godot ticks): 13246ms
+[INFO] [Startup] Time to main menu: 13,253ms
+[INFO] [Startup] Resource stats (main menu loaded (essential)): StaticMem=0B, VRAM=181.9MB, Objects=7,891, Resources=457, Nodes=1,451, CachedAssets=11
+[INFO] AtlasManager: Loaded epoch_atlas with 57 sprites
+[INFO] AtlasManager: Loaded relic_atlas with 341 sprites
+[INFO] AtlasManager: Loaded relic_outline_atlas with 341 sprites
+[INFO] AtlasManager: Loaded power_atlas with 264 sprites
+[INFO] AtlasManager: Loaded card_atlas with 875 sprites
+[INFO] AtlasManager: Loaded potion_atlas with 63 sprites
+[INFO] AtlasManager: Loaded potion_outline_atlas with 63 sprites
+[INFO] AtlasManager: Loaded stats_screen_atlas with 16 sprites
+[INFO] AtlasManager: Loaded intent_atlas with 310 sprites
+[INFO] AtlasManager: Loaded era_atlas with 27 sprites
+[INFO] Unloading 4 missed cache assets
+[INFO] Preloading 'Common' assets... count=686 vfx=92
+[INFO] [Startup] Resource stats (main menu loaded (complete)): StaticMem=0B, VRAM=410.4MB, Objects=7,855, Resources=455, Nodes=1,449, CachedAssets=5
+[INFO] Preloading 'Common' Complete: assets=778 time_elapsed=3,819ms
+[WARN] Asset not cached: res://scenes/screens/multiplayer_submenu.tscn
+[WARN] Asset not cached: res://scenes/screens/singleplayer_submenu.tscn
+[INFO] Max ascension changed to 0
+[INFO] Max ascension changed to 9
+[INFO] [StartRunLobby (1)] CHARACTER.IRONCLAD ascension set to preferred: 9
+[WARN] Warning: Packet writer is growing from 1024 bytes to 2048 bytes!
+[WARN] Warning: Packet writer is growing from 2048 bytes to 4096 bytes!
+[INFO] Player already has Epoch: NEOW_EPOCH
+[INFO] Player already has Epoch: REGENT1_EPOCH
+[INFO] Player already has Epoch: OROBAS_EPOCH
+[INFO] Player already has Epoch: DARV_EPOCH
+[INFO] Wrote 235162 bytes to path=user://steam/76561198265192385/modded/profile1/saves/progress.save save_dir=user://steam/76561198265192385
+[INFO] Wrote 235162 bytes to modded/profile1/saves/progress.save in steam remote store
+[INFO] Wrote 7525 bytes to path=user://steam/76561198265192385/modded/profile1/saves/history/1789413997.run save_dir=user://steam/76561198265192385
+[INFO] Wrote 7525 bytes to modded/profile1/saves/history/1789413997.run in steam remote store
+[INFO] Saved run history: 1789413997.run
+[INFO] Created Run History entry!
+[WARN] Asset not cached: res://scenes/screens/multiplayer_host_submenu.tscn
+[ERROR] System.InvalidOperationException: Tried to get NetId while not connected!
+   at MegaCrit.Sts2.Core.Multiplayer.NetHostGameService.get_NetId()
+   at MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput.PeerInputSynchronizer..ctor(INetGameService netService)
+   at MegaCrit.Sts2.Core.Multiplayer.Game.Lobby.StartRunLobby..ctor(GameMode gameMode, INetGameService netService, IStartRunLobbyListener lobbyListener, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.CharacterSelect.NCharacterSelectScreen.InitializeMultiplayerAsHost_Patch1(NCharacterSelectScreen this, INetGameService gameService, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHostAsync(GameMode gameMode, Control loadingOverlay, NSubmenuStack stack)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.RunSafely(Task task)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHost(GameMode gameMode)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.OnStandardPressed(NButton _)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.OnReleaseHandler()
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.HandleMouseRelease(InputEvent inputEvent)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl._GuiInput(InputEvent inputEvent)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NSubmenuButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+
+[WARN] Asset not cached: res://scenes/screens/feedback_screen/feedback_screen.tscn
+[INFO] Feedback screen opened
+[WARN] Asset not cached: res://images/atlases/compressed.sprites/feedback/flower.tres
+[INFO] Feedback screen closed
+[INFO] MuteInBackground: environment [displayServer=X11, os=Linux]
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=67, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=6108, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[ERROR] System.InvalidOperationException: Tried to get NetId while not connected!
+   at MegaCrit.Sts2.Core.Multiplayer.NetHostGameService.get_NetId()
+   at MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput.PeerInputSynchronizer..ctor(INetGameService netService)
+   at MegaCrit.Sts2.Core.Multiplayer.Game.Lobby.StartRunLobby..ctor(GameMode gameMode, INetGameService netService, IStartRunLobbyListener lobbyListener, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.CharacterSelect.NCharacterSelectScreen.InitializeMultiplayerAsHost_Patch1(NCharacterSelectScreen this, INetGameService gameService, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHostAsync(GameMode gameMode, Control loadingOverlay, NSubmenuStack stack)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.RunSafely(Task task)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHost(GameMode gameMode)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.OnStandardPressed(NButton _)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.OnReleaseHandler()
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.HandleMouseRelease(InputEvent inputEvent)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl._GuiInput(InputEvent inputEvent)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NSubmenuButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+
+[INFO] Feedback screen opened
+[INFO] Feedback screen closed
+[ERROR] System.InvalidOperationException: Tried to get NetId while not connected!
+   at MegaCrit.Sts2.Core.Multiplayer.NetHostGameService.get_NetId()
+   at MegaCrit.Sts2.Core.Multiplayer.Game.PeerInput.PeerInputSynchronizer..ctor(INetGameService netService)
+   at MegaCrit.Sts2.Core.Multiplayer.Game.Lobby.StartRunLobby..ctor(GameMode gameMode, INetGameService netService, IStartRunLobbyListener lobbyListener, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.CharacterSelect.NCharacterSelectScreen.InitializeMultiplayerAsHost_Patch1(NCharacterSelectScreen this, INetGameService gameService, Int32 maxPlayers)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHostAsync(GameMode gameMode, Control loadingOverlay, NSubmenuStack stack)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.LogTaskExceptions(Task task)
+   at MegaCrit.Sts2.Core.Helpers.TaskHelper.RunSafely(Task task)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.StartHost(GameMode gameMode)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NMultiplayerHostSubmenu.OnStandardPressed(NButton _)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.OnReleaseHandler()
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.HandleMouseRelease(InputEvent inputEvent)
+   at Godot.Callable.<From>g__Trampoline|2_0[T0](Object delegateObj, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.DelegateUtils.InvokeWithVariantArgs(IntPtr delegateGCHandle, Void* trampoline, godot_variant** args, Int32 argc, godot_variant* outRet)
+   at Godot.NativeCalls.godot_icall_2_873(IntPtr method, IntPtr ptr, godot_string_name arg1, ReadOnlySpan`1 arg2, godot_string_name caller)
+   at Godot.GodotObject.EmitSignal(StringName signal, Variant[] args)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl._GuiInput(InputEvent inputEvent)
+   at Godot.Control.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NClickableControl.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.GodotExtensions.NButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at MegaCrit.Sts2.Core.Nodes.Screens.MainMenu.NSubmenuButton.InvokeGodotClassMethod(godot_string_name& method, NativeVariantPtrArgs args, godot_variant& ret)
+   at Godot.Bridge.CSharpInstanceBridge.Call(IntPtr godotObjectGCHandle, godot_string_name* method, godot_variant** args, Int32 argCount, godot_variant_call_error* refCallError, godot_variant* ret)
+
+[INFO] Feedback screen opened
+[WARN] Asset not cached: res://images/atlases/compressed.sprites/feedback/flower_anticipation.tres
+[INFO] Feedback screen closed
+[WARN] Asset not cached: res://scenes/screens/join_friend_submenu.tscn
+[INFO] Attempting to join game with connection initializer LocalCoop.Mod.Runtime.BrokerClientJoinFlow+PlaceholderClientConnectionInitializer
+[INFO] Max ascension changed to 0
+[INFO] Max ascension changed to 9
+[WARN] Asset not cached: res://scenes/ui/remote_lobby_player.tscn
+[DEBUG] [StartRunLobby] Received AscensionChangedMessage, new ascension: 2
+[DEBUG] [StartRunLobby] Received LobbyPlayerChangedCharacterMessage for 5495323171043147776 CHARACTER.IRONCLAD (43256312)
+[WARN] Asset not cached: res://scenes/ui/multiplayer/remote_mouse_cursor.tscn
+[WARN] Asset not cached: res://images/packed/sprite_fonts/star_icon.png
+[WARN] Asset not cached: res://scenes/screens/char_select/char_select_bg_random_character.tscn
+[WARN] Asset not cached: res://images/ui/top_panel/character_icon_random_character.png
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[DEBUG] [StartRunLobby] Received AscensionChangedMessage, new ascension: 1
+[DEBUG] [StartRunLobby] Received AscensionChangedMessage, new ascension: 0
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=4000, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=1213, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=797, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=580, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=133, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=500, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
+[INFO] MuteInBackground: FocusIn received [tween=True, msSinceFocusOut=534, windowFocused=True]
+[INFO] MuteInBackground: Unmuted, restored volume to 0.5
+[INFO] Restored foreground FPS
+[INFO] MuteInBackground: FocusOut received [tween=False, windowFocused=False]
+[INFO] Limiting background FPS to 30
