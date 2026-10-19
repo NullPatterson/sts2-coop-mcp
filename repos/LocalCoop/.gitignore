@@ -1,0 +1,23 @@
+# Build outputs
+bin/
+obj/
+TestResults/
+
+# IDE/editor state
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Local runtime artifacts
+artifacts/
+tmp/
+.localcoop-clients/
+.localcoop-runtime/
+*.log
+*.pid
+
+# Local agent/process notes
+AGENTS.md
+docs/development/
+docs/superpowers/

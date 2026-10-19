@@ -1,0 +1,2962 @@
+{
+  "AKABEKO": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Akabeko",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 206720,
+    "tier": null,
+    "win_rate": null
+  },
+  "ALCHEMICAL_COFFER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Alchemical Coffer",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 23771,
+    "tier": null,
+    "win_rate": null
+  },
+  "AMETHYST_AUBERGINE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Amethyst Aubergine",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 281372,
+    "tier": null,
+    "win_rate": null
+  },
+  "ANCHOR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Anchor",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 398035,
+    "tier": null,
+    "win_rate": null
+  },
+  "ARCANE_SCROLL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Arcane Scroll",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 213481,
+    "tier": null,
+    "win_rate": null
+  },
+  "ARCHAIC_TOOTH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Archaic Tooth",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 127397,
+    "tier": null,
+    "win_rate": null
+  },
+  "ART_OF_WAR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Art of War",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 95075,
+    "tier": null,
+    "win_rate": null
+  },
+  "ASTROLABE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Astrolabe",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 45203,
+    "tier": null,
+    "win_rate": null
+  },
+  "BAG_OF_MARBLES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bag of Marbles",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 344650,
+    "tier": null,
+    "win_rate": null
+  },
+  "BAG_OF_PREPARATION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bag of Preparation",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 403486,
+    "tier": null,
+    "win_rate": null
+  },
+  "BEATING_REMNANT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Beating Remnant",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 82833,
+    "tier": null,
+    "win_rate": null
+  },
+  "BEAUTIFUL_BRACELET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Beautiful Bracelet",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 33922,
+    "tier": null,
+    "win_rate": null
+  },
+  "BELLOWS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bellows",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 124866,
+    "tier": null,
+    "win_rate": null
+  },
+  "BELT_BUCKLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Belt Buckle",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 27488,
+    "tier": null,
+    "win_rate": null
+  },
+  "BIG_HAT": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Big Hat",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 9043,
+    "tier": null,
+    "win_rate": null
+  },
+  "BIG_MUSHROOM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Big Mushroom",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 44100,
+    "tier": null,
+    "win_rate": null
+  },
+  "BIIIG_HUG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Biiig Hug",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 28612,
+    "tier": null,
+    "win_rate": null
+  },
+  "BING_BONG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bing Bong",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 50566,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLACK_BLOOD": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Black Blood",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 28509,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLACK_STAR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Black Star",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 32497,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLESSED_ANTLER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Blessed Antler",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 39903,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLOOD_SOAKED_ROSE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Blood-Soaked Rose",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 31232,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLOOD_VIAL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Blood Vial",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 373743,
+    "tier": null,
+    "win_rate": null
+  },
+  "BONE_FLUTE": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Bone Flute",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 54283,
+    "tier": null,
+    "win_rate": null
+  },
+  "BONE_TEA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bone Tea",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 58477,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOOKMARK": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Bookmark",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 8747,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOOK_OF_FIVE_RINGS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Book of Five Rings",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 271350,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOOK_REPAIR_KNIFE": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Book Repair Knife",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 24727,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOOMING_CONCH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Booming Conch",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 66492,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOUND_PHYLACTERY": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Bound Phylactery",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 471461,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOWLER_HAT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bowler Hat",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 156832,
+    "tier": null,
+    "win_rate": null
+  },
+  "BREAD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bread",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 48003,
+    "tier": null,
+    "win_rate": null
+  },
+  "BRILLIANT_SCARF": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Brilliant Scarf",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 36734,
+    "tier": null,
+    "win_rate": null
+  },
+  "BRIMSTONE": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Brimstone",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 6088,
+    "tier": null,
+    "win_rate": null
+  },
+  "BRONZE_SCALES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bronze Scales",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 372811,
+    "tier": null,
+    "win_rate": null
+  },
+  "BURNING_BLOOD": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Burning Blood",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 564207,
+    "tier": null,
+    "win_rate": null
+  },
+  "BURNING_STICKS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Burning Sticks",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 30867,
+    "tier": null,
+    "win_rate": null
+  },
+  "BYRDPIP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Byrdpip",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 43149,
+    "tier": null,
+    "win_rate": null
+  },
+  "CALLING_BELL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Calling Bell",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 33220,
+    "tier": null,
+    "win_rate": null
+  },
+  "CANDELABRA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Candelabra",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 229102,
+    "tier": null,
+    "win_rate": null
+  },
+  "CAPTAINS_WHEEL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Captain's Wheel",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 100042,
+    "tier": null,
+    "win_rate": null
+  },
+  "CAULDRON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Cauldron",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 9479,
+    "tier": null,
+    "win_rate": null
+  },
+  "CENTENNIAL_PUZZLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Centennial Puzzle",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 364324,
+    "tier": null,
+    "win_rate": null
+  },
+  "CHANDELIER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Chandelier",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 103710,
+    "tier": null,
+    "win_rate": null
+  },
+  "CHARONS_ASHES": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Charon's Ashes",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 11395,
+    "tier": null,
+    "win_rate": null
+  },
+  "CHEMICAL_X": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Chemical X",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 28678,
+    "tier": null,
+    "win_rate": null
+  },
+  "CHOICES_PARADOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Choices Paradox",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 47316,
+    "tier": null,
+    "win_rate": null
+  },
+  "CHOSEN_CHEESE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "The Chosen Cheese",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 147662,
+    "tier": null,
+    "win_rate": null
+  },
+  "CIRCLET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Circlet",
+    "pick_rate": null,
+    "rarity": "Relic",
+    "sample_size": 223,
+    "tier": null,
+    "win_rate": null
+  },
+  "CLAWS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Claws",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 26945,
+    "tier": null,
+    "win_rate": null
+  },
+  "CLOAK_CLASP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Cloak Clasp",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 98709,
+    "tier": null,
+    "win_rate": null
+  },
+  "CRACKED_CORE": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Cracked Core",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 457499,
+    "tier": null,
+    "win_rate": null
+  },
+  "CROSSBOW": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Crossbow",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 37717,
+    "tier": null,
+    "win_rate": null
+  },
+  "CURSED_PEARL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Cursed Pearl",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 141874,
+    "tier": null,
+    "win_rate": null
+  },
+  "DARKSTONE_PERIAPT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Darkstone Periapt",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 20212,
+    "tier": null,
+    "win_rate": null
+  },
+  "DATA_DISK": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Data Disk",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 62588,
+    "tier": null,
+    "win_rate": null
+  },
+  "DAUGHTER_OF_THE_WIND": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Daughter of the Wind",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 67072,
+    "tier": null,
+    "win_rate": null
+  },
+  "DELICATE_FROND": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Delicate Frond",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 30949,
+    "tier": null,
+    "win_rate": null
+  },
+  "DEMON_TONGUE": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Demon Tongue",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 12391,
+    "tier": null,
+    "win_rate": null
+  },
+  "DIAMOND_DIADEM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Diamond Diadem",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 19515,
+    "tier": null,
+    "win_rate": null
+  },
+  "DINGY_RUG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dingy Rug",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 23437,
+    "tier": null,
+    "win_rate": null
+  },
+  "DISTINGUISHED_CAPE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Distinguished Cape",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 34494,
+    "tier": null,
+    "win_rate": null
+  },
+  "DIVINE_DESTINY": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Divine Destiny",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 23368,
+    "tier": null,
+    "win_rate": null
+  },
+  "DIVINE_RIGHT": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Divine Right",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 462113,
+    "tier": null,
+    "win_rate": null
+  },
+  "DOLLYS_MIRROR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dolly's Mirror",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 66710,
+    "tier": null,
+    "win_rate": null
+  },
+  "DRAGON_FRUIT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dragon Fruit",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 44972,
+    "tier": null,
+    "win_rate": null
+  },
+  "DREAM_CATCHER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dream Catcher",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 22234,
+    "tier": null,
+    "win_rate": null
+  },
+  "DRIFTWOOD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Driftwood",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 39448,
+    "tier": null,
+    "win_rate": null
+  },
+  "DUSTY_TOME": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dusty Tome",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 48587,
+    "tier": null,
+    "win_rate": null
+  },
+  "ECTOPLASM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ectoplasm",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 4553,
+    "tier": null,
+    "win_rate": null
+  },
+  "ELECTRIC_SHRYMP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Electric Shrymp",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 52348,
+    "tier": null,
+    "win_rate": null
+  },
+  "EMBER_TEA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ember Tea",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 21317,
+    "tier": null,
+    "win_rate": null
+  },
+  "EMOTION_CHIP": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Emotion Chip",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 9042,
+    "tier": null,
+    "win_rate": null
+  },
+  "EMPTY_CAGE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Empty Cage",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 33149,
+    "tier": null,
+    "win_rate": null
+  },
+  "ETERNAL_FEATHER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Eternal Feather",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 220283,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_ANCHOR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Anchor???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 23190,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_BLOOD_VIAL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Blood Vial???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 19848,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_HAPPY_FLOWER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Happy Flower???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 27444,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_LEES_WAFFLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lee's Waffle???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 18312,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_MANGO": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mango???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 18603,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_MERCHANTS_RUG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "The Merchant's Rug???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 990,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_ORICHALCUM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Orichalcum???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 10056,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_SNECKO_EYE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Snecko Eye???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 1318,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_STRIKE_DUMMY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Strike Dummy???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 10272,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAKE_VENERABLE_TEA_SET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Venerable Tea Set???",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 22804,
+    "tier": null,
+    "win_rate": null
+  },
+  "FENCING_MANUAL": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Fencing Manual",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 57186,
+    "tier": null,
+    "win_rate": null
+  },
+  "FESTIVE_POPPER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Festive Popper",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 328762,
+    "tier": null,
+    "win_rate": null
+  },
+  "FIDDLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fiddle",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 21217,
+    "tier": null,
+    "win_rate": null
+  },
+  "FISHING_ROD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fishing Rod",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 73170,
+    "tier": null,
+    "win_rate": null
+  },
+  "FORGOTTEN_SOUL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Forgotten Soul",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 61662,
+    "tier": null,
+    "win_rate": null
+  },
+  "FRAGRANT_MUSHROOM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fragrant Mushroom",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 90481,
+    "tier": null,
+    "win_rate": null
+  },
+  "FRESNEL_LENS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fresnel Lens",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 84614,
+    "tier": null,
+    "win_rate": null
+  },
+  "FROZEN_EGG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Frozen Egg",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 77624,
+    "tier": null,
+    "win_rate": null
+  },
+  "FUNERARY_MASK": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Funerary Mask",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 29339,
+    "tier": null,
+    "win_rate": null
+  },
+  "FUR_COAT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fur Coat",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 41303,
+    "tier": null,
+    "win_rate": null
+  },
+  "GALACTIC_DUST": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Galactic Dust",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 27503,
+    "tier": null,
+    "win_rate": null
+  },
+  "GAMBLING_CHIP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gambling Chip",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 102310,
+    "tier": null,
+    "win_rate": null
+  },
+  "GAME_PIECE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Game Piece",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 96691,
+    "tier": null,
+    "win_rate": null
+  },
+  "GHOST_SEED": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ghost Seed",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 39070,
+    "tier": null,
+    "win_rate": null
+  },
+  "GIRYA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Girya",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 73197,
+    "tier": null,
+    "win_rate": null
+  },
+  "GLASS_EYE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Glass Eye",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 48677,
+    "tier": null,
+    "win_rate": null
+  },
+  "GLITTER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Glitter",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 52341,
+    "tier": null,
+    "win_rate": null
+  },
+  "GNARLED_HAMMER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gnarled Hammer",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 37810,
+    "tier": null,
+    "win_rate": null
+  },
+  "GOLDEN_COMPASS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Golden Compass",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 56160,
+    "tier": null,
+    "win_rate": null
+  },
+  "GOLDEN_PEARL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Golden Pearl",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 130055,
+    "tier": null,
+    "win_rate": null
+  },
+  "GOLD_PLATED_CABLES": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Gold-Plated Cables",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 21764,
+    "tier": null,
+    "win_rate": null
+  },
+  "GORGET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gorget",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 387671,
+    "tier": null,
+    "win_rate": null
+  },
+  "GREMLIN_HORN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gremlin Horn",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 208017,
+    "tier": null,
+    "win_rate": null
+  },
+  "HAND_DRILL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Hand Drill",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 19708,
+    "tier": null,
+    "win_rate": null
+  },
+  "HAPPY_FLOWER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Happy Flower",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 401084,
+    "tier": null,
+    "win_rate": null
+  },
+  "HEFTY_TABLET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Hefty Tablet",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 172596,
+    "tier": null,
+    "win_rate": null
+  },
+  "HELICAL_DART": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Helical Dart",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 12229,
+    "tier": null,
+    "win_rate": null
+  },
+  "HISTORY_COURSE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "History Course",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 28827,
+    "tier": null,
+    "win_rate": null
+  },
+  "HORN_CLEAT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Horn Cleat",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 220762,
+    "tier": null,
+    "win_rate": null
+  },
+  "ICE_CREAM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ice Cream",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 107231,
+    "tier": null,
+    "win_rate": null
+  },
+  "INFUSED_CORE": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Infused Core",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 25111,
+    "tier": null,
+    "win_rate": null
+  },
+  "INTIMIDATING_HELMET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Intimidating Helmet",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 94710,
+    "tier": null,
+    "win_rate": null
+  },
+  "IRON_CLUB": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Iron Club",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 38671,
+    "tier": null,
+    "win_rate": null
+  },
+  "IVORY_TILE": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Ivory Tile",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 8771,
+    "tier": null,
+    "win_rate": null
+  },
+  "JEWELED_MASK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Jeweled Mask",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 70319,
+    "tier": null,
+    "win_rate": null
+  },
+  "JEWELRY_BOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Jewelry Box",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 41431,
+    "tier": null,
+    "win_rate": null
+  },
+  "JOSS_PAPER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Joss Paper",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 168224,
+    "tier": null,
+    "win_rate": null
+  },
+  "JUZU_BRACELET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Juzu Bracelet",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 296841,
+    "tier": null,
+    "win_rate": null
+  },
+  "KALEIDOSCOPE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Kaleidoscope",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 81295,
+    "tier": null,
+    "win_rate": null
+  },
+  "KIFUDA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Kifuda",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 51707,
+    "tier": null,
+    "win_rate": null
+  },
+  "KUNAI": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Kunai",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 101029,
+    "tier": null,
+    "win_rate": null
+  },
+  "KUSARIGAMA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Kusarigama",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 197685,
+    "tier": null,
+    "win_rate": null
+  },
+  "LANTERN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lantern",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 416267,
+    "tier": null,
+    "win_rate": null
+  },
+  "LARGE_CAPSULE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Large Capsule",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 146628,
+    "tier": null,
+    "win_rate": null
+  },
+  "LASTING_CANDY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lasting Candy",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 151388,
+    "tier": null,
+    "win_rate": null
+  },
+  "LAVA_LAMP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lava Lamp",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 20082,
+    "tier": null,
+    "win_rate": null
+  },
+  "LAVA_ROCK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lava Rock",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 64820,
+    "tier": null,
+    "win_rate": null
+  },
+  "LEAD_PAPERWEIGHT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lead Paperweight",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 139269,
+    "tier": null,
+    "win_rate": null
+  },
+  "LEAFY_POULTICE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Leafy Poultice",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 170881,
+    "tier": null,
+    "win_rate": null
+  },
+  "LEES_WAFFLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lee's Waffle",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 58603,
+    "tier": null,
+    "win_rate": null
+  },
+  "LETTER_OPENER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Letter Opener",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 207126,
+    "tier": null,
+    "win_rate": null
+  },
+  "LIZARD_TAIL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lizard Tail",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 105266,
+    "tier": null,
+    "win_rate": null
+  },
+  "LOOMING_FRUIT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Looming Fruit",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 37959,
+    "tier": null,
+    "win_rate": null
+  },
+  "LORDS_PARASOL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lord's Parasol",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 31021,
+    "tier": null,
+    "win_rate": null
+  },
+  "LOST_COFFER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lost Coffer",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 108167,
+    "tier": null,
+    "win_rate": null
+  },
+  "LOST_WISP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lost Wisp",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 30004,
+    "tier": null,
+    "win_rate": null
+  },
+  "LUCKY_FYSH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lucky Fysh",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 155393,
+    "tier": null,
+    "win_rate": null
+  },
+  "LUNAR_PASTRY": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Lunar Pastry",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 13504,
+    "tier": null,
+    "win_rate": null
+  },
+  "MANGO": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mango",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 103538,
+    "tier": null,
+    "win_rate": null
+  },
+  "MASSIVE_SCROLL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Massive Scroll",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 105941,
+    "tier": null,
+    "win_rate": null
+  },
+  "MAW_BANK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Maw Bank",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 16563,
+    "tier": null,
+    "win_rate": null
+  },
+  "MEAL_TICKET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Meal Ticket",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 297269,
+    "tier": null,
+    "win_rate": null
+  },
+  "MEAT_CLEAVER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Meat Cleaver",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 42295,
+    "tier": null,
+    "win_rate": null
+  },
+  "MEAT_ON_THE_BONE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Meat on the Bone",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 99036,
+    "tier": null,
+    "win_rate": null
+  },
+  "MEMBERSHIP_CARD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Membership Card",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 104888,
+    "tier": null,
+    "win_rate": null
+  },
+  "MERCURY_HOURGLASS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mercury Hourglass",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 206045,
+    "tier": null,
+    "win_rate": null
+  },
+  "METRONOME": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Metronome",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 11462,
+    "tier": null,
+    "win_rate": null
+  },
+  "MINIATURE_CANNON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Miniature Cannon",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 185106,
+    "tier": null,
+    "win_rate": null
+  },
+  "MINIATURE_TENT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Miniature Tent",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 120612,
+    "tier": null,
+    "win_rate": null
+  },
+  "MINI_REGENT": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Mini Regent",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 9971,
+    "tier": null,
+    "win_rate": null
+  },
+  "MOLTEN_EGG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Molten Egg",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 77372,
+    "tier": null,
+    "win_rate": null
+  },
+  "MR_STRUGGLES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mr. Struggles",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 54613,
+    "tier": null,
+    "win_rate": null
+  },
+  "MUMMIFIED_HAND": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mummified Hand",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 106792,
+    "tier": null,
+    "win_rate": null
+  },
+  "MUSIC_BOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Music Box",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 46199,
+    "tier": null,
+    "win_rate": null
+  },
+  "MYSTIC_LIGHTER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mystic Lighter",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 27442,
+    "tier": null,
+    "win_rate": null
+  },
+  "NEOWS_BONES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Neow's Bones",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 131042,
+    "tier": null,
+    "win_rate": null
+  },
+  "NEOWS_TALISMAN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Neow's Talisman",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 36042,
+    "tier": null,
+    "win_rate": null
+  },
+  "NEOWS_TORMENT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Neow's Torment",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 62165,
+    "tier": null,
+    "win_rate": null
+  },
+  "NEW_LEAF": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "New Leaf",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 139601,
+    "tier": null,
+    "win_rate": null
+  },
+  "NINJA_SCROLL": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Ninja Scroll",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 13440,
+    "tier": null,
+    "win_rate": null
+  },
+  "NUNCHAKU": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Nunchaku",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 214069,
+    "tier": null,
+    "win_rate": null
+  },
+  "NUTRITIOUS_OYSTER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Nutritious Oyster",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 55964,
+    "tier": null,
+    "win_rate": null
+  },
+  "NUTRITIOUS_SOUP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Nutritious Soup",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 78344,
+    "tier": null,
+    "win_rate": null
+  },
+  "ODDLY_SMOOTH_STONE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Oddly Smooth Stone",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 388146,
+    "tier": null,
+    "win_rate": null
+  },
+  "OLD_COIN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Old Coin",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 73029,
+    "tier": null,
+    "win_rate": null
+  },
+  "ORANGE_DOUGH": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Orange Dough",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 8929,
+    "tier": null,
+    "win_rate": null
+  },
+  "ORICHALCUM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Orichalcum",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 206191,
+    "tier": null,
+    "win_rate": null
+  },
+  "ORNAMENTAL_FAN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ornamental Fan",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 221868,
+    "tier": null,
+    "win_rate": null
+  },
+  "ORRERY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Orrery",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 62985,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_BLOOD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Blood",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 70683,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_CLAW": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Claw",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 40364,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_EYE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Eye",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 21662,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_FLESH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Flesh",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 94434,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_GROWTH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Growth",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 38036,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_HORN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Horn",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 42259,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_LEGION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Legion",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 41882,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_TEARS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Tears",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 77294,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_TOOTH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Tooth",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 46650,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAELS_WING": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pael's Wing",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 80010,
+    "tier": null,
+    "win_rate": null
+  },
+  "PANDORAS_BOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pandora's Box",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 37867,
+    "tier": null,
+    "win_rate": null
+  },
+  "PANTOGRAPH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pantograph",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 226097,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAPER_KRANE": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Paper Krane",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 16165,
+    "tier": null,
+    "win_rate": null
+  },
+  "PAPER_PHROG": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Paper Phrog",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 41179,
+    "tier": null,
+    "win_rate": null
+  },
+  "PARRYING_SHIELD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Parrying Shield",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 205768,
+    "tier": null,
+    "win_rate": null
+  },
+  "PEAR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pear",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 220361,
+    "tier": null,
+    "win_rate": null
+  },
+  "PENDULUM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pendulum",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 367357,
+    "tier": null,
+    "win_rate": null
+  },
+  "PEN_NIB": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pen Nib",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 211913,
+    "tier": null,
+    "win_rate": null
+  },
+  "PERMAFROST": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Permafrost",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 240107,
+    "tier": null,
+    "win_rate": null
+  },
+  "PETRIFIED_TOAD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Petrified Toad",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 198463,
+    "tier": null,
+    "win_rate": null
+  },
+  "PHIAL_HOLSTER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Phial Holster",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 65361,
+    "tier": null,
+    "win_rate": null
+  },
+  "PHILOSOPHERS_STONE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Philosopher's Stone",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 6281,
+    "tier": null,
+    "win_rate": null
+  },
+  "PHYLACTERY_UNBOUND": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Phylactery Unbound",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 30806,
+    "tier": null,
+    "win_rate": null
+  },
+  "PLANISPHERE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Planisphere",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 164367,
+    "tier": null,
+    "win_rate": null
+  },
+  "POCKETWATCH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pocketwatch",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 94377,
+    "tier": null,
+    "win_rate": null
+  },
+  "POLLINOUS_CORE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pollinous Core",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 41632,
+    "tier": null,
+    "win_rate": null
+  },
+  "POMANDER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pomander",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 67132,
+    "tier": null,
+    "win_rate": null
+  },
+  "POTION_BELT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Potion Belt",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 382689,
+    "tier": null,
+    "win_rate": null
+  },
+  "POWER_CELL": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Power Cell",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 9278,
+    "tier": null,
+    "win_rate": null
+  },
+  "PRAYER_WHEEL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Prayer Wheel",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 99987,
+    "tier": null,
+    "win_rate": null
+  },
+  "PRECARIOUS_SHEARS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Precarious Shears",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 136655,
+    "tier": null,
+    "win_rate": null
+  },
+  "PRECISE_SCISSORS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Precise Scissors",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 82801,
+    "tier": null,
+    "win_rate": null
+  },
+  "PRESERVED_FOG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Preserved Fog",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 42584,
+    "tier": null,
+    "win_rate": null
+  },
+  "PRISMATIC_GEM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Prismatic Gem",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 21548,
+    "tier": null,
+    "win_rate": null
+  },
+  "PUMPKIN_CANDLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Pumpkin Candle",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 33833,
+    "tier": null,
+    "win_rate": null
+  },
+  "PUNCH_DAGGER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Punch Dagger",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 48671,
+    "tier": null,
+    "win_rate": null
+  },
+  "RADIANT_PEARL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Radiant Pearl",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 31903,
+    "tier": null,
+    "win_rate": null
+  },
+  "RAINBOW_RING": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Rainbow Ring",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 98761,
+    "tier": null,
+    "win_rate": null
+  },
+  "RAZOR_TOOTH": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Razor Tooth",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 105269,
+    "tier": null,
+    "win_rate": null
+  },
+  "RED_MASK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Red Mask",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 339829,
+    "tier": null,
+    "win_rate": null
+  },
+  "RED_SKULL": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Red Skull",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 68327,
+    "tier": null,
+    "win_rate": null
+  },
+  "REGALITE": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Regalite",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 20861,
+    "tier": null,
+    "win_rate": null
+  },
+  "REGAL_PILLOW": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Regal Pillow",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 383046,
+    "tier": null,
+    "win_rate": null
+  },
+  "REPTILE_TRINKET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Reptile Trinket",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 197573,
+    "tier": null,
+    "win_rate": null
+  },
+  "RINGING_TRIANGLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ringing Triangle",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 23964,
+    "tier": null,
+    "win_rate": null
+  },
+  "RING_OF_THE_DRAKE": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Ring of the Drake",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 22363,
+    "tier": null,
+    "win_rate": null
+  },
+  "RING_OF_THE_SNAKE": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Ring of the Snake",
+    "pick_rate": null,
+    "rarity": "Starter Relic",
+    "sample_size": 572951,
+    "tier": null,
+    "win_rate": null
+  },
+  "RIPPLE_BASIN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ripple Basin",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 181022,
+    "tier": null,
+    "win_rate": null
+  },
+  "ROYAL_POISON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Royal Poison",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 20161,
+    "tier": null,
+    "win_rate": null
+  },
+  "ROYAL_STAMP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Royal Stamp",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 66627,
+    "tier": null,
+    "win_rate": null
+  },
+  "RUINED_HELMET": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Ruined Helmet",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 15712,
+    "tier": null,
+    "win_rate": null
+  },
+  "RUNIC_CAPACITOR": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Runic Capacitor",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 16266,
+    "tier": null,
+    "win_rate": null
+  },
+  "RUNIC_PYRAMID": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Runic Pyramid",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 31209,
+    "tier": null,
+    "win_rate": null
+  },
+  "SAI": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sai",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 54370,
+    "tier": null,
+    "win_rate": null
+  },
+  "SAND_CASTLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sand Castle",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 44060,
+    "tier": null,
+    "win_rate": null
+  },
+  "SCREAMING_FLAGON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Screaming Flagon",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 20454,
+    "tier": null,
+    "win_rate": null
+  },
+  "SCROLL_BOXES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Scroll Boxes",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 132726,
+    "tier": null,
+    "win_rate": null
+  },
+  "SEAL_OF_GOLD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Seal of Gold",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 27114,
+    "tier": null,
+    "win_rate": null
+  },
+  "SEA_GLASS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sea Glass",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 26929,
+    "tier": null,
+    "win_rate": null
+  },
+  "SELF_FORMING_CLAY": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Self-Forming Clay",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 27066,
+    "tier": null,
+    "win_rate": null
+  },
+  "SERE_TALON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sere Talon",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 24737,
+    "tier": null,
+    "win_rate": null
+  },
+  "SHOVEL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Shovel",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 77163,
+    "tier": null,
+    "win_rate": null
+  },
+  "SHURIKEN": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Shuriken",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 101375,
+    "tier": null,
+    "win_rate": null
+  },
+  "SIGNET_RING": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Signet Ring",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 53610,
+    "tier": null,
+    "win_rate": null
+  },
+  "SILKEN_TRESS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Silken Tress",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 114860,
+    "tier": null,
+    "win_rate": null
+  },
+  "SILVER_CRUCIBLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Silver Crucible",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 58676,
+    "tier": null,
+    "win_rate": null
+  },
+  "SLING_OF_COURAGE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sling of Courage",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 20479,
+    "tier": null,
+    "win_rate": null
+  },
+  "SMALL_CAPSULE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Small Capsule",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 85591,
+    "tier": null,
+    "win_rate": null
+  },
+  "SNECKO_EYE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Snecko Eye",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 7064,
+    "tier": null,
+    "win_rate": null
+  },
+  "SNECKO_SKULL": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Snecko Skull",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 57142,
+    "tier": null,
+    "win_rate": null
+  },
+  "SOZU": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sozu",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 10795,
+    "tier": null,
+    "win_rate": null
+  },
+  "SPARKLING_ROUGE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sparkling Rouge",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 212259,
+    "tier": null,
+    "win_rate": null
+  },
+  "SPIKED_GAUNTLETS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Spiked Gauntlets",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 32010,
+    "tier": null,
+    "win_rate": null
+  },
+  "STONE_CALENDAR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Stone Calendar",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 96207,
+    "tier": null,
+    "win_rate": null
+  },
+  "STONE_CRACKER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Stone Cracker",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 211525,
+    "tier": null,
+    "win_rate": null
+  },
+  "STONE_HUMIDIFIER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Stone Humidifier",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 60334,
+    "tier": null,
+    "win_rate": null
+  },
+  "STORYBOOK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Storybook",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 43071,
+    "tier": null,
+    "win_rate": null
+  },
+  "STRAWBERRY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Strawberry",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 385189,
+    "tier": null,
+    "win_rate": null
+  },
+  "STRIKE_DUMMY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Strike Dummy",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 358252,
+    "tier": null,
+    "win_rate": null
+  },
+  "STURDY_CLAMP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sturdy Clamp",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 106003,
+    "tier": null,
+    "win_rate": null
+  },
+  "SWORD_OF_JADE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sword of Jade",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 42035,
+    "tier": null,
+    "win_rate": null
+  },
+  "SWORD_OF_STONE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Sword of Stone",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 92079,
+    "tier": null,
+    "win_rate": null
+  },
+  "SYMBIOTIC_VIRUS": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Symbiotic Virus",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 25901,
+    "tier": null,
+    "win_rate": null
+  },
+  "TANXS_WHISTLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tanx's Whistle",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 28876,
+    "tier": null,
+    "win_rate": null
+  },
+  "TEA_OF_DISCOURTESY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tea of Discourtesy",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 46510,
+    "tier": null,
+    "win_rate": null
+  },
+  "THE_ABACUS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "The Abacus",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 22778,
+    "tier": null,
+    "win_rate": null
+  },
+  "THE_BOOT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "The Boot",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 18489,
+    "tier": null,
+    "win_rate": null
+  },
+  "THE_COURIER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "The Courier",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 93432,
+    "tier": null,
+    "win_rate": null
+  },
+  "THROWING_AXE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Throwing Axe",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 50689,
+    "tier": null,
+    "win_rate": null
+  },
+  "TINGSHA": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Tingsha",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 34373,
+    "tier": null,
+    "win_rate": null
+  },
+  "TINY_MAILBOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tiny Mailbox",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 182820,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOASTY_MITTENS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Toasty Mittens",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 15092,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOOLBOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Toolbox",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 39240,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOUCH_OF_OROBAS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Touch of Orobas",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 113677,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOUGH_BANDAGES": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Tough Bandages",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 15639,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOXIC_EGG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Toxic Egg",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 80713,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOY_BOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Toy Box",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 27745,
+    "tier": null,
+    "win_rate": null
+  },
+  "TRI_BOOMERANG": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tri-Boomerang",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 51881,
+    "tier": null,
+    "win_rate": null
+  },
+  "TUNGSTEN_ROD": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tungsten Rod",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 85630,
+    "tier": null,
+    "win_rate": null
+  },
+  "TUNING_FORK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Tuning Fork",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 210706,
+    "tier": null,
+    "win_rate": null
+  },
+  "TWISTED_FUNNEL": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Twisted Funnel",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 27140,
+    "tier": null,
+    "win_rate": null
+  },
+  "UNCEASING_TOP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Unceasing Top",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 97471,
+    "tier": null,
+    "win_rate": null
+  },
+  "UNDYING_SIGIL": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Undying Sigil",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 7758,
+    "tier": null,
+    "win_rate": null
+  },
+  "UNSETTLING_LAMP": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Unsettling Lamp",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 95969,
+    "tier": null,
+    "win_rate": null
+  },
+  "VAJRA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Vajra",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 389452,
+    "tier": null,
+    "win_rate": null
+  },
+  "VAMBRACE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Vambrace",
+    "pick_rate": null,
+    "rarity": "Uncommon Relic",
+    "sample_size": 213132,
+    "tier": null,
+    "win_rate": null
+  },
+  "VELVET_CHOKER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Velvet Choker",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 3802,
+    "tier": null,
+    "win_rate": null
+  },
+  "VENERABLE_TEA_SET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Venerable Tea Set",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 378883,
+    "tier": null,
+    "win_rate": null
+  },
+  "VERY_HOT_COCOA": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Very Hot Cocoa",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 114350,
+    "tier": null,
+    "win_rate": null
+  },
+  "VEXING_PUZZLEBOX": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Vexing Puzzlebox",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 91860,
+    "tier": null,
+    "win_rate": null
+  },
+  "VITRUVIAN_MINION": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Vitruvian Minion",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 5297,
+    "tier": null,
+    "win_rate": null
+  },
+  "WAR_HAMMER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "War Hammer",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 29289,
+    "tier": null,
+    "win_rate": null
+  },
+  "WAR_PAINT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "War Paint",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 391134,
+    "tier": null,
+    "win_rate": null
+  },
+  "WHETSTONE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Whetstone",
+    "pick_rate": null,
+    "rarity": "Common Relic",
+    "sample_size": 383188,
+    "tier": null,
+    "win_rate": null
+  },
+  "WHISPERING_EARRING": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Whispering Earring",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 42307,
+    "tier": null,
+    "win_rate": null
+  },
+  "WHITE_BEAST_STATUE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "White Beast Statue",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 74013,
+    "tier": null,
+    "win_rate": null
+  },
+  "WHITE_STAR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "White Star",
+    "pick_rate": null,
+    "rarity": "Rare Relic",
+    "sample_size": 66972,
+    "tier": null,
+    "win_rate": null
+  },
+  "WINGED_BOOTS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Winged Boots",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 18756,
+    "tier": null,
+    "win_rate": null
+  },
+  "WING_CHARM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Wing Charm",
+    "pick_rate": null,
+    "rarity": "Shop Relic",
+    "sample_size": 23281,
+    "tier": null,
+    "win_rate": null
+  },
+  "WONGOS_MYSTERY_TICKET": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Wongo's Mystery Ticket",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 17742,
+    "tier": null,
+    "win_rate": null
+  },
+  "WONGO_CUSTOMER_APPRECIATION_BADGE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Wongo Customer Appreciation Badge",
+    "pick_rate": null,
+    "rarity": "Event Relic",
+    "sample_size": 31,
+    "tier": null,
+    "win_rate": null
+  },
+  "YUMMY_COOKIE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Yummy Cookie",
+    "pick_rate": null,
+    "rarity": "Ancient Relic",
+    "sample_size": 124260,
+    "tier": null,
+    "win_rate": null
+  }
+}

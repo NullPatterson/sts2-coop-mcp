@@ -1,0 +1,632 @@
+{
+  "ASHWATER": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Ashwater",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 11868,
+    "tier": null,
+    "win_rate": null
+  },
+  "ATTACK_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Attack Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 17732,
+    "tier": null,
+    "win_rate": null
+  },
+  "BEETLE_JUICE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Beetle Juice",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 6098,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLESSING_OF_THE_FORGE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Blessing of the Forge",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 32730,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLOCK_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Block Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 26931,
+    "tier": null,
+    "win_rate": null
+  },
+  "BLOOD_POTION": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Blood Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 13506,
+    "tier": null,
+    "win_rate": null
+  },
+  "BONE_BREW": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Bone Brew",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 1290,
+    "tier": null,
+    "win_rate": null
+  },
+  "BOTTLED_POTENTIAL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Bottled Potential",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 11199,
+    "tier": null,
+    "win_rate": null
+  },
+  "CLARITY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Clarity Extract",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 16274,
+    "tier": null,
+    "win_rate": null
+  },
+  "COLORLESS_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Colorless Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 15637,
+    "tier": null,
+    "win_rate": null
+  },
+  "COSMIC_CONCOCTION": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Cosmic Concoction",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 772,
+    "tier": null,
+    "win_rate": null
+  },
+  "CUNNING_POTION": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Cunning Potion",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 2116,
+    "tier": null,
+    "win_rate": null
+  },
+  "CURE_ALL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Cure All",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 10273,
+    "tier": null,
+    "win_rate": null
+  },
+  "DEXTERITY_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Dexterity Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 56931,
+    "tier": null,
+    "win_rate": null
+  },
+  "DISTILLED_CHAOS": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Distilled Chaos",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 3234,
+    "tier": null,
+    "win_rate": null
+  },
+  "DROPLET_OF_PRECOGNITION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Droplet of Precognition",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 9266,
+    "tier": null,
+    "win_rate": null
+  },
+  "DUPLICATOR": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Duplicator",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 41281,
+    "tier": null,
+    "win_rate": null
+  },
+  "ENERGY_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Energy Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 69626,
+    "tier": null,
+    "win_rate": null
+  },
+  "ENTROPIC_BREW": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Entropic Brew",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 5390,
+    "tier": null,
+    "win_rate": null
+  },
+  "ESSENCE_OF_DARKNESS": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Essence of Darkness",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 1291,
+    "tier": null,
+    "win_rate": null
+  },
+  "EXPLOSIVE_AMPOULE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Explosive Ampoule",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 41816,
+    "tier": null,
+    "win_rate": null
+  },
+  "FAIRY_IN_A_BOTTLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fairy in a Bottle",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 56249,
+    "tier": null,
+    "win_rate": null
+  },
+  "FIRE_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fire Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 43743,
+    "tier": null,
+    "win_rate": null
+  },
+  "FLEX_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Flex Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 99788,
+    "tier": null,
+    "win_rate": null
+  },
+  "FOCUS_POTION": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Focus Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 8087,
+    "tier": null,
+    "win_rate": null
+  },
+  "FORTIFIER": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fortifier",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 32345,
+    "tier": null,
+    "win_rate": null
+  },
+  "FOUL_POTION": {
+    "character": "event",
+    "codex_score": null,
+    "name": "Foul Potion",
+    "pick_rate": null,
+    "rarity": "Event",
+    "sample_size": 19943,
+    "tier": null,
+    "win_rate": null
+  },
+  "FRUIT_JUICE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fruit Juice",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 1461,
+    "tier": null,
+    "win_rate": null
+  },
+  "FYSH_OIL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Fysh Oil",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 18287,
+    "tier": null,
+    "win_rate": null
+  },
+  "GAMBLERS_BREW": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gambler's Brew",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 26349,
+    "tier": null,
+    "win_rate": null
+  },
+  "GHOST_IN_A_JAR": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Ghost in a Jar",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 4529,
+    "tier": null,
+    "win_rate": null
+  },
+  "GIGANTIFICATION_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Gigantification Potion",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 20441,
+    "tier": null,
+    "win_rate": null
+  },
+  "GLOWWATER_POTION": {
+    "character": "event",
+    "codex_score": null,
+    "name": "Glowwater Potion",
+    "pick_rate": null,
+    "rarity": "Event",
+    "sample_size": 6763,
+    "tier": null,
+    "win_rate": null
+  },
+  "HEART_OF_IRON": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Heart of Iron",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 8469,
+    "tier": null,
+    "win_rate": null
+  },
+  "KINGS_COURAGE": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "King's Courage",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 3431,
+    "tier": null,
+    "win_rate": null
+  },
+  "LIQUID_BRONZE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Liquid Bronze",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 16675,
+    "tier": null,
+    "win_rate": null
+  },
+  "LIQUID_MEMORIES": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Liquid Memories",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 9345,
+    "tier": null,
+    "win_rate": null
+  },
+  "LUCKY_TONIC": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Lucky Tonic",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 18903,
+    "tier": null,
+    "win_rate": null
+  },
+  "MAZALETHS_GIFT": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Mazaleth's Gift",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 10519,
+    "tier": null,
+    "win_rate": null
+  },
+  "OROBIC_ACID": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Orobic Acid",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 3810,
+    "tier": null,
+    "win_rate": null
+  },
+  "POISON_POTION": {
+    "character": "silent",
+    "codex_score": null,
+    "name": "Poison Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 4740,
+    "tier": null,
+    "win_rate": null
+  },
+  "POTION_OF_BINDING": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Potion of Binding",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 12019,
+    "tier": null,
+    "win_rate": null
+  },
+  "POTION_OF_CAPACITY": {
+    "character": "defect",
+    "codex_score": null,
+    "name": "Potion of Capacity",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 6998,
+    "tier": null,
+    "win_rate": null
+  },
+  "POTION_OF_DOOM": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Potion of Doom",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 6196,
+    "tier": null,
+    "win_rate": null
+  },
+  "POTION_SHAPED_ROCK": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Potion-Shaped Rock",
+    "pick_rate": null,
+    "rarity": "Token",
+    "sample_size": 17435,
+    "tier": null,
+    "win_rate": null
+  },
+  "POT_OF_GHOULS": {
+    "character": "necrobinder",
+    "codex_score": null,
+    "name": "Pot of Ghouls",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 1338,
+    "tier": null,
+    "win_rate": null
+  },
+  "POWDERED_DEMISE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Powdered Demise",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 15361,
+    "tier": null,
+    "win_rate": null
+  },
+  "POWER_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Power Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 20811,
+    "tier": null,
+    "win_rate": null
+  },
+  "RADIANT_TINCTURE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Radiant Tincture",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 23181,
+    "tier": null,
+    "win_rate": null
+  },
+  "REGEN_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Regen Potion",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 11547,
+    "tier": null,
+    "win_rate": null
+  },
+  "SHACKLING_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Shackling Potion",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 6669,
+    "tier": null,
+    "win_rate": null
+  },
+  "SHIP_IN_A_BOTTLE": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Ship in a Bottle",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 3642,
+    "tier": null,
+    "win_rate": null
+  },
+  "SKILL_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Skill Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 16897,
+    "tier": null,
+    "win_rate": null
+  },
+  "SNECKO_OIL": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Snecko Oil",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 6510,
+    "tier": null,
+    "win_rate": null
+  },
+  "SOLDIERS_STEW": {
+    "character": "ironclad",
+    "codex_score": null,
+    "name": "Soldier's Stew",
+    "pick_rate": null,
+    "rarity": "Rare",
+    "sample_size": 2009,
+    "tier": null,
+    "win_rate": null
+  },
+  "SPEED_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Speed Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 93850,
+    "tier": null,
+    "win_rate": null
+  },
+  "STABLE_SERUM": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Stable Serum",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 52496,
+    "tier": null,
+    "win_rate": null
+  },
+  "STAR_POTION": {
+    "character": "regent",
+    "codex_score": null,
+    "name": "Star Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 15328,
+    "tier": null,
+    "win_rate": null
+  },
+  "STRENGTH_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Strength Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 58496,
+    "tier": null,
+    "win_rate": null
+  },
+  "SWIFT_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Swift Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 42274,
+    "tier": null,
+    "win_rate": null
+  },
+  "TOUCH_OF_INSANITY": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Touch of Insanity",
+    "pick_rate": null,
+    "rarity": "Uncommon",
+    "sample_size": 35105,
+    "tier": null,
+    "win_rate": null
+  },
+  "VULNERABLE_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Vulnerable Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 65148,
+    "tier": null,
+    "win_rate": null
+  },
+  "WEAK_POTION": {
+    "character": "shared",
+    "codex_score": null,
+    "name": "Weak Potion",
+    "pick_rate": null,
+    "rarity": "Common",
+    "sample_size": 32825,
+    "tier": null,
+    "win_rate": null
+  }
+}

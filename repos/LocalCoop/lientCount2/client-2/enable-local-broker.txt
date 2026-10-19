@@ -1,0 +1,7 @@
+role=client
+clientIndex=2
+playerSlot=2
+inputMode=auto
+controllerClientCount=4
+endpoint=127.0.0.1:38989
+sessionId=local-test
