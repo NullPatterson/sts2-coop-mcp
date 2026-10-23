@@ -414,10 +414,13 @@ public static partial class McpMod
     {
         bool inCombat = CombatManager.Instance.IsInProgress;
         var players = new List<Dictionary<string, object?>>();
-        foreach (var player in runState.Players)
+        for (int i = 0; i < runState.Players.Count; i++)
         {
+            var player = runState.Players[i];
             var entry = new Dictionary<string, object?>
             {
+                // Stable for the run; pass as use_potion's target to aim an ally potion here.
+                ["player_id"] = $"player_{i}",
                 ["character"] = SafeGetText(() => player.Character.Title),
                 ["is_local"] = LocalContext.IsMe(player),
                 ["hp"] = player.Creature.CurrentHp,

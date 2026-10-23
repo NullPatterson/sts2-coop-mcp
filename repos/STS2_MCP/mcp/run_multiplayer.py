@@ -13,6 +13,7 @@ different model/tunnel; characters are distinct by default.
 players.json (list, one entry per client; missing keys fall back to CLI flags):
   [{"model": "Qwen/Qwen3-32B-AWQ", "base_url": "http://localhost:8001/v1", "character": "IRONCLAD"},
    {"model": "Qwen/Qwen3-8B",      "base_url": "http://localhost:8002/v1", "character": "SILENT"}]
+  Optional per-client keys: "prompt_mode" (singleplayer|multiplayer|auto), "comms" (see comms.py).
 """
 import argparse
 import json
@@ -53,6 +54,13 @@ def main():
     ap.add_argument("--stagger", type=float, default=5.0, help="Seconds between starting agents (host first).")
     ap.add_argument("--single-player", action="store_true",
                     help="Debug: run without --multiplayer (each client plays its own solo run).")
+    ap.add_argument("--prompt-mode", default="auto", choices=["auto", "singleplayer", "multiplayer"],
+                    help="System prompt for every agent ('auto' follows --single-player). "
+                         "Per-client override: \"prompt_mode\" in --config.")
+    ap.add_argument("--comms", default="none",
+                    help="Communication method for every agent: none, blackboard, ... "
+                         "(see comms.py; default 'none'). "
+                         "Per-client override: \"comms\" in --config.")
     args = ap.parse_args()
 
     players = json.loads(Path(args.config).read_text()) if args.config else []
@@ -62,6 +70,13 @@ def main():
     players = (players + [{}] * n)[:n]
 
     chars = random.sample(CHARACTERS, n)
+
+    # --comms blackboard: one fresh board file per session, shared by every agent.
+    board_path = HERE / ".blackboard" / f"board-{time.strftime('%Y%m%d-%H%M%S')}.jsonl"
+    if any(pl.get("comms", args.comms) == "blackboard" for pl in players):
+        board_path.parent.mkdir(parents=True, exist_ok=True)
+        board_path.touch()
+        print(f"[launcher] blackboard: {board_path}", flush=True)
     procs = []
     try:
         for i, pl in enumerate(players):
@@ -78,7 +93,10 @@ def main():
                    "--port", str(port),
                    "--provider", pl.get("provider", args.provider),
                    "--character", pl.get("character", chars[i]),
-                   "--runs", str(args.runs)]
+                   "--runs", str(args.runs),
+                   "--prompt-mode", pl.get("prompt_mode", args.prompt_mode),
+                   "--comms", pl.get("comms", args.comms),
+                   "--board-path", str(board_path)]
             if args.max_turns is not None:
                 cmd += ["--max-turns", str(args.max_turns)]
             model = pl.get("model", args.model)

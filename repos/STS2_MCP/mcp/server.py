@@ -333,7 +333,9 @@ async def use_potion(slot: int, target: str | None = None) -> str:
 
     Args:
         slot: Potion slot index (as shown in game state).
-        target: Entity ID of the target enemy (e.g. "JAW_WORM_0"). Required for enemy-targeted potions.
+        target: Entity ID of the target enemy, exactly as shown in the
+            state. Required for potions whose target_type is AnyEnemy; omit it for
+            potions that affect you (Self / AnyPlayer / AnyAlly).
     """
     body: dict = {"action": "use_potion", "slot": slot}
     if target is not None:
@@ -828,9 +830,16 @@ async def mp_combat_undo_end_turn() -> str:
 async def mp_use_potion(slot: int, target: str | None = None) -> str:
     """[Multiplayer] Use a potion from the local player's potion slots.
 
+    Check the potion's target_type in the state to know what 'target' means:
+    - AnyEnemy: target is required, the enemy's entity_id exactly as shown in the state.
+    - AnyAlly / AnyPlayer: target is optional. Omit it to use the potion on
+      yourself, or pass a teammate's player_id from the players list
+      (e.g. "player_1") to use it on them.
+    - Self or no target: omit target.
+
     Args:
         slot: Potion slot index (as shown in game state).
-        target: Entity ID of the target enemy. Required for enemy-targeted potions.
+        target: Enemy entity_id, or a teammate's player_id for ally potions.
     """
     body: dict = {"action": "use_potion", "slot": slot}
     if target is not None:

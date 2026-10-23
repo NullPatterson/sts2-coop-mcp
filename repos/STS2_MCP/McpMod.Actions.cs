@@ -204,6 +204,7 @@ public static partial class McpMod
 
         // Resolve target
         Creature? target = null;
+        string? allyName = null;  // set when an ally potion is aimed at a teammate
         var combatState = player.Creature.CombatState;
 
         switch (potion.TargetType)
@@ -219,9 +220,29 @@ public static partial class McpMod
                     return Error($"Target '{targetId}' not found among alive enemies");
                 break;
             case TargetType.Self:
+                target = player.Creature;
+                break;
             case TargetType.AnyAlly:
             case TargetType.AnyPlayer:
+                // Co-op: a 'target' of "player_<i>" (the player_id from the state's
+                // players list) aims the potion at that teammate. Anything else
+                // (omitted, "self", or a stray enemy id) uses it on yourself, as before.
                 target = player.Creature;
+                if (data.TryGetValue("target", out var allyElem)
+                    && allyElem.ValueKind == JsonValueKind.String)
+                {
+                    string allyId = (allyElem.GetString() ?? "").Trim();
+                    if (allyId.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        var ally = ResolvePlayerTarget(player, allyId);
+                        if (ally == null)
+                            return Error($"Ally target '{allyId}' not found. Use a player_id from the players list (e.g. \"player_1\"), or omit target to use it on yourself.");
+                        if (!ally.Creature.IsAlive)
+                            return Error($"Ally target '{allyId}' is dead");
+                        target = ally.Creature;
+                        allyName = SafeGetText(() => ally.Character.Title);
+                    }
+                }
                 break;
             default:
                 target = null;
@@ -233,7 +254,9 @@ public static partial class McpMod
         string targetMsg = potion.TargetType switch
         {
             TargetType.AnyEnemy => $" targeting {SafeGetText(() => target?.Monster?.Title) ?? "enemy"}",
-            TargetType.Self or TargetType.AnyPlayer or TargetType.AnyAlly => " on self",
+            TargetType.Self => " on self",
+            TargetType.AnyPlayer or TargetType.AnyAlly =>
+                allyName != null ? $" on ally {allyName}" : " on self",
             _ => ""
         };
 
@@ -1049,6 +1072,19 @@ public static partial class McpMod
 
         return FindAll<NProceedButton>(screen)
             .FirstOrDefault(IsControlVisibleOrActionable);
+    }
+
+    // "player_1" or "1" -> that entry of the run's player list (same order as the
+    // state's "players" array, which reports each entry's player_id).
+    private static Player? ResolvePlayerTarget(Player self, string id)
+    {
+        string s = id;
+        if (s.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase))
+            s = s.Substring("player_".Length);
+        if (!int.TryParse(s, out int index))
+            return null;
+        var players = self.RunState.Players;
+        return index >= 0 && index < players.Count ? players[index] : null;
     }
 
     private static Creature? ResolveTarget(ICombatState combatState, string entityId)

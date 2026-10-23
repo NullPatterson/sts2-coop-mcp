@@ -25,6 +25,7 @@ from pathlib import Path
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from knowledge import SEARCH_TOOL, search_knowledge, preload
+from comms import COMMS_METHODS, build_comms
 
 # States where the search_knowledge tool is offered: decisions about
 # cards/relics/potions, plus map and rest-site planning. Combat is left out
@@ -127,7 +128,7 @@ STATE_TOOL_MAP: dict[str, list[str]] = {
 # and starts another run until --runs is reached (see run_agent_loop).
 TERMINAL_STATES: set[str] = set()  # add any state that should always stop the loop
 
-SYSTEM_PROMPT = """You are playing Slay the Spire 2. You will be shown the
+SYSTEM_PROMPT_SINGLEPLAYER = """You are playing Slay the Spire 2. You will be shown the
 current game state and a list of tools valid for that state. Call exactly
 one game tool per turn (A search_knowledge lookup beforehand doesn't count). 
 Always call a tool -- never just respond with text.
@@ -181,7 +182,34 @@ cards, relics and potions. Before choosing, look up every option on offer in
 ONE call, using the exact names from the state. A lookup does not take a game
 action: after the results come back you must still call a game tool. Treat the
 stats as one input alongside your current deck, HP and situation. Skipping is
-often the right pick."""
+often the right pick.
+
+## Potions
+Potions are meant to be used, not saved. Unused potions at the end of a run
+are worth nothing, and a full potion belt means potion rewards are lost.
+Using a potion does not end your turn. Drink one in elite and boss fights,
+when a fight is going badly or your HP is low, or when it lets you kill an
+enemy before it hits you. Check each potion's target_type: AnyEnemy potions
+need target set to an enemy's entity_id; other potions take no target."""
+
+# Multiplayer prompt. Starts as a copy of the singleplayer one plus a co-op
+# section to fill in. TODO: write the co-op guidance (teammates, shared map
+# votes, end-turn votes, how to use teammate messages from --comms, ...).
+SYSTEM_PROMPT_MULTIPLAYER = SYSTEM_PROMPT_SINGLEPLAYER + """
+
+## Co-op
+You are one of several players in a co-op run. TODO: co-op strategy goes here.
+
+## Potions on teammates
+Potions whose target_type is AnyAlly or AnyPlayer can be used on a teammate:
+call use_potion with target set to their player_id from the players list
+(e.g. "player_1"). Omit target to use it on yourself. Use a healing or
+defensive potion on a teammate who is about to die if you are not."""
+
+SYSTEM_PROMPTS = {
+    "singleplayer": SYSTEM_PROMPT_SINGLEPLAYER,
+    "multiplayer": SYSTEM_PROMPT_MULTIPLAYER,
+}
 
 # ---------------------------------------------------------------------------
 # Provider abstraction. Two backends supported out of the box:
@@ -245,19 +273,43 @@ class AnthropicBackend:
         self.client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
         self.model = model
 
-    def pick_tool(self, system: str, user_content: str, mcp_tools: list, allow_search=False) -> tuple[str, dict] | None:
-        response = self.client.messages.create(
-            model=self.model,
-            max_tokens=1024,
-            system=system,
-            tools=to_anthropic_tools(mcp_tools),
-            tool_choice={"type": "any"},  # force a tool call, no plain-text turns
-            messages=[{"role": "user", "content": user_content}],
-        )
-        tool_use = next((b for b in response.content if b.type == "tool_use"), None)
-        if tool_use is None:
-            return None
-        return tool_use.name, tool_use.input
+    def pick_tool(self, system: str, user_content: str, mcp_tools: list, allow_search=False,
+                  side_tools=None, side_handler=None) -> tuple[str, dict] | None:
+        """side_tools: extra tools (OpenAI format) that don't count as the game
+        action, e.g. board_post from --comms blackboard. side_handler(name, args)
+        runs one and returns the text the model sees. search_knowledge is still
+        only offered on the OpenAI backend."""
+        game_tools = to_anthropic_tools(mcp_tools)
+        side = [{"name": t["function"]["name"],
+                 "description": t["function"].get("description", ""),
+                 "input_schema": t["function"]["parameters"]} for t in (side_tools or [])]
+        side_names = {t["name"] for t in side}
+        messages = [{"role": "user", "content": user_content}]
+        rounds = MAX_SEARCH_ROUNDS if side else 0
+        for round_ in range(rounds + 1):
+            offer_side = side and round_ < rounds  # last round: game tools only
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=1024,
+                system=system,
+                tools=game_tools + (side if offer_side else []),
+                tool_choice={"type": "any"},  # force a tool call, no plain-text turns
+                messages=messages,
+            )
+            uses = [b for b in response.content if b.type == "tool_use"]
+            if not uses:
+                return None
+            if not any(b.name in side_names for b in uses):
+                return uses[0].name, uses[0].input
+            # Side calls present: run them (any game call alongside is not
+            # executed), then ask again for the game action.
+            messages.append({"role": "assistant", "content": response.content})
+            messages.append({"role": "user", "content": [
+                {"type": "tool_result", "tool_use_id": b.id,
+                 "content": (side_handler(b.name, b.input or {}) if b.name in side_names
+                             else "Not executed. Call one game tool.")}
+                for b in uses]})
+        return None
 
 
 class OpenAICompatibleBackend:
@@ -270,18 +322,28 @@ class OpenAICompatibleBackend:
                                     max_retries=3, timeout=120)
         self.model = model
 
-    def pick_tool(self, system, user_content, mcp_tools, allow_search=False):
+    def pick_tool(self, system, user_content, mcp_tools, allow_search=False,
+                  side_tools=None, side_handler=None):
+        """Side calls (search_knowledge, and any --comms tools such as board_post)
+        don't count as the game action: they're answered and the model is asked
+        again, up to the round limit, after which only game tools are offered."""
         game_tools = to_openai_tools(mcp_tools)
+        extra = list(side_tools or [])
+        extra_names = {t["function"]["name"] for t in extra}
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user_content},
         ]
-        for round_ in range(MAX_SEARCH_ROUNDS + 1):
-            # On the last round the search tool is withheld, so the model must act.
-            offer_search = allow_search and round_ < MAX_SEARCH_ROUNDS
+        rounds = MAX_SEARCH_ROUNDS if (allow_search or extra) else 0
+        for round_ in range(rounds + 1):
+            # On the last round the side tools are withheld, so the model must act.
+            offer_side = round_ < rounds
+            offered = game_tools
+            if offer_side:
+                offered = offered + ([SEARCH_TOOL] if allow_search else []) + extra
             response = self.client.chat.completions.create(
                 model=self.model,
-                tools=game_tools + ([SEARCH_TOOL] if offer_search else []),
+                tools=offered,
                 tool_choice="required",
                 messages=messages,
             )
@@ -289,26 +351,29 @@ class OpenAICompatibleBackend:
             if not message.tool_calls:
                 return None
 
-            searches = [c for c in message.tool_calls if c.function.name == "search_knowledge"]
-            if not searches:
+            side_names = extra_names | {"search_knowledge"}
+            if not any(c.function.name in side_names for c in message.tool_calls):
                 call = message.tool_calls[0]
                 # arguments comes back as a JSON string, not a dict -- parse it
                 return call.function.name, json.loads(call.function.arguments)
 
-            # Model asked for a lookup: answer every tool call in the message, then re-ask.
+            # Side calls present: answer every call (any game call in the same
+            # message is not executed), then re-ask for the game action.
             messages.append(message.model_dump(exclude_none=True))
             for call in message.tool_calls:
+                try:
+                    args = json.loads(call.function.arguments)
+                except json.JSONDecodeError:
+                    args = {}
                 if call.function.name == "search_knowledge":
-                    try:
-                        args = json.loads(call.function.arguments)
-                    except json.JSONDecodeError:
-                        args = {}
                     items = args.get("items") or args.get("queries") or []
                     topics = args.get("topics") or []
                     print(f"[search] items={items} topics={topics}", file=sys.stderr)
                     content = search_knowledge(items, topics)
+                elif call.function.name in extra_names and side_handler:
+                    content = side_handler(call.function.name, args)
                 else:
-                    content = "Not executed. Review the lookup results, then call one game tool."
+                    content = "Not executed. Call one game tool."
                 messages.append({"role": "tool", "tool_call_id": call.id, "content": content})
         return None
 
@@ -417,6 +482,66 @@ async def combat_has_affordable_card(session: ClientSession, mp: bool) -> bool |
     return False
 
 
+def potion_note(state: dict) -> str:
+    """Per-turn combat note listing the potions held, with a stronger nudge when
+    there's a clear reason to drink one. Models tend to hoard potions "for later"
+    unless the prompt puts them in front of them every turn.
+
+    Uses state["player"]["potions"] (slot, name, description, target_type) and,
+    in co-op, state["players"] (player_id, hp, max_hp, is_local, is_alive)."""
+    p = state.get("player") or {}
+    potions = [x for x in (p.get("potions") or []) if isinstance(x, dict)]
+    if not potions:
+        return ""
+
+    has_teammates = any(isinstance(a, dict) and not a.get("is_local")
+                        for a in (state.get("players") or []))
+    ally_how = "on yourself, or target=<teammate player_id>" if has_teammates else "on yourself"
+    lines = []
+    for x in potions:
+        how = {
+            "AnyEnemy": "needs target=<enemy entity_id>",
+            "AnyAlly": ally_how,
+            "AnyPlayer": ally_how,
+        }.get(x.get("target_type"), "no target")
+        if x.get("can_use_in_combat") is False:
+            how = "not usable in combat"
+        desc = (x.get("description") or "").replace("\n", " ")
+        lines.append(f"- slot {x.get('slot')}: {x.get('name')} ({how}) - {desc}")
+
+    reasons = []
+    st = state.get("state_type")
+    if st in ("elite", "boss"):
+        reasons.append(f"this is a{'n' if st == 'elite' else ''} {st} fight")
+    hp, max_hp = p.get("hp"), p.get("max_hp")
+    if isinstance(hp, int) and isinstance(max_hp, int) and max_hp and hp <= max_hp * 0.4:
+        reasons.append(f"your HP is low ({hp}/{max_hp})")
+    max_slots = p.get("max_potion_slots")
+    if isinstance(max_slots, int) and len(potions) >= max_slots:
+        reasons.append("your potion slots are full, so a potion reward after this fight is wasted")
+
+    has_ally_potion = any(x.get("target_type") in ("AnyAlly", "AnyPlayer") for x in potions)
+    ally_lines = []
+    for a in state.get("players") or []:
+        if not isinstance(a, dict) or a.get("is_local") or not a.get("is_alive", True):
+            continue
+        ahp, amax = a.get("hp"), a.get("max_hp")
+        ally_lines.append(f"- {a.get('player_id', '?')}: {a.get('character')} HP {ahp}/{amax}")
+        if (has_ally_potion and isinstance(ahp, int) and isinstance(amax, int)
+                and amax and ahp <= amax * 0.4):
+            reasons.append(f"teammate {a.get('character')} ({a.get('player_id')}) is low "
+                           f"({ahp}/{amax}) and you hold a potion you can use on them")
+
+    note = "\nYour potions (using one does not end your turn):\n" + "\n".join(lines) + "\n"
+    if ally_lines and has_ally_potion:
+        note += "Teammates (targets for ally potions):\n" + "\n".join(ally_lines) + "\n"
+    if reasons:
+        note += ("Strongly consider using a potion this turn: " + "; ".join(reasons)
+                 + ". A potion that saves HP or ends a dangerous fight now is worth more "
+                   "than one saved for later.\n")
+    return note
+
+
 async def get_state_and_tools(
     session: ClientSession, all_tools: list, mp: bool
 ) -> tuple[dict, list]:
@@ -467,10 +592,15 @@ async def get_state_and_tools(
 
 async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character: str,
                          mp_role: str | None = None, max_runs: int = 1,
-                         pick_character=None) -> None:
+                         pick_character=None, system_prompt: str = SYSTEM_PROMPT_SINGLEPLAYER,
+                         comms=None) -> None:
     """max_runs: finished runs (game_over screens) to play before stopping;
     0 = keep going forever. pick_character: optional callable returning the
-    character for each new run (default: keep `character`)."""
+    character for each new run (default: keep `character`).
+    system_prompt: chosen by --prompt-mode. comms: a comms.Comms object
+    chosen by --comms (None = no communication)."""
+    if comms is None:
+        comms = build_comms("none", player_id=str(port))
     server_params = StdioServerParameters(
         command="uv",
         args=["run", "--directory", str(MCP_SERVER_DIR), "python", "server.py", "--port", str(port)],
@@ -756,6 +886,8 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                                 "cards unused. Weigh this like a human player would, rather than "
                                 "playing just because you can afford to.\n"
                             )
+                    if state_type in ("monster", "elite", "boss"):
+                        affordable_note += potion_note(state)
 
                     history_block = ""
                     if recent_actions:
@@ -800,10 +932,17 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                                 "multiplayer join option, refresh if no host is listed, and join the "
                                 "host's lobby (join_0 if there is one entry). Then pick your "
                                 "character and ready up.\n")
+                    # --comms: what the method wants shown this turn (the blackboard,
+                    # for "blackboard"), plus any side tools it offers (board_post).
+                    # Both are empty for "none" and the unimplemented methods.
+                    comms.observe(state)
+                    comms_block = comms.prompt_block()
                     try:
                         picked = backend.pick_tool(
-                            system=SYSTEM_PROMPT,
-                            user_content=f"{character_note}{history_block}{affordable_note}"
+                            side_tools=comms.side_tools(),
+                            side_handler=comms.handle_tool,
+                            system=system_prompt,
+                            user_content=f"{character_note}{comms_block}{history_block}{affordable_note}"
                                          f"Current state (state_type={state_type}):\n"
                                          f"{json.dumps(state, indent=2)}",
                             mcp_tools=offered_tools,
@@ -893,7 +1032,23 @@ def main() -> None:
                               "or your HPC-tunneled vLLM endpoint.")
     parser.add_argument("--character", type=str, default="random",
                          help="Character ID to play (e.g. SILENT), or 'random' (default).")
+    parser.add_argument("--prompt-mode", choices=["auto", "singleplayer", "multiplayer"],
+                         default="auto",
+                         help="Which system prompt to use. 'auto' (default) follows --multiplayer.")
+    parser.add_argument("--comms", choices=COMMS_METHODS, default="none",
+                         help="How this agent communicates with the other agents "
+                              "(default 'none'). Methods are defined in comms.py.")
+    parser.add_argument("--board-path", type=str, default=None,
+                         help="--comms blackboard: the shared board file. Every agent in a "
+                              "session must use the same path (run_multiplayer.py sets this). "
+                              "Default: .blackboard/board.jsonl next to this script.")
     args = parser.parse_args()
+
+    prompt_mode = args.prompt_mode
+    if prompt_mode == "auto":
+        prompt_mode = "multiplayer" if args.multiplayer else "singleplayer"
+    print(f"Prompt mode: {prompt_mode} | comms: {args.comms}")
+    comms = build_comms(args.comms, player_id=str(args.port), board_path=args.board_path)
 
     character = (random.choice(CHARACTERS) if args.character.lower() == "random"
                  else args.character.upper())
@@ -908,9 +1063,12 @@ def main() -> None:
         fixed = args.character.lower() != "random"
         asyncio.run(run_agent_loop(args.port, args.multiplayer, max_turns, backend, character,
                                   args.mp_role, args.runs,
-                                  None if fixed else (lambda: random.choice(CHARACTERS))))
+                                  None if fixed else (lambda: random.choice(CHARACTERS)),
+                                  SYSTEM_PROMPTS[prompt_mode], comms))
     except* GameUnreachable:
         unreachable = True  # message was already printed where it was raised
+    finally:
+        comms.close()
     if unreachable:
         sys.exit(1)
 
