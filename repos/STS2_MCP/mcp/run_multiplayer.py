@@ -61,6 +61,11 @@ def main():
                     help="Communication method for every agent: none, blackboard, stack, ... "
                          "(see comms.py; default 'none'). "
                          "Per-client override: \"comms\" in --config.")
+    ap.add_argument("--state-log-dir", default=None,
+                    help="Record the game state at every step: client i writes "
+                         "<dir>/p<i>_<port>.jsonl (see state_logger.py). Default: off.")
+    ap.add_argument("--run-label", default="",
+                    help="Label stored in every state-log line (e.g. the experiment condition).")
     args = ap.parse_args()
 
     players = json.loads(Path(args.config).read_text()) if args.config else []
@@ -105,6 +110,9 @@ def main():
                    "--comms", pl.get("comms", args.comms)]
             if pl.get("comms", args.comms) in comms_paths:
                 cmd += ["--comms-path", str(comms_paths[pl.get("comms", args.comms)])]
+            if args.state_log_dir:
+                cmd += ["--state-log", str(Path(args.state_log_dir) / f"p{i}_{port}.jsonl"),
+                        "--run-label", args.run_label]
             if args.max_turns is not None:
                 cmd += ["--max-turns", str(args.max_turns)]
             model = pl.get("model", args.model)

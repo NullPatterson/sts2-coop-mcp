@@ -1,4 +1,12 @@
 [
-  {"model": "Qwen/Qwen3-32B-AWQ", "base_url": "http://localhost:8001/v1"},
-  {"model": "Qwen/Qwen3-32B-AWQ",      "base_url": "http://localhost:8002/v1"}
+  {
+    "model": "Qwen/Qwen3-32B-AWQ",
+    "base_url": "http://localhost:8001/v1",
+    "gpu_node": "gpunode005"
+  },
+  {
+    "model": "Qwen/Qwen3-32B-AWQ",
+    "base_url": "http://localhost:8002/v1",
+    "gpu_node": "gpunode006"
+  }
 ]

@@ -11,14 +11,13 @@ Rules (combat only: monster / elite / boss states)
 - Priority then passes to the NEXT agent (seat order = port order). That agent
   can respond (push its own card/potion on top, which resolves FIRST) or pass
   (the stack_pass tool). Each agent who still could act gets asked in turn.
-- When every other agent has passed in a row, the TOP item resolves: its
+- When every other agent has passed in a row, the WHOLE stack resolves, top
+  to bottom, with no further chance to respond between items. Each item's
   owner's harness runs the real game tool. If the card is no longer in hand,
   can't be paid for, or its target died, it fizzles instead (like a spell
   with an illegal target).
-- After a resolution, the next item down is checked the same way: starting
-  with the agent after ITS owner, every other agent gets to respond to the new
-  situation before it resolves. Once the stack is empty, the owner of the last
-  resolved item keeps priority and carries on with its turn.
+- Once the stack is empty, the owner of the last item to resolve (normally
+  the agent that started the chain) keeps priority and carries on.
 - Ending your turn is only allowed with an empty stack. An agent that ended
   its turn is out of the priority rotation until the next combat round.
   (Calling end turn while the stack has items counts as a pass.)
@@ -68,9 +67,9 @@ ARRIVAL_GRACE = 30       # at combat start, wait this long for every player's ag
 STACK_PASS_TOOL = SimpleNamespace(
     name="stack_pass",
     description=(
-        "Pass priority: you don't respond to the top item of the stack. Once every "
-        "other player has passed too, the top item resolves. Use this when nothing you "
-        "could play would be better played BEFORE that item."
+        "Pass priority: you don't respond. Once every other player has passed too, the "
+        "WHOLE stack resolves top to bottom with no further chance to respond. Use this "
+        "when nothing you could play would be better played BEFORE those items."
     ),
     inputSchema={"type": "object", "properties": {}},
 )
@@ -278,8 +277,9 @@ class StackComms(Comms):
             if now - top.get("resolving_since", now) <= RESOLVE_TIMEOUT:
                 return  # its owner is resolving it
             self._remove(d, top, "fizzled", "its owner didn't resolve it in time")
-            d["passes"] = [d["stack"][-1]["owner"]] if d["stack"] else []
-            self._set_holder(d, None)
+            self._continue_chain(d, None)
+            if d["stack"]:
+                return  # the next owner resolves its item
 
         # A holder who left combat, ended the turn or went silent counts as passing.
         h = d.get("holder")
@@ -314,17 +314,18 @@ class StackComms(Comms):
                 start = order[(rnd - 1) % len(order)]
                 self._set_holder(d, start if start in active else self._next_after(d, start, floor))
 
-    def _restart_check(self, d: dict, floor) -> None:
-        """After the top item leaves the stack: the new top gets a fresh round of
-        responses from everyone but its owner, starting after the owner. With
-        an empty stack, this agent (who just resolved) keeps priority."""
+    def _continue_chain(self, d: dict, holder_if_empty: str | None) -> None:
+        """After the top item leaves the stack: no new round of priority. The next
+        item down resolves straight away; once the stack is empty,
+        holder_if_empty (whoever resolved last) gets priority."""
+        d["passes"] = []
         if d["stack"]:
-            owner = d["stack"][-1]["owner"]
-            d["passes"] = [owner]
-            self._set_holder(d, self._next_after(d, owner, floor, skip=d["passes"]))
+            top = d["stack"][-1]
+            top["status"] = "resolving"
+            top["resolving_since"] = time.time()
+            self._set_holder(d, None)
         else:
-            d["passes"] = []
-            self._set_holder(d, self.player_id)
+            self._set_holder(d, holder_if_empty)
 
     def _note_arrival(self, d: dict, state: dict) -> None:
         """Record how many players this combat should have (living players in the
@@ -441,18 +442,38 @@ class StackComms(Comms):
             item["target"] = {"kind": "enemy", "entity_id": e["entity_id"],
                               "combat_id": e.get("combat_id"), "name": e.get("name")}
             item["target_label"] = f"{e.get('name')} ({e['entity_id']}, HP {e.get('hp')}/{e.get('max_hp')})"
-        elif (base == "use_potion" and target_type in ("AnyAlly", "AnyPlayer")
-              and isinstance(target, str) and target.lower().startswith("player_")):
-            pl = next((x for x in state.get("players") or []
-                       if isinstance(x, dict) and x.get("player_id") == target), None)
-            if pl is None:
-                return None, f"No player with player_id {target!r}."
-            if pl.get("is_local"):
-                item["input"].pop("target", None)
+        elif target_type in ("AnyAlly", "AnyPlayer"):
+            # Aimed at a player (cards and potions). Same rules as the mod: a
+            # player_id or "self"; if omitted, potions and AnyPlayer cards hit
+            # yourself, and AnyAlly cards hit your only living teammate.
+            players = [x for x in state.get("players") or [] if isinstance(x, dict)]
+            tid = target.strip() if isinstance(target, str) else ""
+            if tid.lower().startswith("player_"):
+                pl = next((x for x in players if x.get("player_id") == tid), None)
+                if pl is None:
+                    ids = ", ".join(str(x.get("player_id")) for x in players) or "none"
+                    return None, f"No player with player_id {tid!r}. Valid: {ids}, or \"self\"."
+                if pl.get("is_alive") is False:
+                    return None, f"{pl.get('character')} ({tid}) is dead."
+            elif tid.lower() == "self" or base == "use_potion" or target_type == "AnyPlayer":
+                pl = None
+            else:
+                others = [x for x in players if not x.get("is_local") and x.get("is_alive") is not False]
+                if len(others) > 1:
+                    ids = ", ".join(str(x.get("player_id")) for x in others)
+                    return None, (f"{item['name']} targets a teammate: set target to their "
+                                  f"player_id ({ids}).")
+                pl = others[0] if others else None
+            if pl is None or pl.get("is_local"):
+                item["input"]["target"] = "self" if base == "combat_play_card" else None
+                if item["input"]["target"] is None:
+                    item["input"].pop("target")
                 item["target_label"] = "themselves"
             else:
-                item["target"] = {"kind": "ally", "player_id": target, "name": pl.get("character")}
-                item["target_label"] = (f"teammate {pl.get('character')} ({target}, "
+                pid = pl.get("player_id")
+                item["input"]["target"] = pid
+                item["target"] = {"kind": "ally", "player_id": pid, "name": pl.get("character")}
+                item["target_label"] = (f"teammate {pl.get('character')} ({pid}, "
                                         f"HP {pl.get('hp')}/{pl.get('max_hp')})")
         else:
             item["input"].pop("target", None)
@@ -507,6 +528,8 @@ class StackComms(Comms):
             if pl is None or pl.get("is_alive") is False:
                 return None, f"its target {tgt.get('name')} is dead"
             args["target"] = tgt["player_id"]
+        elif item["input"].get("target") == "self":
+            args["target"] = "self"  # an AnyAlly card aimed at its own player
         return (item["tool"], args), ""
 
     async def _resolve(self, item: dict, state: dict, execute, floor) -> None:
@@ -523,7 +546,7 @@ class StackComms(Comms):
             cur = next((x for x in d["stack"] if x.get("id") == item.get("id")), None)
             if cur is not None:
                 self._remove(d, cur, outcome, msg)
-            self._restart_check(d, floor)
+            self._continue_chain(d, self.player_id)
             self._advance(d, floor)
         self._log(f"{outcome} #{item.get('id')} {item.get('name')}: {msg}")
 
@@ -550,6 +573,7 @@ class StackComms(Comms):
             return False
 
         deadline = time.monotonic() + WAIT_SLICE
+        fresh = True  # `state` was fetched right before this call
         while True:
             with self._txn() as d:
                 d["status"][me] = self._status_from(state)
@@ -559,11 +583,17 @@ class StackComms(Comms):
                 resolve_mine = (top if top and top.get("status") == "resolving"
                                 and top.get("owner") == me else None)
                 mine_now = d.get("holder") == me
-                if mine_now and d["stack"] and self.auto_pass and not self._can_respond(state, d):
+                if (fresh and mine_now and d["stack"] and self.auto_pass
+                        and not self._can_respond(state, d)):
                     self._log(f"auto-pass on #{top.get('id')} (nothing playable)")
                     self._do_pass(d, floor)
                     mine_now = False
                 snapshot = json.loads(json.dumps(d))
+            if (resolve_mine or mine_now) and not fresh:
+                # Our turn came up while waiting. Teammates' items may have resolved in
+                # the meantime (killing enemies, shifting IDs), so act on a freshly
+                # fetched game state, not the one from before the wait.
+                return True
             if resolve_mine:
                 await self._resolve(resolve_mine, state, execute, floor)
                 return True  # game state changed: let the loop fetch it again
@@ -573,6 +603,7 @@ class StackComms(Comms):
             if time.monotonic() >= deadline:
                 return True
             await asyncio.sleep(POLL_SECONDS)
+            fresh = False
 
     def offered_tools(self, state: dict, tools: list) -> list:
         if (state.get("state_type") not in STACK_STATES or not self.view
@@ -653,8 +684,9 @@ class StackComms(Comms):
                 "You have priority. Respond by playing a card or using a potion: it goes on top "
                 "and resolves BEFORE everything listed above. For example, apply Vulnerable or "
                 "Weak before a teammate's attack lands, or block or heal before the danger. Or "
-                "call stack_pass to let the top item resolve. You can't end your turn while the "
-                "stack has items.")
+                "call stack_pass. This is your last chance to respond: once everyone has passed, "
+                "the whole stack resolves top to bottom without stopping. You can't end your "
+                "turn while the stack has items.")
         else:
             lines.append(
                 "The stack is empty and you have priority. Play a card or use a potion (it goes "

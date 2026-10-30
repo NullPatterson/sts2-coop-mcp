@@ -386,7 +386,8 @@ async def combat_play_card(card_index: int, target: str | None = None) -> str:
 
     Args:
         card_index: Index of the card in hand (0-based, as shown in game state).
-        target: Entity ID of the target enemy (e.g. "JAW_WORM_0"). Required for single-target cards.
+        target: Entity ID of the target enemy, exactly as shown in the state. Required for
+            cards whose target_type is AnyEnemy; omit it for other cards.
 
     Note that the index can change as cards are played - playing a card will shift the indices of remaining cards in hand.
     Refer to the latest game state for accurate indices. New cards are drawn to the right, so playing cards from right to left can help maintain more stable indices for remaining cards.
@@ -787,9 +788,16 @@ async def mp_combat_play_card(card_index: int, target: str | None = None) -> str
     Same as singleplayer combat_play_card but routed through the multiplayer
     endpoint for sync safety.
 
+    Check the card's target_type in the state to know what 'target' means:
+    - AnyEnemy: target is required, the enemy's entity_id exactly as shown in the state.
+    - AnyAlly / AnyPlayer: the card is aimed at a player. Pass a teammate's
+      player_id from the players list (e.g. "player_1"), or "self". If omitted,
+      AnyPlayer cards target you and AnyAlly cards target your only teammate.
+    - Self, AllEnemies or no target: omit target.
+
     Args:
         card_index: Index of the card in hand (0-based).
-        target: Entity ID of the target enemy (e.g. "JAW_WORM_0"). Required for single-target cards.
+        target: Enemy entity_id, or a player_id / "self" for cards aimed at a player.
     """
     body: dict = {"action": "play_card", "card_index": card_index}
     if target is not None:

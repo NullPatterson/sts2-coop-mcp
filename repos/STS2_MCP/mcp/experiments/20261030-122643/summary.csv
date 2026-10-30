@@ -1,0 +1,2 @@
+n,run,model_size,model,comms,players,started,duration_s,return_code,folder,gameplay_s,result,final_act,final_floor,combats,elites,bosses,combat_rounds,actions_total,actions_by_agent,stack_resolves,final_hp_by_agent,characters_by_agent,last_combat
+1,1,32B,Qwen/Qwen3-32B-AWQ,none,2,2026-10-30T12:26:43,676.1,0,001_none_32B_run1,642.3,loss,1,13,6,2,0,29,524,p0:270;p1:254,0,p0:0/87;p1:0/83,p0:The Silent;p1:The Regent,f13 elite: Phantasmal Gardener

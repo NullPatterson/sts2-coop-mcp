@@ -26,6 +26,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from knowledge import SEARCH_TOOL, search_knowledge, preload
 from comms import COMMS_METHODS, build_comms
+from state_logger import StateLogger
 
 # States where the search_knowledge tool is offered: decisions about
 # cards/relics/potions, plus map and rest-site planning. Combat is left out
@@ -200,11 +201,13 @@ SYSTEM_PROMPT_MULTIPLAYER = SYSTEM_PROMPT_SINGLEPLAYER + """
 ## Co-op
 You are one of several players in a co-op run. TODO: co-op strategy goes here.
 
-## Potions on teammates
-Potions whose target_type is AnyAlly or AnyPlayer can be used on a teammate:
-call use_potion with target set to their player_id from the players list
-(e.g. "player_1"). Omit target to use it on yourself. Use a healing or
-defensive potion on a teammate who is about to die if you are not."""
+## Cards and potions on teammates
+Cards and potions whose target_type is AnyAlly or AnyPlayer are aimed at a
+player. Set target to a teammate's player_id from the players list (e.g.
+"player_1"), or to "self" for yourself. If you leave target out, potions and
+AnyPlayer cards go to you, and AnyAlly cards go to your teammate (with more
+than one teammate you must name one). Use a healing or defensive potion on a
+teammate who is about to die if you are not."""
 
 SYSTEM_PROMPTS = {
     "singleplayer": SYSTEM_PROMPT_SINGLEPLAYER,
@@ -590,17 +593,36 @@ async def get_state_and_tools(
     return state, filtered
 
 
+async def wait_for_main_menu(session: ClientSession, all_tools: list, mp: bool,
+                             timeout: float = 30.0) -> bool:
+    """After posting main_menu from game_over: poll until the game reports the
+    menu (the return transition takes a few seconds). True if it got there."""
+    deadline = asyncio.get_running_loop().time() + timeout
+    while asyncio.get_running_loop().time() < deadline:
+        await asyncio.sleep(1)
+        try:
+            state, _ = await get_state_and_tools(session, all_tools, mp)
+        except json.JSONDecodeError:
+            continue  # mid-transition, no usable state yet
+        if state.get("state_type") == "menu" and "run" not in state:
+            return True
+    return False
+
+
 async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character: str,
                          mp_role: str | None = None, max_runs: int = 1,
                          pick_character=None, system_prompt: str = SYSTEM_PROMPT_SINGLEPLAYER,
-                         comms=None) -> None:
+                         comms=None, state_logger: StateLogger | None = None) -> None:
     """max_runs: finished runs (game_over screens) to play before stopping;
     0 = keep going forever. pick_character: optional callable returning the
     character for each new run (default: keep `character`).
     system_prompt: chosen by --prompt-mode. comms: a comms.Comms object
-    chosen by --comms (None = no communication)."""
+    chosen by --comms (None = no communication). state_logger: records the
+    state at every step (--state-log; None = no logging)."""
     if comms is None:
         comms = build_comms("none", player_id=str(port))
+    if state_logger is None:
+        state_logger = StateLogger(None)
     server_params = StdioServerParameters(
         command="uv",
         args=["run", "--directory", str(MCP_SERVER_DIR), "python", "server.py", "--port", str(port)],
@@ -688,9 +710,17 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                 """Lets a --comms method run a game tool itself (the stack uses this
                 to resolve this agent's items when their turn comes)."""
                 print(f"[client:{port}] resolving: {name}({args})")
+                pre_state = None
+                if state_logger.path:
+                    try:  # the state right before the item takes effect
+                        pre_state, _ = await get_state_and_tools(session, all_tools, mp)
+                    except json.JSONDecodeError:
+                        pass
                 res = await session.call_tool(name, args)
                 text = res.content[0].text
                 print(f"[client:{port}]   -> {text[:200]}")
+                if pre_state is not None:
+                    state_logger.log("stack_resolve", pre_state, turn, name, args, text)
                 return text
 
             for turn in range(max_turns):
@@ -735,11 +765,12 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                         runs_done += 1
                         print(f"[client:{port}] run {runs_done} finished "
                               f"(game_over). Summary: {json.dumps(state)[:300]}")
-                    if max_runs and runs_done >= max_runs:
-                        print(f"[client:{port}] reached --runs {max_runs}, stopping.")
-                        break
+                        state_logger.log("run_end", state, turn)
+                    last_run = bool(max_runs and runs_done >= max_runs)
                     # Deterministic return to the menu: game_over only offers
                     # main_menu, so there is nothing for the model to decide.
+                    # Done after the last run too, so the game is left at the
+                    # main menu instead of on the game-over screen.
                     in_coop = state.get("game_mode") == "multiplayer" or (
                         mp and "game_mode" not in state)
                     res_text = await post_menu_select(port, "main_menu", in_coop)
@@ -750,6 +781,12 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                             print(f"[client:{port}] could not leave game_over after 5 tries; "
                                   f"stopping.", file=sys.stderr)
                             break
+                    elif last_run:
+                        at_menu = await wait_for_main_menu(session, all_tools, mp)
+                        print(f"[client:{port}] reached --runs {max_runs}; "
+                              + ("back at the main menu, stopping." if at_menu else
+                                 "the main menu didn't appear within 30s, stopping anyway."))
+                        break
                     else:
                         menu_return_failures = 0
                         # fresh slate for the next run
@@ -857,6 +894,7 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                     result = await session.call_tool(tool_name, tool_input)
                     result_text = result.content[0].text
                     print(f"[client:{port}]   -> {result_text[:200]}")
+                    state_logger.log("fallback", state, turn, tool_name, tool_input, result_text)
                     await asyncio.sleep(0.5)
                     continue
 
@@ -986,6 +1024,7 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                     result_text = result.content[0].text
                     comms.after_action(tool_name, tool_input, result_text, state)
                 print(f"[client:{port}]   -> {result_text[:200]}")
+                state_logger.log("decision", state, turn, tool_name, tool_input, result_text)
 
                 try:
                     _parsed_for_history = json.loads(result_text)
@@ -1064,6 +1103,11 @@ def main() -> None:
                               "session must use the same path (run_multiplayer.py sets this). "
                               "Default: .blackboard/board.jsonl or .stack/stack.json next to "
                               "this script.")
+    parser.add_argument("--state-log", type=str, default=None,
+                         help="Append the game state at every step to this JSONL file "
+                              "(see state_logger.py). Default: no logging.")
+    parser.add_argument("--run-label", type=str, default="",
+                         help="Label stored in every --state-log line, e.g. the experiment condition.")
     args = parser.parse_args()
 
     prompt_mode = args.prompt_mode
@@ -1086,7 +1130,9 @@ def main() -> None:
         asyncio.run(run_agent_loop(args.port, args.multiplayer, max_turns, backend, character,
                                   args.mp_role, args.runs,
                                   None if fixed else (lambda: random.choice(CHARACTERS)),
-                                  SYSTEM_PROMPTS[prompt_mode], comms))
+                                  SYSTEM_PROMPTS[prompt_mode], comms,
+                                  StateLogger(args.state_log, args.run_label, str(args.port),
+                                              args.model, args.comms)))
     except* GameUnreachable:
         unreachable = True  # message was already printed where it was raised
     finally:
