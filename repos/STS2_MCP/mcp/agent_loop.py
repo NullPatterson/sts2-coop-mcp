@@ -684,8 +684,24 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
             game_over_counted = False
             menu_return_failures = 0
 
+            async def execute_tool(name: str, args: dict) -> str:
+                """Lets a --comms method run a game tool itself (the stack uses this
+                to resolve this agent's items when their turn comes)."""
+                print(f"[client:{port}] resolving: {name}({args})")
+                res = await session.call_tool(name, args)
+                text = res.content[0].text
+                print(f"[client:{port}]   -> {text[:200]}")
+                return text
+
             for turn in range(max_turns):
                 state, valid_tools = await get_state_and_tools(session, all_tools, mp)
+                comms.observe(state)
+                # --comms stack: wait here while another player holds priority, and
+                # resolve this agent's own stack items when they come up. Waiting
+                # doesn't use up a turn. Other methods return False immediately.
+                while await comms.before_turn(state, execute_tool):
+                    state, valid_tools = await get_state_and_tools(session, all_tools, mp)
+                    comms.observe(state)
                 state_type = state.get("state_type", "unknown")
 
                 # Ascension guard: every in-run state carries run.ascension. Check it
@@ -870,7 +886,7 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                     # fact as information in the prompt and let the model
                     # weigh it against enemy intent and relics/cards visible
                     # in the state -- same as a human player would.
-                    offered_tools = valid_tools
+                    offered_tools = comms.offered_tools(state, valid_tools)
                     affordable_note = ""
                     if state_type in ("monster", "elite", "boss") and any(
                         t.name == end_turn_name for t in valid_tools
@@ -962,8 +978,13 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                     tool_name, tool_input = picked
 
                 print(f"[client:{port}] turn {turn}: {tool_name}({tool_input})")
-                result = await session.call_tool(tool_name, tool_input)
-                result_text = result.content[0].text
+                # --comms stack: plays/potions/passes go on the shared stack instead
+                # of straight to the game (intercept returns the result to show).
+                result_text = comms.intercept(tool_name, tool_input, state)
+                if result_text is None:
+                    result = await session.call_tool(tool_name, tool_input)
+                    result_text = result.content[0].text
+                    comms.after_action(tool_name, tool_input, result_text, state)
                 print(f"[client:{port}]   -> {result_text[:200]}")
 
                 try:
@@ -1038,17 +1059,18 @@ def main() -> None:
     parser.add_argument("--comms", choices=COMMS_METHODS, default="none",
                          help="How this agent communicates with the other agents "
                               "(default 'none'). Methods are defined in comms.py.")
-    parser.add_argument("--board-path", type=str, default=None,
-                         help="--comms blackboard: the shared board file. Every agent in a "
+    parser.add_argument("--comms-path", "--board-path", dest="comms_path", type=str, default=None,
+                         help="Shared file for --comms blackboard / stack. Every agent in a "
                               "session must use the same path (run_multiplayer.py sets this). "
-                              "Default: .blackboard/board.jsonl next to this script.")
+                              "Default: .blackboard/board.jsonl or .stack/stack.json next to "
+                              "this script.")
     args = parser.parse_args()
 
     prompt_mode = args.prompt_mode
     if prompt_mode == "auto":
         prompt_mode = "multiplayer" if args.multiplayer else "singleplayer"
     print(f"Prompt mode: {prompt_mode} | comms: {args.comms}")
-    comms = build_comms(args.comms, player_id=str(args.port), board_path=args.board_path)
+    comms = build_comms(args.comms, player_id=str(args.port), path=args.comms_path)
 
     character = (random.choice(CHARACTERS) if args.character.lower() == "random"
                  else args.character.upper())

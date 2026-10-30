@@ -58,7 +58,7 @@ def main():
                     help="System prompt for every agent ('auto' follows --single-player). "
                          "Per-client override: \"prompt_mode\" in --config.")
     ap.add_argument("--comms", default="none",
-                    help="Communication method for every agent: none, blackboard, ... "
+                    help="Communication method for every agent: none, blackboard, stack, ... "
                          "(see comms.py; default 'none'). "
                          "Per-client override: \"comms\" in --config.")
     args = ap.parse_args()
@@ -71,12 +71,19 @@ def main():
 
     chars = random.sample(CHARACTERS, n)
 
-    # --comms blackboard: one fresh board file per session, shared by every agent.
-    board_path = HERE / ".blackboard" / f"board-{time.strftime('%Y%m%d-%H%M%S')}.jsonl"
-    if any(pl.get("comms", args.comms) == "blackboard" for pl in players):
-        board_path.parent.mkdir(parents=True, exist_ok=True)
-        board_path.touch()
-        print(f"[launcher] blackboard: {board_path}", flush=True)
+    # Shared-file comms: one fresh file per method per session, shared by every agent.
+    stamp = time.strftime('%Y%m%d-%H%M%S')
+    comms_paths = {
+        "blackboard": HERE / ".blackboard" / f"board-{stamp}.jsonl",
+        "stack": HERE / ".stack" / f"stack-{stamp}.json",
+    }
+    methods = {pl.get("comms", args.comms) for pl in players}
+    for m in methods & comms_paths.keys():
+        comms_paths[m].parent.mkdir(parents=True, exist_ok=True)
+        print(f"[launcher] {m}: {comms_paths[m]}", flush=True)
+    if "stack" in methods and len(methods) > 1:
+        print("[launcher] WARNING: only some players use --comms stack. Players outside the "
+              "stack act immediately and never wait for priority.", flush=True)
     procs = []
     try:
         for i, pl in enumerate(players):
@@ -95,8 +102,9 @@ def main():
                    "--character", pl.get("character", chars[i]),
                    "--runs", str(args.runs),
                    "--prompt-mode", pl.get("prompt_mode", args.prompt_mode),
-                   "--comms", pl.get("comms", args.comms),
-                   "--board-path", str(board_path)]
+                   "--comms", pl.get("comms", args.comms)]
+            if pl.get("comms", args.comms) in comms_paths:
+                cmd += ["--comms-path", str(comms_paths[pl.get("comms", args.comms)])]
             if args.max_turns is not None:
                 cmd += ["--max-turns", str(args.max_turns)]
             model = pl.get("model", args.model)

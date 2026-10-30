@@ -1,1 +1,4 @@
 /game/
+# Per-session agent comms files (blackboard posts, stack state)
+.blackboard/
+.stack/

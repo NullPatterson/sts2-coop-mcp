@@ -14,9 +14,24 @@ know which one is active:
                             plain message passing, for methods that want it
     close()                 release files/sockets on shutdown
 
+Turn-flow hooks (only "stack" uses these; the defaults change nothing):
+    await before_turn(state, execute) -> bool
+                            called after every state fetch; True = this agent
+                            must wait, so the loop fetches a fresh state and
+                            calls again. execute(tool, args) runs a game tool.
+    offered_tools(state, tools) -> list
+                            the game tools the model is offered this turn
+    intercept(tool, args, state) -> str | None
+                            a result to use INSTEAD of calling the game tool
+    after_action(tool, args, result_text, state)
+                            called after a game tool really ran
+
 Methods:
     none         agents never talk (default)
     blackboard   shared board file; agents post intents and their hand
+    stack        no talking: actions go on a shared last-in-first-out stack
+                 and resolve Magic: the Gathering style once every other
+                 player has passed priority
     shared-file, direct, broker
                  placeholders: warn once, then behave like "none"
 
@@ -70,6 +85,20 @@ class Comms:
         return []
 
     def close(self) -> None:
+        pass
+
+    # -- turn-flow hooks ------------------------------------------------------
+    async def before_turn(self, state: dict, execute) -> bool:
+        return False
+
+    def offered_tools(self, state: dict, tools: list) -> list:
+        return tools
+
+    def intercept(self, tool_name: str, tool_input: dict, state: dict) -> str | None:
+        return None
+
+    def after_action(self, tool_name: str, tool_input: dict, result_text: str,
+                     state: dict) -> None:
         pass
 
 
@@ -164,10 +193,11 @@ class BlackboardComms(Comms):
 
     name = "blackboard"
 
-    def __init__(self, player_id: str, board_path: str | None = None,
+    def __init__(self, player_id: str, path: str | None = None, board_path: str | None = None,
                  max_shown: int = 10, posts_per_round: int = 2, **options):
         super().__init__(player_id, **options)
-        self.path = Path(board_path) if board_path else DEFAULT_BOARD_PATH
+        path = path or board_path
+        self.path = Path(path) if path else DEFAULT_BOARD_PATH
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.touch(exist_ok=True)
         self.max_shown = max_shown
@@ -322,8 +352,11 @@ class BrokerComms(_Placeholder):
     name = "broker"
 
 
+from comms_stack import StackComms  # noqa: E402  (needs Comms defined above)
+
 _METHODS: dict[str, type[Comms]] = {
-    cls.name: cls for cls in (NoComms, BlackboardComms, SharedFileComms, DirectComms, BrokerComms)
+    cls.name: cls for cls in (NoComms, BlackboardComms, StackComms,
+                              SharedFileComms, DirectComms, BrokerComms)
 }
 COMMS_METHODS = list(_METHODS)
 
