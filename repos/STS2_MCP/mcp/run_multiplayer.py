@@ -144,6 +144,14 @@ def main():
                 p.kill()
             print(f"[launcher] {tag} exited with {p.returncode}")
 
+    # Pass a failing agent's exit code on (3 = stopped before finishing its runs),
+    # so experiment_handler.py can tell an aborted run from a finished one.
+    failed = [p.returncode for _, p in procs if p.returncode not in (0, None)]
+    if failed:
+        print(f"[launcher] WARNING: {len(failed)} agent(s) did not finish cleanly "
+              f"(exit codes {failed}).", flush=True)
+        sys.exit(max(failed) if max(failed) > 0 else 1)
+
 
 if __name__ == "__main__":
     main()

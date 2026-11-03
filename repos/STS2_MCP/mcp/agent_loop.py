@@ -27,6 +27,8 @@ from mcp.client.stdio import stdio_client
 from knowledge import SEARCH_TOOL, search_knowledge, preload
 from comms import COMMS_METHODS, build_comms
 from state_logger import StateLogger
+from card_select import CardSelectHelper
+from shop import ShopHelper
 
 # States where the search_knowledge tool is offered: decisions about
 # cards/relics/potions, plus map and rest-site planning. Combat is left out
@@ -161,6 +163,12 @@ shops.
   index. Don't call bundle_select on the same or a different index
   repeatedly without ever confirming -- that never actually adds cards
   to your deck.
+- **Card selection** (upgrade / remove / transform / "choose N cards",
+  from events, rest sites, shops): call deck_select_card ONCE for each
+  card you want, up to the number the prompt asks for. It toggles, so
+  calling it again on a selected card un-selects it. Then call
+  deck_confirm_selection. Your selections so far are listed above the
+  state on these screens.
 
 ## Tool arguments
 Tool arguments must use the exact IDs, indices, or values shown in the
@@ -485,6 +493,29 @@ async def combat_has_affordable_card(session: ClientSession, mp: bool) -> bool |
     return False
 
 
+def ally_card_note(state: dict) -> str:
+    """Combat note for cards in hand that are aimed at a player (AnyAlly /
+    AnyPlayer): which ones they are and the exact target values to use."""
+    hand = [c for c in (state.get("player") or {}).get("hand") or [] if isinstance(c, dict)]
+    cards = [c for c in hand if c.get("target_type") in ("AnyAlly", "AnyPlayer")]
+    players = [p for p in state.get("players") or [] if isinstance(p, dict)]
+    if not cards or not any(not p.get("is_local") for p in players):
+        return ""
+    lines = ["\nCards in your hand aimed at a player (not at an enemy):"]
+    for c in cards:
+        default = "you" if c.get("target_type") == "AnyPlayer" else "your teammate"
+        lines.append(f"- [{c.get('index')}] {c.get('name')} ({c.get('target_type')}; "
+                     f"with no target it goes to {default})")
+    lines.append("For these, set target to one of:")
+    for p in players:
+        who = "you" if p.get("is_local") else "teammate"
+        dead = ", dead" if p.get("is_alive") is False else ""
+        lines.append(f"- \"{p.get('player_id')}\" = {p.get('character')} ({who}, HP "
+                     f"{p.get('hp')}/{p.get('max_hp')}, Block {p.get('block', 0)}{dead})")
+    lines.append("or \"self\" for yourself. Never use an enemy's entity_id for these cards.")
+    return "\n".join(lines) + "\n"
+
+
 def potion_note(state: dict) -> str:
     """Per-turn combat note listing the potions held, with a stronger nudge when
     there's a clear reason to drink one. Models tend to hoard potions "for later"
@@ -612,8 +643,10 @@ async def wait_for_main_menu(session: ClientSession, all_tools: list, mp: bool,
 async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character: str,
                          mp_role: str | None = None, max_runs: int = 1,
                          pick_character=None, system_prompt: str = SYSTEM_PROMPT_SINGLEPLAYER,
-                         comms=None, state_logger: StateLogger | None = None) -> None:
-    """max_runs: finished runs (game_over screens) to play before stopping;
+                         comms=None, state_logger: StateLogger | None = None) -> int:
+    """Returns the number of runs finished (game_over screens reached).
+
+    max_runs: finished runs (game_over screens) to play before stopping;
     0 = keep going forever. pick_character: optional callable returning the
     character for each new run (default: keep `character`).
     system_prompt: chosen by --prompt-mode. comms: a comms.Comms object
@@ -705,6 +738,8 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
             runs_done = 0
             game_over_counted = False
             menu_return_failures = 0
+            card_sel = CardSelectHelper()  # card_select / hand_select screens
+            screen_helpers = [card_sel, ShopHelper()]
 
             async def execute_tool(name: str, args: dict) -> str:
                 """Lets a --comms method run a game tool itself (the stack uses this
@@ -799,6 +834,29 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                     await asyncio.sleep(3)
                     continue
                 game_over_counted = False
+
+                # Screen helpers act without asking the model when there's only one
+                # sensible move: card selection (confirm once the selection is
+                # complete) and shops (leave once nothing is buyable).
+                auto, auto_helper = None, None
+                for h in screen_helpers:
+                    h.observe(state)
+                for h in screen_helpers:
+                    auto = h.auto_action(state, valid_tools)
+                    if auto:
+                        auto_helper = h
+                        break
+                if auto:
+                    a_name, a_args = auto
+                    res = await session.call_tool(a_name, a_args)
+                    a_text = res.content[0].text
+                    what = "card selection complete" if auto_helper is card_sel else "leaving the shop"
+                    print(f"[client:{port}] {what} ({auto_helper.last_reason}) "
+                          f"-> {a_name}: {a_text[:150]}")
+                    auto_helper.record(a_name, a_args, a_text, state)
+                    state_logger.log("auto", state, turn, a_name, a_args, a_text)
+                    await asyncio.sleep(1)
+                    continue
 
                 if not valid_tools:
                     # These two have no actions at all, so never guess for them.
@@ -942,6 +1000,7 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                             )
                     if state_type in ("monster", "elite", "boss"):
                         affordable_note += potion_note(state)
+                        affordable_note += ally_card_note(state)
 
                     history_block = ""
                     if recent_actions:
@@ -997,6 +1056,7 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                             side_handler=comms.handle_tool,
                             system=system_prompt,
                             user_content=f"{character_note}{comms_block}{history_block}{affordable_note}"
+                                         f"{''.join(h.note(state) for h in screen_helpers)}"
                                          f"Current state (state_type={state_type}):\n"
                                          f"{json.dumps(state, indent=2)}",
                             mcp_tools=offered_tools,
@@ -1019,10 +1079,18 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                 # --comms stack: plays/potions/passes go on the shared stack instead
                 # of straight to the game (intercept returns the result to show).
                 result_text = comms.intercept(tool_name, tool_input, state)
+                # Screen helpers refuse moves that can't work (re-selecting a card,
+                # buying what you can't afford, ...); the model gets told why instead.
+                for h in screen_helpers:
+                    if result_text is not None:
+                        break
+                    result_text = h.intercept(tool_name, tool_input, state)
                 if result_text is None:
                     result = await session.call_tool(tool_name, tool_input)
                     result_text = result.content[0].text
                     comms.after_action(tool_name, tool_input, result_text, state)
+                    for h in screen_helpers:
+                        h.record(tool_name, tool_input, result_text, state)
                 print(f"[client:{port}]   -> {result_text[:200]}")
                 state_logger.log("decision", state, turn, tool_name, tool_input, result_text)
 
@@ -1067,6 +1135,10 @@ async def run_agent_loop(port: int, mp: bool, max_turns: int, backend, character
                 # so you're not hammering get_game_state faster than the game
                 # actually updates.
                 await asyncio.sleep(0.5)
+            else:
+                print(f"[client:{port}] WARNING: used all {max_turns} turns (--max-turns) "
+                      f"before finishing; stopping, possibly mid-run.", file=sys.stderr)
+    return runs_done
 
 
 def main() -> None:
@@ -1079,7 +1151,8 @@ def main() -> None:
     parser.add_argument("--runs", type=int, default=0,
                          help="Runs to play before stopping (default 0 = keep going forever).")
     parser.add_argument("--max-turns", type=int, default=None,
-                         help="Total action budget (default: 500 for a single run, unlimited otherwise).")
+                         help="Total action budget (default: unlimited). When it runs out the "
+                              "agent stops, even mid-run, and exits with code 3.")
     parser.add_argument("--provider", type=str, default="anthropic",
                          choices=["anthropic", "openai"],
                          help="'anthropic' for Claude, 'openai' for any OpenAI-compatible "
@@ -1124,21 +1197,31 @@ def main() -> None:
     backend = build_backend(args.provider, args.model, args.base_url)
 
     unreachable = False
+    runs_done = 0
     try:
-        max_turns = args.max_turns if args.max_turns is not None else (500 if args.runs == 1 else 10**9)
+        # No default cap: a capped agent stops mid-run, and a launcher that only
+        # waits for its agents to exit would then start the next run on top of it.
+        max_turns = args.max_turns if args.max_turns is not None else 10**9
         fixed = args.character.lower() != "random"
-        asyncio.run(run_agent_loop(args.port, args.multiplayer, max_turns, backend, character,
-                                  args.mp_role, args.runs,
-                                  None if fixed else (lambda: random.choice(CHARACTERS)),
-                                  SYSTEM_PROMPTS[prompt_mode], comms,
-                                  StateLogger(args.state_log, args.run_label, str(args.port),
-                                              args.model, args.comms)))
+        runs_done = asyncio.run(run_agent_loop(
+            args.port, args.multiplayer, max_turns, backend, character,
+            args.mp_role, args.runs,
+            None if fixed else (lambda: random.choice(CHARACTERS)),
+            SYSTEM_PROMPTS[prompt_mode], comms,
+            StateLogger(args.state_log, args.run_label, str(args.port),
+                        args.model, args.comms)))
     except* GameUnreachable:
         unreachable = True  # message was already printed where it was raised
     finally:
         comms.close()
     if unreachable:
         sys.exit(1)
+    if args.runs and runs_done < args.runs:
+        # Stopped before finishing its runs (turn budget, wrong ascension, stuck on
+        # game over, ...). Exit non-zero so launchers can tell this from a clean finish.
+        print(f"[client:{args.port}] stopped after {runs_done} of {args.runs} run(s); "
+              f"the game may still be mid-run.", file=sys.stderr)
+        sys.exit(3)
 
 
 if __name__ == "__main__":

@@ -125,6 +125,7 @@ public static partial class McpMod
 
         // Resolve target
         Creature? target = null;
+        string? allyName = null;  // set when the card is aimed at a player
         if (card.TargetType == TargetType.AnyEnemy)
         {
             if (!data.TryGetValue("target", out var targetElem))
@@ -135,14 +136,55 @@ public static partial class McpMod
             if (target == null)
                 return Error($"Target '{targetId}' not found among alive enemies");
         }
+        else if (card.TargetType == TargetType.AnyAlly || card.TargetType == TargetType.AnyPlayer)
+        {
+            // Co-op cards aimed at a player. 'target' may be a player_id from the
+            // state's players list ("player_1"), its number ("1"), the character's
+            // name ("The Silent" / "Silent"), "self", or "ally"/"teammate".
+            // Omitted: AnyPlayer -> yourself; AnyAlly -> the only other living
+            // player (yourself when playing solo).
+            string allyId = data.TryGetValue("target", out var allyElem)
+                            && allyElem.ValueKind == JsonValueKind.String
+                ? (allyElem.GetString() ?? "").Trim() : "";
+            string lower = allyId.ToLowerInvariant();
+            var living = player.RunState.Players.Where(p => p.Creature.IsAlive).ToList();
+            var others = living.Where(p => p != player).ToList();
+            Player? chosen;
+            if (lower is "self" or "me" or "myself" or "yourself")
+            {
+                chosen = player;
+            }
+            else if (lower is "" or "ally" or "teammate" or "other" or "partner")
+            {
+                if (card.TargetType == TargetType.AnyPlayer && lower == "")
+                    chosen = player;
+                else if (others.Count > 1)
+                    return Error($"Card '{card.Title}' targets a teammate: set 'target' to one of {PlayerTargetList(player)}.");
+                else
+                    chosen = others.Count == 1 ? others[0] : player;
+            }
+            else
+            {
+                chosen = ResolvePlayerTarget(player, allyId);
+                if (chosen == null)
+                    return Error($"Card '{card.Title}' targets a player, and '{allyId}' isn't one. Set 'target' to one of {PlayerTargetList(player)}.");
+                if (!chosen.Creature.IsAlive)
+                    return Error($"Player target '{allyId}' is dead");
+            }
+            target = chosen.Creature;
+            allyName = chosen == player ? "yourself" : SafeGetText(() => chosen.Character.Title);
+        }
 
         // Play the card via the action queue (same path as the game UI)
         RunManager.Instance.ActionQueueSynchronizer.RequestEnqueue(new PlayCardAction(card, target));
 
+        string targetMsg = allyName != null
+            ? $" targeting {allyName}"
+            : target != null ? $" targeting {SafeGetText(() => target.Monster?.Title) ?? "target"}" : "";
         return new Dictionary<string, object?>
         {
             ["status"] = "ok",
-            ["message"] = $"Playing '{card.Title}'" + (target != null ? $" targeting {SafeGetText(() => target.Monster?.Title) ?? "target"}" : "")
+            ["message"] = $"Playing '{card.Title}'{targetMsg}"
         };
     }
 
@@ -224,19 +266,19 @@ public static partial class McpMod
                 break;
             case TargetType.AnyAlly:
             case TargetType.AnyPlayer:
-                // Co-op: a 'target' of "player_<i>" (the player_id from the state's
-                // players list) aims the potion at that teammate. Anything else
+                // Co-op: a 'target' naming a player (player_id "player_1", its number,
+                // or the character's name) aims the potion at them. Anything else
                 // (omitted, "self", or a stray enemy id) uses it on yourself, as before.
                 target = player.Creature;
                 if (data.TryGetValue("target", out var allyElem)
                     && allyElem.ValueKind == JsonValueKind.String)
                 {
                     string allyId = (allyElem.GetString() ?? "").Trim();
-                    if (allyId.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase))
+                    var ally = allyId.Length > 0 ? ResolvePlayerTarget(player, allyId) : null;
+                    if (ally == null && allyId.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase))
+                        return Error($"Ally target '{allyId}' not found. Set 'target' to one of {PlayerTargetList(player)}, or omit it to use the potion on yourself.");
+                    if (ally != null && ally != player)
                     {
-                        var ally = ResolvePlayerTarget(player, allyId);
-                        if (ally == null)
-                            return Error($"Ally target '{allyId}' not found. Use a player_id from the players list (e.g. \"player_1\"), or omit target to use it on yourself.");
                         if (!ally.Creature.IsAlive)
                             return Error($"Ally target '{allyId}' is dead");
                         target = ally.Creature;
@@ -1078,13 +1120,32 @@ public static partial class McpMod
     // state's "players" array, which reports each entry's player_id).
     private static Player? ResolvePlayerTarget(Player self, string id)
     {
-        string s = id;
-        if (s.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase))
-            s = s.Substring("player_".Length);
-        if (!int.TryParse(s, out int index))
-            return null;
+        // Accepts "player_1", "1", or the character's name ("The Silent" / "silent").
         var players = self.RunState.Players;
-        return index >= 0 && index < players.Count ? players[index] : null;
+        string s = id.Trim();
+        string num = s.StartsWith("player_", System.StringComparison.OrdinalIgnoreCase)
+            ? s.Substring("player_".Length) : s;
+        if (int.TryParse(num, out int index))
+            return index >= 0 && index < players.Count ? players[index] : null;
+        string want = NormalizeCharacterName(s);
+        return want.Length == 0 ? null
+            : players.FirstOrDefault(p => NormalizeCharacterName(SafeGetText(() => p.Character.Title)) == want);
+    }
+
+    private static string NormalizeCharacterName(string? name)
+    {
+        string n = (name ?? "").Trim().ToLowerInvariant();
+        return n.StartsWith("the ") ? n.Substring(4) : n;
+    }
+
+    // "player_0 (The Ironclad, you), player_1 (The Silent), or \"self\"" for error messages.
+    private static string PlayerTargetList(Player self)
+    {
+        var players = self.RunState.Players;
+        var parts = players.Select((p, i) =>
+            $"\"player_{i}\" ({SafeGetText(() => p.Character.Title)}{(p == self ? ", you" : "")}"
+            + $"{(p.Creature.IsAlive ? "" : ", dead")})");
+        return string.Join(", ", parts) + ", or \"self\"";
     }
 
     private static Creature? ResolveTarget(ICombatState combatState, string entityId)

@@ -790,9 +790,10 @@ async def mp_combat_play_card(card_index: int, target: str | None = None) -> str
 
     Check the card's target_type in the state to know what 'target' means:
     - AnyEnemy: target is required, the enemy's entity_id exactly as shown in the state.
-    - AnyAlly / AnyPlayer: the card is aimed at a player. Pass a teammate's
-      player_id from the players list (e.g. "player_1"), or "self". If omitted,
-      AnyPlayer cards target you and AnyAlly cards target your only teammate.
+    - AnyAlly / AnyPlayer: the card is aimed at a player, never an enemy. Pass
+      a teammate's player_id from the players list (e.g. "player_1"; their
+      character name also works), or "self". If omitted, AnyPlayer cards
+      target you and AnyAlly cards target your only teammate.
     - Self, AllEnemies or no target: omit target.
 
     Args:

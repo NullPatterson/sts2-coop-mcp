@@ -2,3 +2,4 @@
 # Per-session agent comms files (blackboard posts, stack state)
 .blackboard/
 .stack/
+repos/STS2_MCP/mcp/experiments

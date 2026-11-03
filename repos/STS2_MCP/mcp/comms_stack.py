@@ -75,6 +75,25 @@ STACK_PASS_TOOL = SimpleNamespace(
 )
 
 
+SELF_WORDS = ("self", "me", "myself", "yourself")
+ALLY_WORDS = ("ally", "teammate", "other", "partner")
+
+
+def _norm_name(name) -> str:
+    n = str(name or "").strip().lower()
+    return n[4:] if n.startswith("the ") else n
+
+
+def _find_player(players: list, tid: str):
+    """The players-list entry a target names: "player_1", "1", or a character
+    name ("The Silent" / "silent"). Same rules as the mod. None if no match."""
+    num = tid[len("player_"):] if tid.lower().startswith("player_") else tid
+    if num.isdigit():
+        return next((p for p in players if p.get("player_id") == f"player_{int(num)}"), None)
+    want = _norm_name(tid)
+    return next((p for p in players if want and _norm_name(p.get("character")) == want), None)
+
+
 def _base(tool_name: str) -> str:
     return tool_name[3:] if tool_name.startswith("mp_") else tool_name
 
@@ -444,26 +463,35 @@ class StackComms(Comms):
             item["target_label"] = f"{e.get('name')} ({e['entity_id']}, HP {e.get('hp')}/{e.get('max_hp')})"
         elif target_type in ("AnyAlly", "AnyPlayer"):
             # Aimed at a player (cards and potions). Same rules as the mod: a
-            # player_id or "self"; if omitted, potions and AnyPlayer cards hit
+            # player_id ("player_1"), its number, the character's name, "self",
+            # or "ally"/"teammate". If omitted, potions and AnyPlayer cards hit
             # yourself, and AnyAlly cards hit your only living teammate.
             players = [x for x in state.get("players") or [] if isinstance(x, dict)]
-            tid = target.strip() if isinstance(target, str) else ""
-            if tid.lower().startswith("player_"):
-                pl = next((x for x in players if x.get("player_id") == tid), None)
-                if pl is None:
-                    ids = ", ".join(str(x.get("player_id")) for x in players) or "none"
-                    return None, f"No player with player_id {tid!r}. Valid: {ids}, or \"self\"."
-                if pl.get("is_alive") is False:
-                    return None, f"{pl.get('character')} ({tid}) is dead."
-            elif tid.lower() == "self" or base == "use_potion" or target_type == "AnyPlayer":
+            tid = str(target).strip() if target is not None else ""
+            low = tid.lower()
+            others = [x for x in players if not x.get("is_local") and x.get("is_alive") is not False]
+            valid = ", ".join(f"{x.get('player_id')} ({x.get('character')}"
+                              f"{', you' if x.get('is_local') else ''})" for x in players)
+            if low in SELF_WORDS:
                 pl = None
+            elif low in ("",) + ALLY_WORDS:
+                if base == "use_potion" or (target_type == "AnyPlayer" and low == ""):
+                    pl = None
+                elif len(others) > 1:
+                    return None, (f"{item['name']} targets a teammate: set target to one of "
+                                  f"{valid}, or \"self\".")
+                else:
+                    pl = others[0] if others else None
             else:
-                others = [x for x in players if not x.get("is_local") and x.get("is_alive") is not False]
-                if len(others) > 1:
-                    ids = ", ".join(str(x.get("player_id")) for x in others)
-                    return None, (f"{item['name']} targets a teammate: set target to their "
-                                  f"player_id ({ids}).")
-                pl = others[0] if others else None
+                pl = _find_player(players, tid)
+                if pl is None:
+                    if base == "use_potion" and not low.startswith("player_"):
+                        pl = None  # stray value on a potion: yourself, like the mod
+                    else:
+                        return None, (f"{item['name']} targets a player, and {tid!r} isn't one. "
+                                      f"Set target to one of {valid}, or \"self\".")
+                elif pl.get("is_alive") is False:
+                    return None, f"{pl.get('character')} ({pl.get('player_id')}) is dead."
             if pl is None or pl.get("is_local"):
                 item["input"]["target"] = "self" if base == "combat_play_card" else None
                 if item["input"]["target"] is None:
